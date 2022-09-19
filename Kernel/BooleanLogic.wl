@@ -4,32 +4,19 @@ BeginPackage["PeterBurbery`BooleanLogic`"];
 
 (* Declare your packages public symbols here. *)
 
-SayHello;
-BooleanFunctionInformation;
+BooleanStructureData;
 FindBooleanAlternative;
 Begin["`Private`"];
 
 
 
 (* Define your public and private symbols here. *)
-ClearAll[BooleanFunctionInformation];
-SayHello[name_?StringQ] := Print["Hello ", name, "!"];
-BooleanFunctionInformation[booleanfunction_]:=Block[{dnf,cnf
-sop,pos},
-dnf=BooleanConvert[booleanfunction,"DNF"];
-<|"disjunctive-normal-form"->Iconize[TraditionalForm[dnf]],
-"DNFlength"->LeafCount[dnf],"sum-of-products"|>
-]
-(*BooleanFunctionInformation[booleanfunction_]:=Block[{booleanforms,
-minimalbooleanforms},booleanforms=AssociationMap[BooleanConvert[booleanfunction,#]&,
-{"DNF","CNF","SOP","POS","ESOP","ANF","NOR","NAND","AND","OR",
-"IMPLIES","ITE","IF","BFF","BDT"}];
-(*<|"boolean-forms"->
-booleanforms,
-,"minimal-forms"->AssociationMap[BooleanMinimize[booleanfunction,#]&,
+ClearAll[BooleanStructureData];
+BooleanStructureData[func_]:= <|"truth-table"->
+BooleanTable[func],"truth-vector"->Boole[BooleanTable[func]],
+"input-variables"->BooleanVariables[func],"positive-unate
+-monotone"->UnateQ[func],"negative-unate"->UnateQ[func]|>
 
-{"DNF","CNF","SOP","POS","ANF","NAND","AND","OR"}],"sati
-sfiable"->SatisfiableQ[booleanfunction]|>*)]*)
 ClearAll[FindBooleanAlternative]
 
 Options[FindBooleanAlternative] = {"MaxSize" -> 8};
