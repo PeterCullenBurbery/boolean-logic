@@ -1,4 +1,4 @@
 <|"English\\ReferencePages\\Symbols\\BooleanTruthInputData.nb" -> 
   <|"Result" -> Success["BuildDocumentationNotebook", 
-     <|"Time" -> Quantity[1.99466, "Seconds"]|>], 
-   "FileHash" -> "WocpxOA8xaZKuxePE37e7vxzVeBFtUHBJCEJ2mr4+9o="|>|>
+     <|"Time" -> Quantity[4.2251751, "Seconds"]|>], 
+   "FileHash" -> "kLAMsl7D+UNQ1bbUz/evMigajezn8b1ethIywrPjY4o="|>|>

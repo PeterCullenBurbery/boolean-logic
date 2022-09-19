@@ -6,6 +6,8 @@ BeginPackage["PeterBurbery`BooleanLogic`"];
 
 BooleanStructureData;
 FindBooleanAlternative;
+BooleanTruthInputData;
+VennDiagram;
 Begin["`Private`"];
 
 
@@ -14,8 +16,7 @@ Begin["`Private`"];
 ClearAll[BooleanStructureData];
 BooleanStructureData[func_]:= <|"truth-table"->
 BooleanTable[func],"truth-vector"->Boole[BooleanTable[func]],
-"input-variables"->BooleanVariables[func],"positive-unate
--monotone"->UnateQ[func],"negative-unate"->UnateQ[func]|>
+"input-variables"->BooleanVariables[func],"positive-unate-monotone"->UnateQ[func],"negative-unate"->UnateQ[func]|>
 
 ClearAll[FindBooleanAlternative]
 
@@ -49,6 +50,20 @@ Enclose @ Module[{
 		UpTo[limit]
 	]
 ]
+
+VennDiagram // ClearAll;
+VennDiagram // Attributes = {};
+VennDiagram[ args___ ] := 
+    Module[ { res },
+        update[ ];
+        res = Symbol[ "ResourceFunctionHelpers`VennDiagram" ][ args ];
+        res /; Head @ res =!= Symbol[ "ResourceFunctionHelpers`VennDiagram" ]
+    ];
+    
+BooleanTruthInputData//ClearAll;
+BooleanTruthInputData[func_]:=<|"satisfiable"->SatisfiableQ[func],
+"true-outputs-count"->SatisfiabilityCount[func],"input-that-makes-output-true"->
+SatisfiabilityInstances[func,BooleanVariables[func]],"tautology"->TautologyQ[func]|>
 
 
 End[]; (* End `Private` *)
