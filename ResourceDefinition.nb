@@ -7054,9 +7054,8 @@ Cell[BoxData[
 }, Open  ]]
 }, Open  ]]
 },
-WindowSize->{1152, Automatic},
-WindowMargins->{{
-  Automatic, -5.399999999999864}, {-5.399999999999977, Automatic}},
+WindowSize->{1141.2, Automatic},
+WindowMargins->{{0, Automatic}, {0, Automatic}},
 WindowTitle->"BooleanLogic | Definition Notebook",
 DockedCells->{
   Cell[
@@ -7527,6 +7526,7 @@ e3aded1"|>}|>, "AllowEmbedding" -> True, "InitialShape" ->
                     Pane[
                     Annotation[
                     Mouseover[
+                    
                     Graphics[{}, ImageSize -> 6, BaselinePosition -> 
                     Scaled[-0.15]], 
                     Graphics[{
@@ -7769,8 +7769,7 @@ lastPathIsLeafHeader, TypeSystem`NestedGrid`PackagePrivate`headerHidden$ = And[
                     Alternatives["ColumnHeader", "KeyDummy"]], 
                     TypeSystem`NestedGrid`PackagePrivate`isLeafHeader$, 
                     Not[TypeSystem`NestedGrid`PackagePrivate`allHidden$]], {
-                    If[
-                    TypeSystem`NestedGrid`PackagePrivate`sortDirection$ =!= 
+                    If[TypeSystem`NestedGrid`PackagePrivate`sortDirection$ =!= 
                     "Ascending", 
                     MenuItem["Sort", 
                     KernelExecute[
@@ -8019,6 +8018,7 @@ lastPathIsLeafHeader = TypeSystem`NestedGrid`PackagePrivate`isLeafHeader$;
                     TemplateBox[{"\"TotalTime\"", "\": \""}, "RowDefault"], 
                     "SummaryItemAnnotation"], "\[InvisibleSpace]", 
                     TagBox[
+                    
                     TemplateBox[{"0.0034144`", "\"s\"", "seconds", 
                     "\"Seconds\""}, "Quantity", SyntaxForm -> Mod], 
                     "SummaryItem"]}]}}, GridBoxAlignment -> {
@@ -8121,7 +8121,6 @@ lastPathIsLeafHeader = TypeSystem`NestedGrid`PackagePrivate`isLeafHeader$;
                     TagBox["0", "SummaryItem"]}]}, {
                     RowBox[{
                     TagBox[
-                    
                     TemplateBox[{"\"SkippedFilesCount\"", "\": \""}, 
                     "RowDefault"], "SummaryItemAnnotation"], 
                     "\[InvisibleSpace]", 
@@ -8353,7 +8352,6 @@ zFFQJJNuk3X6SgajS7mq/Bib7vvLGePD0CCP8c="}, "ClickToCopyTemplate"]], "",
                   0.282842712474619}}], 
                  
                  Polygon[{{0.42426406871192845`, -0.282842712474619}, {
-                  
                   0.282842712474619, -0.42426406871192845`}, \
 {-0.42426406871192845`, 0.282842712474619}, {-0.282842712474619, 
                   0.42426406871192845`}}]}, ImageSize -> 18, PlotRangePadding -> 
@@ -8630,8 +8628,7 @@ e3aded1"|>}|>, "AllowEmbedding" -> True, "InitialShape" ->
                     EventHandler[
                     MouseAppearance[
                     Mouseover["Hash", 
-                    Style[
-                    "Hash", FontColor -> RGBColor[0.27450980392156865`, 
+                    Style["Hash", FontColor -> RGBColor[0.27450980392156865`, 
                     0.5372549019607843, 0.792156862745098]]], "LinkHand"], {
                     "MouseClicked", 1} :> If[
                     TypeSystem`NestedGrid`PackagePrivate`checkInteractivity[
@@ -9037,6 +9034,7 @@ lastPathIsLeafHeader = TypeSystem`NestedGrid`PackagePrivate`isLeafHeader$;
                     RowBox[{"{", 
                     RowBox[{
                     TagBox["Success", "SummaryHead"], "[", 
+                    
                     DynamicModuleBox[{Typeset`open$$ = False, 
                     Typeset`embedState$$ = "Ready"}, 
                     TemplateBox[{
@@ -10106,8 +10104,9 @@ lastContextMenuTrigger, TypeSystem`NestedGrid`PackagePrivate`$lastContextMenu,
 lastContextMenuTrigger = 
                     TypeSystem`NestedGrid`PackagePrivate`$contextMenuTrigger; 
                     TypeSystem`NestedGrid`PackagePrivate`$lastContextMenu = 
-                    Block[{TypeSystem`NestedGrid`PackagePrivate`$\
-globalScrollPos = {TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                    Block[{
+                    TypeSystem`NestedGrid`PackagePrivate`$globalScrollPos = {
+                    TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
                     TypeSystem`NestedGrid`PackagePrivate`$hPos$$}}, 
                     
                     With[{TypeSystem`NestedGrid`PackagePrivate`lastPath$ = 
@@ -11201,9 +11200,11 @@ lastPathIsLeafHeader, TypeSystem`NestedGrid`PackagePrivate`headerHidden$ = And[
                     Nothing, 
                     MenuItem[
                     "Show " <> 
-                    Which[TypeSystem`NestedGrid`PackagePrivate`lastPathType$ == "\
-Item", "", TypeSystem`NestedGrid`PackagePrivate`lastPathType$ == "RowHeader", 
-                    "Row", TypeSystem`NestedGrid`PackagePrivate`lastPathType$ == 
+                    Which[TypeSystem`NestedGrid`PackagePrivate`lastPathType$ == 
+                    "Item", "", 
+                    TypeSystem`NestedGrid`PackagePrivate`lastPathType$ == 
+                    "RowHeader", "Row", 
+                    TypeSystem`NestedGrid`PackagePrivate`lastPathType$ == 
                     "ColumnHeader", "Column", True, ""], 
                     KernelExecute[
                     TypeSystem`NestedGrid`PackagePrivate`updateHiddenItems[
