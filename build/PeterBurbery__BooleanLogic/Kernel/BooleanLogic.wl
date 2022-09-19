@@ -4,17 +4,19 @@ BeginPackage["PeterBurbery`BooleanLogic`"];
 
 (* Declare your packages public symbols here. *)
 
-SayHello;
-BooleanFunctionInformation;
+BooleanStructureData;
 FindBooleanAlternative;
 Begin["`Private`"];
 
 
 
 (* Define your public and private symbols here. *)
+ClearAll[BooleanStructureData];
+BooleanStructureData[func_]:= <|"truth-table"->
+BooleanTable[func],"truth-vector"->Boole[BooleanTable[func]],
+"input-variables"->BooleanVariables[func],"positive-unate
+-monotone"->UnateQ[func],"negative-unate"->UnateQ[func]|>
 
-SayHello[name_?StringQ] := Print["Hello ", name, "!"];
-BooleanFunctionInformation[booleanfunction_]:=<|"MinimalForms"->AssociationMap[BooleanMinimize[booleanfunction,#]&,{"DNF","CNF"}],"Satisfiable"->SatisfiableQ[booleanfunction]|>
 ClearAll[FindBooleanAlternative]
 
 Options[FindBooleanAlternative] = {"MaxSize" -> 8};
@@ -47,6 +49,8 @@ Enclose @ Module[{
 		UpTo[limit]
 	]
 ]
+
+
 End[]; (* End `Private` *)
 
 EndPackage[];

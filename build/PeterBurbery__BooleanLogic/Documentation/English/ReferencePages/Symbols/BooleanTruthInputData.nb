@@ -1,0 +1,191 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      7274,        181]
+NotebookOptionsPosition[      5280,        137]
+NotebookOutlinePosition[      6854,        175]
+CellTagsIndexPosition[      6811,        172]
+WindowTitle->BooleanTruthInputData
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[GridBox[{
+   {GridBox[{
+      {
+       ItemBox[Cell[BoxData[
+         RowBox[{
+          TemplateBox[{12},
+           "Spacer1"], Cell[
+          "PETER BURBERY/ BOOLEAN LOGIC SYMBOL", "PacletNameCell",
+           TextAlignment->Center,ExpressionUUID->
+           "51b5d3f6-07b6-4bc7-adbc-9184ab57905f"], 
+          TemplateBox[{8},
+           "Spacer1"]}]],
+         TextAlignment->Center,ExpressionUUID->
+         "742bab8d-33c1-4dca-81cd-6a7700f582bd"],
+        Background->RGBColor[0.490196, 0.576471, 0.690196],
+        ItemSize->Full], ""}
+     },
+     GridBoxAlignment->{"Rows" -> {{Center}}},
+     GridBoxItemSize->{"Columns" -> {Full, 
+         Scaled[0.02]}, "Rows" -> {{2.5}}}], Cell[TextData[Cell[BoxData[
+     TagBox[
+      ActionMenuBox[
+       FrameBox[Cell[TextData[{
+         "URL",
+         " ",
+         Cell[BoxData[
+          GraphicsBox[
+           {GrayLevel[0.66667], Thickness[0.13], 
+            LineBox[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]},
+           AspectRatio->1,
+           ImageSize->20,
+           PlotRange->{{-3, 4}, {-1, 1}}]],ExpressionUUID->
+          "407d2d5b-ac4b-40a9-a8d6-02e1c5ec8557"]
+        }],ExpressionUUID->"96958da9-6420-42d9-af78-e75769dc40bc"],
+        StripOnInput->
+         False], {"\<\"PeterBurbery/BooleanLogic/ref/BooleanTruthInputData\"\>\
+":>None, "\<\"Copy Wolfram Documentation Center URL\"\>":>
+       Module[{DocumentationSearch`Private`nb$}, 
+        DocumentationSearch`Private`nb$ = NotebookPut[
+           Notebook[{
+             Cell["PeterBurbery/BooleanLogic/ref/BooleanTruthInputData"]}, 
+            Visible -> False]]; 
+        SelectionMove[DocumentationSearch`Private`nb$, All, Notebook]; 
+        FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
+        NotebookClose[DocumentationSearch`Private`nb$]; Null], 
+       Delimiter, "\<\"Copy web URL\"\>":>
+       Module[{DocumentationSearch`Private`nb$}, 
+        DocumentationSearch`Private`nb$ = NotebookPut[
+           Notebook[{
+             Cell[
+              BoxData[
+               MakeBoxes[
+                Hyperlink[
+                "http://reference.wolfram.com/language/PeterBurbery/\
+BooleanLogic/ref/BooleanTruthInputData.html"], StandardForm]], "Input", 
+              TextClipboardType -> "PlainText"]}, Visible -> False]]; 
+        SelectionMove[DocumentationSearch`Private`nb$, All, Notebook]; 
+        FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
+        NotebookClose[DocumentationSearch`Private`nb$]; 
+        Null], "\<\"Go to web URL\"\>":>FrontEndExecute[{
+         NotebookLocate[{
+           URL[If[
+              TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$88690], 
+              "http://reference.wolfram.com/system-modeler/", 
+              "http://reference.wolfram.com/language/"] <> 
+            "PeterBurbery/BooleanLogic/ref/BooleanTruthInputData" <> ".html"],
+            None}]}]},
+       Appearance->None,
+       MenuAppearance->Automatic,
+       MenuStyle->"URLMenu"],
+      MouseAppearanceTag["LinkHand"]]],
+     LineSpacing->{1.4, 0},ExpressionUUID->
+     "3a4a8499-c272-4988-a233-96105555b101"]], "AnchorBar",
+     CacheGraphics->False,ExpressionUUID->
+     "22f08d6b-72c4-4f37-a654-72f659d4b0f5"]}
+  }]], "AnchorBarGrid",
+ GridBoxOptions->{GridBoxItemSize->{"Columns" -> {
+     Scaled[0.65], {
+      Scaled[0.34]}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+   "RowsIndexed" -> {}}},
+ CellID->1,ExpressionUUID->"52742019-b2e6-4fbb-98ac-1d172609daa4"],
+
+Cell["PeterBurbery`BooleanLogic`", "ContextNameCell",ExpressionUUID->"363aa584-e391-473f-bd31-eb13d72b49f9"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[GridBox[{
+   {Cell[TextData[{
+     Cell[
+     "BooleanTruthInputData", "ObjectName",ExpressionUUID->
+      "9434ec7a-fb15-42a9-9356-71175cf1395d"],
+     Cell[BoxData[
+      TemplateBox[{8},
+       "Spacer1"]],ExpressionUUID->"d47564fa-839c-4900-94ac-be1231909b14"],
+     Cell[BoxData[
+     ""], "ObjectNameTranslation",ExpressionUUID->
+      "f835fcd3-595a-4e51-aa84-13709ca5f3ba"]
+    }],ExpressionUUID->"6fb7bd04-a4f5-4509-97b9-addb3edd90af"], 
+    "\[SpanFromLeft]"}
+  }]], "ObjectNameGrid",ExpressionUUID->"79f2e959-72f3-4a98-83e1-\
+8b6efdb04102"],
+
+Cell[BoxData[GridBox[{
+   {"", Cell[TextData[{
+     Cell[BoxData[
+      RowBox[{"BooleanTruthInputData", "[", "]"}]], "InlineFormula",
+      FontFamily->"Source Sans Pro",ExpressionUUID->
+      "4d2ee786-3559-4bb4-ab77-a3b5111dfaa5"],
+     " \[LineSeparator]XXXX"
+    }],ExpressionUUID->"e02e9971-6679-4db0-bc07-24a25171ee2b"]}
+  }]], "Usage",
+ CellID->55424419,ExpressionUUID->"2701dbcc-04d4-4443-9b8c-cb1a64d92a94"]
+}, Open  ]],
+
+Cell[" ", "FooterCell",ExpressionUUID->"8838cb2b-5feb-4e82-b409-2a90b978435f"]
+},
+Saveable->False,
+ScreenStyleEnvironment->"Working",
+WindowSize->{900., 765.75},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+WindowTitle->"BooleanTruthInputData",
+TaggingRules->{
+ "ModificationHighlight" -> False, "ColorType" -> "", "LinkTrails" -> "", 
+  "HasOptions" -> True, "ExampleCounter" -> 1, 
+  "Openers" -> {
+   "PrimaryExamplesSection" -> Open, "ExampleSection" -> {"0" -> Open}}, 
+  "NewStyles" -> True, "CitationPopupData" -> $Failed, "ShowCitation" -> 
+  False, "RootCaptions" -> "", 
+  "Metadata" -> {
+   "built" -> "{2022, 9, 19, 14, 20, 35.3115067}", 
+    "history" -> {"", "", "", ""}, "context" -> "PeterBurbery`BooleanLogic`", 
+    "keywords" -> {}, "specialkeywords" -> {}, 
+    "tutorialcollectionlinks" -> {}, "index" -> True, "label" -> 
+    "Peter Burbery/ Boolean Logic Symbol", "language" -> "en", "paclet" -> 
+    "PeterBurbery/BooleanLogic", "status" -> "None", "summary" -> 
+    "BooleanTruthInputData[] XXXX", "synonyms" -> {}, "tabletags" -> {}, 
+    "title" -> "BooleanTruthInputData", "titlemodifier" -> "", "windowtitle" -> 
+    "BooleanTruthInputData", "type" -> "Symbol", "uri" -> 
+    "PeterBurbery/BooleanLogic/ref/BooleanTruthInputData"}},
+FrontEndVersion->"13.1 for Microsoft Windows (64-bit) (June 16, 2022)",
+StyleDefinitions->FrontEnd`FileName[{"Wolfram"}, "Reference.nb", 
+  CharacterEncoding -> "UTF-8"],
+ExpressionUUID->"a2f43810-7c09-4ac3-9c52-7f75f7a76235"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[593, 21, 3470, 80, 70, "AnchorBarGrid",ExpressionUUID->"52742019-b2e6-4fbb-98ac-1d172609daa4",
+ CellID->1],
+Cell[4066, 103, 108, 0, 70, "ContextNameCell",ExpressionUUID->"363aa584-e391-473f-bd31-eb13d72b49f9"],
+Cell[CellGroupData[{
+Cell[4199, 107, 564, 14, 70, "ObjectNameGrid",ExpressionUUID->"79f2e959-72f3-4a98-83e1-8b6efdb04102"],
+Cell[4766, 123, 417, 9, 70, "Usage",ExpressionUUID->"2701dbcc-04d4-4443-9b8c-cb1a64d92a94",
+ CellID->55424419]
+}, Open  ]],
+Cell[5198, 135, 78, 0, 70, "FooterCell",ExpressionUUID->"8838cb2b-5feb-4e82-b409-2a90b978435f"]
+}
+]
+*)
+
+(* End of internal cache information *)
+
