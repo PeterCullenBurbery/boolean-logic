@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     21267,        550]
-NotebookOptionsPosition[     16373,        447]
-NotebookOutlinePosition[     18271,        493]
-CellTagsIndexPosition[     18186,        488]
+NotebookDataLength[     18258,        463]
+NotebookOptionsPosition[     13809,        367]
+NotebookOutlinePosition[     16028,        422]
+CellTagsIndexPosition[     15943,        417]
 WindowTitle->BooleanTruthInputData
 WindowFrame->Normal*)
 
@@ -28,11 +28,11 @@ Cell[BoxData[GridBox[{
            "Spacer1"], Cell[
           "PETER BURBERY/ BOOLEAN LOGIC SYMBOL", "PacletNameCell",
            TextAlignment->Center,ExpressionUUID->
-           "76d4a699-fa8d-47ed-81ce-88266c4c0d95"], 
+           "8d09ed7a-f97b-4cc2-8beb-239970720c3c"], 
           TemplateBox[{8},
            "Spacer1"]}]],
          TextAlignment->Center,ExpressionUUID->
-         "44f75cce-b6e3-4155-bb1a-5fd0ac1e1edf"],
+         "311bbbec-9f74-4b71-8c37-f493ea8d1895"],
         Background->RGBColor[0.490196, 0.576471, 0.690196],
         ItemSize->Full], ""}
      },
@@ -51,8 +51,8 @@ Cell[BoxData[GridBox[{
            AspectRatio->1,
            ImageSize->20,
            PlotRange->{{-3, 4}, {-1, 1}}]],ExpressionUUID->
-          "7252a5b3-b22c-4217-9e62-d80b436b5228"]
-        }],ExpressionUUID->"1245d5e3-091d-4215-a7e9-c087aa1abed6"],
+          "14442efe-98f1-40b5-a8cd-d571b2d54a33"]
+        }],ExpressionUUID->"4e70c948-bf56-43a9-9593-07133bd5e291"],
         StripOnInput->
          False], {"\<\"PeterBurbery/BooleanLogic/ref/BooleanTruthInputData\"\>\
 ":>None, "\<\"Copy Wolfram Documentation Center URL\"\>":>
@@ -81,7 +81,7 @@ BooleanLogic/ref/BooleanTruthInputData.html"], StandardForm]], "Input",
         Null], "\<\"Go to web URL\"\>":>FrontEndExecute[{
          NotebookLocate[{
            URL[If[
-              TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$66345], 
+              TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$741559], 
               "http://reference.wolfram.com/system-modeler/", 
               "http://reference.wolfram.com/language/"] <> 
             "PeterBurbery/BooleanLogic/ref/BooleanTruthInputData" <> ".html"],
@@ -91,17 +91,17 @@ BooleanLogic/ref/BooleanTruthInputData.html"], StandardForm]], "Input",
        MenuStyle->"URLMenu"],
       MouseAppearanceTag["LinkHand"]]],
      LineSpacing->{1.4, 0},ExpressionUUID->
-     "ea63cdf0-ee69-4f98-b5fd-56d2d9d47d43"]], "AnchorBar",
+     "e6748855-1714-43d0-b5b6-ea92fd9263fe"]], "AnchorBar",
      CacheGraphics->False,ExpressionUUID->
-     "85a98890-b321-4491-aaed-eab12ebc7af8"]}
+     "733b3398-f029-4204-9f97-879908582822"]}
   }]], "AnchorBarGrid",
  GridBoxOptions->{GridBoxItemSize->{"Columns" -> {
      Scaled[0.65], {
       Scaled[0.34]}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
    "RowsIndexed" -> {}}},
- CellID->1,ExpressionUUID->"c0f31708-a7f2-4173-9fc6-ffbc8ddc23c9"],
+ CellID->1,ExpressionUUID->"ec951788-30d2-43cc-a3a8-bcf2bff4d7e2"],
 
-Cell["PeterBurbery`BooleanLogic`", "ContextNameCell",ExpressionUUID->"7ae547b7-9c26-4766-b948-da76d4bad759"],
+Cell["PeterBurbery`BooleanLogic`", "ContextNameCell",ExpressionUUID->"30f6e4cb-0507-4c4c-b6f8-83f453bc36ed"],
 
 Cell[CellGroupData[{
 
@@ -109,34 +109,41 @@ Cell[BoxData[GridBox[{
    {Cell[TextData[{
      Cell[
      "BooleanTruthInputData", "ObjectName",ExpressionUUID->
-      "20e468d5-b312-4968-bd8f-aa26dde62abb"],
+      "919d8924-e4a7-47d3-a7ab-678a49bb8ab1"],
      Cell[BoxData[
       TemplateBox[{8},
-       "Spacer1"]],ExpressionUUID->"393f2807-536d-4846-a372-d499bea0101e"],
+       "Spacer1"]],ExpressionUUID->"b34886f7-ab0d-4645-b28f-205a81fb4988"],
      Cell[BoxData[
      ""], "ObjectNameTranslation",ExpressionUUID->
-      "aaf8180b-bcae-436e-9aeb-78366a93e497"]
-    }],ExpressionUUID->"7fb8ff89-2fc8-4358-9bd6-0a791eefe779"], 
+      "75a22131-311a-405b-bdf9-3f1187cb3c56"]
+    }],ExpressionUUID->"33cc13a3-01a7-4767-b66b-a0777549779b"], 
     "\[SpanFromLeft]"}
-  }]], "ObjectNameGrid",ExpressionUUID->"6f406dbc-3eca-44b1-8a4b-\
-5ed43f080154"],
+  }]], "ObjectNameGrid",ExpressionUUID->"7ba428bd-6688-4620-80a4-\
+834ecf9f804d"],
 
 Cell[BoxData[GridBox[{
    {"", Cell[TextData[{
      Cell[BoxData[
-      RowBox[{"BooleanTruthInputData", "[", 
-       StyleBox["functional", "TI"], "]"}]], "InlineFormula",
+      RowBox[{
+       TemplateBox[{
+         Cell[
+          TextData["BooleanTruthInputData"]], 
+         "paclet:PeterBurberyBooleanLogic/ref/BooleanTruthInputData", 
+         "PeterBurberyBooleanLogic Package Symbol"},
+        "PackageLink",
+        BaseStyle->"InlineFormula"], "[", 
+       StyleBox["logicfunction", "TI"], "]"}]], "InlineFormula",
       FontFamily->"Source Sans Pro",ExpressionUUID->
-      "4d2ee786-3559-4bb4-ab77-a3b5111dfaa5"],
-     " \[LineSeparator]finds information about truth inputs for boolean \
+      "cf92a216-a844-4073-8dac-1ef2601dc541"],
+     "\[LineSeparator]find information about truth inputs about the boolean \
 function ",
      Cell[BoxData[
-      StyleBox["functional", "TI"]], "InlineFormula",
+      StyleBox["logicfunction", "TI"]], "InlineFormula",
       FontFamily->"Source Sans Pro",ExpressionUUID->
-      "58943257-11d6-4cad-b383-2bfb3fc56443"]
-    }],ExpressionUUID->"15850fb0-90ad-49ee-a842-1269b2786749"]}
+      "67405b7a-37fc-494d-9e9a-d89113a4ad60"]
+    }],ExpressionUUID->"578a8fd1-3527-405b-bdd4-a96fd3fca011"]}
   }]], "Usage",
- CellID->55424419,ExpressionUUID->"2701dbcc-04d4-4443-9b8c-cb1a64d92a94"]
+ CellID->52264354,ExpressionUUID->"6340141d-dedf-4071-91d0-fc5ce608926d"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -166,25 +173,25 @@ Cell[TextData[{
         PlotRange -> {{-3, 4}, {-1, 1}}, ImageSize -> 20], Magnification -> 
        0.68 Inherited], Rational[1, 2] Pi, {-1.65, -1}]]],
    ImageSizeCache->{13.600000000000001`, {5., 8.600000000000001}}]],
-  ExpressionUUID->"25df3c03-68dd-41ae-9cd5-18e027069d7b"],
+  ExpressionUUID->"90e8e088-d8e5-4a0e-b5bf-fb82d681da3f"],
  Cell[BoxData[
   TemplateBox[{1},
-   "Spacer1"]],ExpressionUUID->"ab61f3b5-efb9-4489-af13-80323cbd0457"],
+   "Spacer1"]],ExpressionUUID->"f0adba90-8da4-43fb-aeeb-a5241a527a38"],
  "Examples",
  "\[NonBreakingSpace]\[NonBreakingSpace]",
  Cell["(1)", "ExampleCount",ExpressionUUID->
-  "3603def4-fdcf-45aa-ad27-21a00a6fb491"]
+  "f3262f29-c361-43cd-a873-d5a4e621d082"]
 }], "PrimaryExamplesSection",
  WholeCellGroupOpener->True,
  CacheGraphics->False,
  CellTags->"PrimaryExamplesSection",
- CellID->429650748,ExpressionUUID->"ff78e1f7-6f21-42e5-9662-8f50e1be07eb"],
+ CellID->165794489,ExpressionUUID->"80ae4720-59d0-4db7-85b7-b26a32d17b76"],
 
 Cell[BoxData[
  RowBox[{"Needs", "[", "\"\<PeterBurbery`BooleanLogic`\>\"", "]"}]], "Input", \
 "ExampleInitialization",
  CellLabel->"In[1]:=",
- CellID->530687027,ExpressionUUID->"0dac290b-631c-41e7-ae00-3459ef7f0d9c"],
+ CellID->258443830,ExpressionUUID->"b868d94a-a27a-43e1-acd3-2fcfbe50c949"],
 
 Cell[CellGroupData[{
 
@@ -213,21 +220,21 @@ Cell[TextData[{
         PlotRange -> {{-3, 4}, {-1, 1}}, ImageSize -> 20], Magnification -> 
        0.68 Inherited], Rational[1, 2] Pi, {-1.65, -1}]]],
    ImageSizeCache->{13.600000000000001`, {5., 8.600000000000001}}]],
-  ExpressionUUID->"5e163913-2f09-492b-a113-06809d7ec88c"],
+  ExpressionUUID->"b7a0f76d-276b-4ef4-b6d5-adc996f62016"],
  Cell[BoxData[
   TemplateBox[{1},
-   "Spacer1"]],ExpressionUUID->"95c6eb9d-4fc6-4a03-b896-f6a96e9547f4"],
+   "Spacer1"]],ExpressionUUID->"d9fdc015-90c8-4dad-8da0-b87edfcc16cc"],
  "Basic Examples",
  "\[NonBreakingSpace]\[NonBreakingSpace]",
  Cell["(1)", "ExampleCount",ExpressionUUID->
-  "ccd5a900-44d0-471c-a27f-d34fb90ff743"]
+  "b229d7c6-285c-4a1f-af36-1ea123be36e5"]
 }], "ExampleSection", "ExampleSection",
  WholeCellGroupOpener->True,
  CacheGraphics->False,
- CellID->783055952,ExpressionUUID->"49a9c9ec-0475-42a1-ba3d-a12371aedcc1"],
+ CellID->82597574,ExpressionUUID->"8f818b82-779b-4ef5-909a-b579c01aeeeb"],
 
 Cell["Find information about the two variable function xor:", "ExampleText",
- CellID->250337723,ExpressionUUID->"359dbe0b-b922-4b9b-a758-2bc14ced28d1"],
+ CellID->37852302,ExpressionUUID->"373efceb-3dab-4d1c-aafd-1ccaca70f77e"],
 
 Cell[CellGroupData[{
 
@@ -236,7 +243,7 @@ Cell[BoxData[
   RowBox[{"p", "\[Xor]", "q"}], "]"}]], "Input",
  CellProlog:>Needs["PeterBurbery`BooleanLogic`"],
  CellLabel->"In[1]:=",
- CellID->151971048,ExpressionUUID->"b3815ebb-9727-4a2c-a51c-aab6cebfce8a"],
+ CellID->263379117,ExpressionUUID->"60916134-b274-4549-bafd-5e154bb1bd67"],
 
 Cell[BoxData[
  RowBox[{"\[LeftAssociation]", 
@@ -250,13 +257,13 @@ Cell[BoxData[
    RowBox[{"\<\"tautology\"\>", "\[Rule]", "False"}]}], 
   "\[RightAssociation]"}]], "Output",
  CellLabel->"Out[1]=",
- CellID->42328748,ExpressionUUID->"837847a2-04ad-42d4-9499-f5cf056a20a7"]
+ CellID->54334622,ExpressionUUID->"210a2e27-5cf7-49fb-865b-0f6f338750b8"]
 }, Open  ]],
 
 Cell["\<\
-Find information about a random three variable boolean function:\
+Find information about a random 14 variable boolean function:\
 \>", "ExampleText",
- CellID->249006308,ExpressionUUID->"487fa11c-adf1-410b-93e9-690c9b60aa5b"],
+ CellID->461638588,ExpressionUUID->"a16ff1d9-34ef-4af8-9cdc-a6603dcb5c7f"],
 
 Cell[CellGroupData[{
 
@@ -264,47 +271,11 @@ Cell[BoxData[
  RowBox[{"BooleanTruthInputData", "[", 
   RowBox[{"BooleanFunction", "[", 
    RowBox[{
-    RowBox[{"RandomInteger", "[", "1000", "]"}], ",", "3"}], "]"}], 
-  "]"}]], "Input",
+    RowBox[{"RandomInteger", "[", 
+     SuperscriptBox["2", "14"], "]"}], ",", "14"}], "]"}], "]"}]], "Input",
  CellProlog:>Needs["PeterBurbery`BooleanLogic`"],
  CellLabel->"In[2]:=",
- CellID->56927497,ExpressionUUID->"edb687af-2e38-451b-b9c4-944635b8542c"],
-
-Cell[BoxData[
- RowBox[{"\[LeftAssociation]", 
-  RowBox[{
-   RowBox[{"\<\"satisfiable\"\>", "\[Rule]", "True"}], ",", 
-   RowBox[{"\<\"true-outputs-count\"\>", "\[Rule]", "4"}], ",", 
-   RowBox[{"\<\"input-that-makes-output-true\"\>", "\[Rule]", 
-    RowBox[{"{", 
-     RowBox[{
-      RowBox[{"{", 
-       RowBox[{"True", ",", "True", ",", "True"}], "}"}], ",", 
-      RowBox[{"{", 
-       RowBox[{"False", ",", "True", ",", "True"}], "}"}], ",", 
-      RowBox[{"{", 
-       RowBox[{"False", ",", "False", ",", "False"}], "}"}]}], "}"}]}], ",", 
-   RowBox[{"\<\"tautology\"\>", "\[Rule]", "False"}]}], 
-  "\[RightAssociation]"}]], "Output",
- CellLabel->"Out[2]=",
- CellID->152226426,ExpressionUUID->"330a8b8f-8bcb-4bcc-9745-ad9333121b9a"]
-}, Open  ]],
-
-Cell["Find information a random five variable boolean function:", \
-"ExampleText",
- CellID->325613986,ExpressionUUID->"286c7af3-b397-4e73-8a11-40bf5579569a"],
-
-Cell[CellGroupData[{
-
-Cell[BoxData[
- RowBox[{"BooleanTruthInputData", "[", 
-  RowBox[{"BooleanFunction", "[", 
-   RowBox[{
-    RowBox[{"RandomInteger", "[", "100000", "]"}], ",", "5"}], "]"}], 
-  "]"}]], "Input",
- CellProlog:>Needs["PeterBurbery`BooleanLogic`"],
- CellLabel->"In[3]:=",
- CellID->170211986,ExpressionUUID->"1d11ff23-5373-4042-9b0c-d9ece414e83a"],
+ CellID->743332476,ExpressionUUID->"a2289353-92e4-4d60-972c-f61f71be1077"],
 
 Cell[BoxData[
  RowBox[{"\[LeftAssociation]", 
@@ -315,92 +286,46 @@ Cell[BoxData[
     RowBox[{"{", 
      RowBox[{
       RowBox[{"{", 
-       RowBox[{"False", ",", "True", ",", "True", ",", "False", ",", "True"}],
-        "}"}], ",", 
-      RowBox[{"{", 
        RowBox[{
-       "False", ",", "False", ",", "True", ",", "True", ",", "False"}], "}"}],
-       ",", 
-      RowBox[{"{", 
-       RowBox[{
-       "False", ",", "False", ",", "True", ",", "False", ",", "True"}], "}"}],
-       ",", 
-      RowBox[{"{", 
-       RowBox[{
-       "False", ",", "False", ",", "False", ",", "True", ",", "True"}], "}"}],
-       ",", 
-      RowBox[{"{", 
-       RowBox[{
-       "False", ",", "False", ",", "False", ",", "False", ",", "True"}], 
-       "}"}]}], "}"}]}], ",", 
-   RowBox[{"\<\"tautology\"\>", "\[Rule]", "False"}]}], 
-  "\[RightAssociation]"}]], "Output",
- CellLabel->"Out[3]=",
- CellID->72980449,ExpressionUUID->"5cb164da-8b70-40ab-93c6-d22000cc27cc"]
-}, Open  ]],
-
-Cell["Seven variables:", "ExampleText",
- CellID->224823364,ExpressionUUID->"aefbb32b-95e5-4ad2-9a80-fbd81d35fd15"],
-
-Cell[CellGroupData[{
-
-Cell[BoxData[
- RowBox[{"BooleanTruthInputData", "[", 
-  RowBox[{"BooleanFunction", "[", 
-   RowBox[{
-    RowBox[{"RandomInteger", "[", "100000", "]"}], ",", "7"}], "]"}], 
-  "]"}]], "Input",
- CellProlog:>Needs["PeterBurbery`BooleanLogic`"],
- CellLabel->"In[4]:=",
- CellID->448505265,ExpressionUUID->"bf0a140f-9ad0-43bb-9d79-1edaddb91e80"],
-
-Cell[BoxData[
- RowBox[{"\[LeftAssociation]", 
-  RowBox[{
-   RowBox[{"\<\"satisfiable\"\>", "\[Rule]", "True"}], ",", 
-   RowBox[{"\<\"true-outputs-count\"\>", "\[Rule]", "10"}], ",", 
-   RowBox[{"\<\"input-that-makes-output-true\"\>", "\[Rule]", 
-    RowBox[{"{", 
-     RowBox[{
-      RowBox[{"{", 
-       RowBox[{
-       "False", ",", "False", ",", "False", ",", "True", ",", "True", ",", 
-        "True", ",", "False"}], "}"}], ",", 
-      RowBox[{"{", 
-       RowBox[{
-       "False", ",", "False", ",", "False", ",", "True", ",", "False", ",", 
-        "True", ",", "True"}], "}"}], ",", 
-      RowBox[{"{", 
-       RowBox[{
-       "False", ",", "False", ",", "False", ",", "True", ",", "False", ",", 
-        "False", ",", "True"}], "}"}], ",", 
-      RowBox[{"{", 
-       RowBox[{
-       "False", ",", "False", ",", "False", ",", "False", ",", "True", ",", 
-        "True", ",", "True"}], "}"}], ",", 
-      RowBox[{"{", 
-       RowBox[{
-       "False", ",", "False", ",", "False", ",", "False", ",", "True", ",", 
-        "False", ",", "True"}], "}"}], ",", 
+       "False", ",", "False", ",", "False", ",", "False", ",", "False", ",", 
+        "False", ",", "False", ",", "False", ",", "False", ",", "False", ",", 
+        "True", ",", "True", ",", "False", ",", "True"}], "}"}], ",", 
       RowBox[{"{", 
        RowBox[{
        "False", ",", "False", ",", "False", ",", "False", ",", "False", ",", 
-        "True", ",", "True"}], "}"}], ",", 
+        "False", ",", "False", ",", "False", ",", "False", ",", "False", ",", 
+        "False", ",", "True", ",", "True", ",", "False"}], "}"}], ",", 
       RowBox[{"{", 
        RowBox[{
        "False", ",", "False", ",", "False", ",", "False", ",", "False", ",", 
-        "False", ",", "False"}], "}"}]}], "}"}]}], ",", 
+        "False", ",", "False", ",", "False", ",", "False", ",", "False", ",", 
+        "False", ",", "False", ",", "True", ",", "False"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{
+       "False", ",", "False", ",", "False", ",", "False", ",", "False", ",", 
+        "False", ",", "False", ",", "False", ",", "False", ",", "False", ",", 
+        "False", ",", "False", ",", "False", ",", "True"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{
+       "False", ",", "False", ",", "False", ",", "False", ",", "False", ",", 
+        "False", ",", "False", ",", "False", ",", "False", ",", "False", ",", 
+        "False", ",", "True", ",", "False", ",", "False"}], "}"}]}], "}"}]}], 
+   ",", 
    RowBox[{"\<\"tautology\"\>", "\[Rule]", "False"}]}], 
   "\[RightAssociation]"}]], "Output",
- CellLabel->"Out[4]=",
- CellID->232007539,ExpressionUUID->"51050731-7af1-4cd1-a10a-6e0d761e278f"]
+ CellLabel->"Out[2]=",
+ CellID->521272429,ExpressionUUID->"5d6c38be-a7b2-407e-ad7c-1ed1ec5268aa"]
 }, Open  ]],
 
-Cell["\<\
-The largest boolean function possible with BooleanFunction has 66 variables. \
-Find information about a random function with 66 variables:\
-\>", "ExampleText",
- CellID->343959513,ExpressionUUID->"0cb749dd-65cc-4d32-86fb-5584555cb458"],
+Cell[TextData[{
+ "Find information about the largest boolean function possible in Mathematica \
+with ",
+ ButtonBox["BooleanFunction",
+  BaseStyle->"Link",
+  ButtonData->"paclet:ref/BooleanFunction"],
+ " that does not cause an overflow error:"
+}], "ExampleText",
+ CellID->11443897,ExpressionUUID->"edd1789e-c6a9-43aa-b134-c1100a2552ee"],
 
 Cell[CellGroupData[{
 
@@ -408,33 +333,28 @@ Cell[BoxData[
  RowBox[{
   RowBox[{"BooleanTruthInputData", "[", 
    RowBox[{"BooleanFunction", "[", 
-    RowBox[{"1", ",", "66"}], "]"}], "]"}], "//", "Short"}]], "Input",
+    RowBox[{
+     RowBox[{"RandomInteger", "[", 
+      SuperscriptBox["2", "66"], "]"}], ",", "66"}], "]"}], "]"}], "//", 
+  "Short"}]], "Input",
  CellProlog:>Needs["PeterBurbery`BooleanLogic`"],
- CellLabel->"In[5]:=",
- CellID->63763749,ExpressionUUID->"2ca44dc3-a1ab-4ca6-8119-46de2938c3c7"],
+ CellLabel->"In[3]:=",
+ CellID->525405694,ExpressionUUID->"5d3e70b6-9099-4493-b2db-fa9f5ae85794"],
 
 Cell[BoxData[
  TagBox[
   RowBox[{"\[LeftAssociation]", 
    RowBox[{
     RowBox[{"\<\"satisfiable\"\>", "\[Rule]", "True"}], ",", 
-    RowBox[{"\<\"true-outputs-count\"\>", "\[Rule]", "4294967296"}], ",", 
-    RowBox[{"\<\"input-that-makes-output-true\"\>", "\[Rule]", 
-     RowBox[{"{", 
-      RowBox[{
-       RowBox[{"{", 
-        RowBox[{
-        "False", ",", "False", ",", "False", ",", "False", ",", "False", ",", 
-         "False", ",", 
-         RowBox[{"\[LeftSkeleton]", "54", "\[RightSkeleton]"}], ",", "True", 
-         ",", "True", ",", "True", ",", "True", ",", "True", ",", "True"}], 
-        "}"}], ",", 
-       RowBox[{"\[LeftSkeleton]", "65", "\[RightSkeleton]"}]}], "}"}]}], ",", 
+    RowBox[{"\<\"true-outputs-count\"\>", "\[Rule]", "133143986176"}], ",", 
+    RowBox[{
+     RowBox[{"\<\"i\"\>", "\[Ellipsis]", "\<\"e\"\>"}], "\[Rule]", 
+     RowBox[{"\[LeftSkeleton]", "1", "\[RightSkeleton]"}]}], ",", 
     RowBox[{"\<\"tautology\"\>", "\[Rule]", "False"}]}], 
    "\[RightAssociation]"}],
   Short]], "Output",
- CellLabel->"Out[5]//Short=",
- CellID->232817186,ExpressionUUID->"a6a0fe1e-2893-4199-acf1-3861cc1cffbc"]
+ CellLabel->"Out[3]//Short=",
+ CellID->20319129,ExpressionUUID->"72ad7da6-5874-4ae0-94c4-91bf81aaaa29"]
 }, Open  ]]
 }, Dynamic[CurrentValue[
  EvaluationNotebook[], {TaggingRules, "Openers", "ExampleSection", "0"}, 
@@ -443,7 +363,7 @@ Cell[BoxData[
  EvaluationNotebook[], {TaggingRules, "Openers", "PrimaryExamplesSection"}, 
   Closed]]]],
 
-Cell[" ", "FooterCell",ExpressionUUID->"40b630a4-5a25-44d1-99e4-08e0f241fba8"]
+Cell[" ", "FooterCell",ExpressionUUID->"dd02b3a6-9fe1-4d98-8675-0f6fcc9a3878"]
 },
 Saveable->False,
 ScreenStyleEnvironment->"Working",
@@ -458,21 +378,30 @@ TaggingRules->{
   "NewStyles" -> True, "CitationPopupData" -> $Failed, "ShowCitation" -> 
   False, "RootCaptions" -> "", 
   "Metadata" -> {
-   "built" -> "{2022, 9, 19, 16, 55, 15.7540520}", 
-    "history" -> {"", "", "", ""}, "context" -> "PeterBurbery`BooleanLogic`", 
-    "keywords" -> {}, "specialkeywords" -> {}, 
+   "built" -> "{2022, 9, 27, 15, 0, 59.2274752}", 
+    "history" -> {"XX", "", "", ""}, "context" -> 
+    "PeterBurbery`BooleanLogic`", "keywords" -> {}, "specialkeywords" -> {}, 
     "tutorialcollectionlinks" -> {}, "index" -> True, "label" -> 
     "Peter Burbery/ Boolean Logic Symbol", "language" -> "en", "paclet" -> 
     "PeterBurbery/BooleanLogic", "status" -> "None", "summary" -> 
-    "BooleanTruthInputData[functional] finds information about truth inputs \
-for boolean function functional", "synonyms" -> {}, "tabletags" -> {}, 
-    "title" -> "BooleanTruthInputData", "titlemodifier" -> "", "windowtitle" -> 
-    "BooleanTruthInputData", "type" -> "Symbol", "uri" -> 
+    "BooleanTruthInputData[logicfunction] find information about truth inputs \
+about the boolean function logicfunction", "synonyms" -> {}, 
+    "tabletags" -> {}, "title" -> "BooleanTruthInputData", "titlemodifier" -> 
+    "", "windowtitle" -> "BooleanTruthInputData", "type" -> "Symbol", "uri" -> 
     "PeterBurbery/BooleanLogic/ref/BooleanTruthInputData"}},
+CellContext->"Global`",
 FrontEndVersion->"13.1 for Microsoft Windows (64-bit) (June 16, 2022)",
-StyleDefinitions->FrontEnd`FileName[{"Wolfram"}, "Reference.nb", 
-  CharacterEncoding -> "UTF-8"],
-ExpressionUUID->"fec6a79f-bfa3-429f-ac99-b8200c598332"
+StyleDefinitions->Notebook[{
+   Cell[
+    StyleData[
+    StyleDefinitions -> FrontEnd`FileName[{"Wolfram"}, "Reference.nb"]]], 
+   Cell[
+    StyleData["Input"], CellContext -> "Global`"], 
+   Cell[
+    StyleData["Output"], CellContext -> "Global`"]}, Visible -> False, 
+  FrontEndVersion -> "13.1 for Microsoft Windows (64-bit) (June 16, 2022)", 
+  StyleDefinitions -> "Default.nb"],
+ExpressionUUID->"505f826c-518c-47c0-ae08-b7f357b01aaa"
 ]
 (* End of Notebook Content *)
 
@@ -480,78 +409,62 @@ ExpressionUUID->"fec6a79f-bfa3-429f-ac99-b8200c598332"
 (*CellTagsOutline
 CellTagsIndex->{
  "PrimaryExamplesSection"->{
-  Cell[5487, 143, 1420, 37, 35, "PrimaryExamplesSection",ExpressionUUID->"ff78e1f7-6f21-42e5-9662-8f50e1be07eb",
+  Cell[5741, 150, 1420, 37, 35, "PrimaryExamplesSection",ExpressionUUID->"80ae4720-59d0-4db7-85b7-b26a32d17b76",
    CellTags->"PrimaryExamplesSection",
-   CellID->429650748]}
+   CellID->165794489]}
  }
 *)
 (*CellTagsIndex
 CellTagsIndex->{
- {"PrimaryExamplesSection", 17987, 481}
+ {"PrimaryExamplesSection", 15744, 410}
  }
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[593, 21, 3470, 80, 56, "AnchorBarGrid",ExpressionUUID->"c0f31708-a7f2-4173-9fc6-ffbc8ddc23c9",
+Cell[593, 21, 3471, 80, 56, "AnchorBarGrid",ExpressionUUID->"ec951788-30d2-43cc-a3a8-bcf2bff4d7e2",
  CellID->1],
-Cell[4066, 103, 108, 0, 23, "ContextNameCell",ExpressionUUID->"7ae547b7-9c26-4766-b948-da76d4bad759"],
+Cell[4067, 103, 108, 0, 23, "ContextNameCell",ExpressionUUID->"30f6e4cb-0507-4c4c-b6f8-83f453bc36ed"],
 Cell[CellGroupData[{
-Cell[4199, 107, 564, 14, 56, "ObjectNameGrid",ExpressionUUID->"6f406dbc-3eca-44b1-8a4b-5ed43f080154"],
-Cell[4766, 123, 684, 15, 109, "Usage",ExpressionUUID->"2701dbcc-04d4-4443-9b8c-cb1a64d92a94",
- CellID->55424419]
+Cell[4200, 107, 564, 14, 56, "ObjectNameGrid",ExpressionUUID->"7ba428bd-6688-4620-80a4-834ecf9f804d"],
+Cell[4767, 123, 937, 22, 111, "Usage",ExpressionUUID->"6340141d-dedf-4071-91d0-fc5ce608926d",
+ CellID->52264354]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[5487, 143, 1420, 37, 35, "PrimaryExamplesSection",ExpressionUUID->"ff78e1f7-6f21-42e5-9662-8f50e1be07eb",
+Cell[5741, 150, 1420, 37, 35, "PrimaryExamplesSection",ExpressionUUID->"80ae4720-59d0-4db7-85b7-b26a32d17b76",
  CellTags->"PrimaryExamplesSection",
- CellID->429650748],
-Cell[6910, 182, 216, 4, 26, "Input",ExpressionUUID->"0dac290b-631c-41e7-ae00-3459ef7f0d9c",
- CellID->530687027],
+ CellID->165794489],
+Cell[7164, 189, 216, 4, 26, "Input",ExpressionUUID->"b868d94a-a27a-43e1-acd3-2fcfbe50c949",
+ CellID->258443830],
 Cell[CellGroupData[{
-Cell[7151, 190, 1398, 36, 30, "ExampleSection",ExpressionUUID->"49a9c9ec-0475-42a1-ba3d-a12371aedcc1",
- CellID->783055952],
-Cell[8552, 228, 151, 1, 38, "ExampleText",ExpressionUUID->"359dbe0b-b922-4b9b-a758-2bc14ced28d1",
- CellID->250337723],
+Cell[7405, 197, 1397, 36, 30, "ExampleSection",ExpressionUUID->"8f818b82-779b-4ef5-909a-b579c01aeeeb",
+ CellID->82597574],
+Cell[8805, 235, 150, 1, 38, "ExampleText",ExpressionUUID->"373efceb-3dab-4d1c-aafd-1ccaca70f77e",
+ CellID->37852302],
 Cell[CellGroupData[{
-Cell[8728, 233, 250, 5, 26, "Input",ExpressionUUID->"b3815ebb-9727-4a2c-a51c-aab6cebfce8a",
- CellID->151971048],
-Cell[8981, 240, 534, 12, 37, "Output",ExpressionUUID->"837847a2-04ad-42d4-9499-f5cf056a20a7",
- CellID->42328748]
+Cell[8980, 240, 250, 5, 26, "Input",ExpressionUUID->"60916134-b274-4549-bafd-5e154bb1bd67",
+ CellID->263379117],
+Cell[9233, 247, 534, 12, 37, "Output",ExpressionUUID->"210a2e27-5cf7-49fb-865b-0f6f338750b8",
+ CellID->54334622]
 }, Open  ]],
-Cell[9530, 255, 170, 3, 38, "ExampleText",ExpressionUUID->"487fa11c-adf1-410b-93e9-690c9b60aa5b",
- CellID->249006308],
+Cell[9782, 262, 167, 3, 38, "ExampleText",ExpressionUUID->"a16ff1d9-34ef-4af8-9cdc-a6603dcb5c7f",
+ CellID->461638588],
 Cell[CellGroupData[{
-Cell[9725, 262, 335, 8, 26, "Input",ExpressionUUID->"edb687af-2e38-451b-b9c4-944635b8542c",
- CellID->56927497],
-Cell[10063, 272, 737, 17, 54, "Output",ExpressionUUID->"330a8b8f-8bcb-4bcc-9745-ad9333121b9a",
- CellID->152226426]
+Cell[9974, 269, 359, 8, 30, "Input",ExpressionUUID->"a2289353-92e4-4d60-972c-f61f71be1077",
+ CellID->743332476],
+Cell[10336, 279, 1812, 37, 114, "Output",ExpressionUUID->"5d6c38be-a7b2-407e-ad7c-1ed1ec5268aa",
+ CellID->521272429]
 }, Open  ]],
-Cell[10815, 292, 157, 2, 38, "ExampleText",ExpressionUUID->"286c7af3-b397-4e73-8a11-40bf5579569a",
- CellID->325613986],
+Cell[12163, 319, 335, 8, 57, "ExampleText",ExpressionUUID->"edd1789e-c6a9-43aa-b134-c1100a2552ee",
+ CellID->11443897],
 Cell[CellGroupData[{
-Cell[10997, 298, 338, 8, 26, "Input",ExpressionUUID->"1d11ff23-5373-4042-9b0c-d9ece414e83a",
- CellID->170211986],
-Cell[11338, 308, 1114, 30, 69, "Output",ExpressionUUID->"5cb164da-8b70-40ab-93c6-d22000cc27cc",
- CellID->72980449]
-}, Open  ]],
-Cell[12467, 341, 114, 1, 38, "ExampleText",ExpressionUUID->"aefbb32b-95e5-4ad2-9a80-fbd81d35fd15",
- CellID->224823364],
-Cell[CellGroupData[{
-Cell[12606, 346, 338, 8, 26, "Input",ExpressionUUID->"bf0a140f-9ad0-43bb-9d79-1edaddb91e80",
- CellID->448505265],
-Cell[12947, 356, 1587, 39, 99, "Output",ExpressionUUID->"51050731-7af1-4cd1-a10a-6e0d761e278f",
- CellID->232007539]
-}, Open  ]],
-Cell[14549, 398, 244, 4, 70, "ExampleText",ExpressionUUID->"0cb749dd-65cc-4d32-86fb-5584555cb458",
- CellID->343959513],
-Cell[CellGroupData[{
-Cell[14818, 406, 318, 7, 70, "Input",ExpressionUUID->"2ca44dc3-a1ab-4ca6-8119-46de2938c3c7",
- CellID->63763749],
-Cell[15139, 415, 910, 21, 54, "Output",ExpressionUUID->"a6a0fe1e-2893-4199-acf1-3861cc1cffbc",
- CellID->232817186]
+Cell[12523, 331, 394, 10, 30, "Input",ExpressionUUID->"5d3e70b6-9099-4493-b2db-fa9f5ae85794",
+ CellID->525405694],
+Cell[12920, 343, 565, 13, 37, "Output",ExpressionUUID->"72ad7da6-5874-4ae0-94c4-91bf81aaaa29",
+ CellID->20319129]
 }, Open  ]]
 }, Dynamic[CurrentValue[EvaluationNotebook[], {TaggingRules, "Openers", "ExampleSection", "0"}, Closed]]]]
 }, Dynamic[CurrentValue[EvaluationNotebook[], {TaggingRules, "Openers", "PrimaryExamplesSection"}, Closed]]]],
-Cell[16291, 445, 78, 0, 70, "FooterCell",ExpressionUUID->"40b630a4-5a25-44d1-99e4-08e0f241fba8"]
+Cell[13727, 365, 78, 0, 41, "FooterCell",ExpressionUUID->"dd02b3a6-9fe1-4d98-8675-0f6fcc9a3878"]
 }
 ]
 *)
