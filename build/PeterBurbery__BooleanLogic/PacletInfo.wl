@@ -7,7 +7,7 @@ PacletObject[
     "Creator" -> "Peter Cullen Burbery",
     "License" -> "MIT",
     "PublisherID" -> "PeterBurbery",
-    "Version" -> "1.14.0",
+    "Version" -> "1.15.0",
     "WolframVersion" -> "13.1+",
     "Extensions" -> {
       {

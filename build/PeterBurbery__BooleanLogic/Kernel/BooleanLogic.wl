@@ -8,6 +8,7 @@ BooleanStructureData;
 FindBooleanAlternative;
 BooleanTruthInputData;
 VennDiagram;
+TruthTable;
 Begin["`Private`"];
 
 
@@ -16,7 +17,7 @@ Begin["`Private`"];
 ClearAll[BooleanStructureData];
 BooleanStructureData[func_]:= <|"truth-table"->
 BooleanTable[func],"truth-vector"->Boole[BooleanTable[func]],
-"input-variables"->BooleanVariables[func],"positive-unate-monotone"->UnateQ[func],"negative-unate"->UnateQ[func]|>
+"input-variables"->BooleanVariables[func],"positive-unate-monotone"->UnateQ[func],"negative-unate"->UnateQ[func,If[ListQ[BooleanVariables[func]],Not/@BooleanVariables[func],ConstantArray[False,BooleanVariables[func]]]]|>
 
 ClearAll[FindBooleanAlternative]
 
@@ -64,6 +65,28 @@ BooleanTruthInputData//ClearAll;
 BooleanTruthInputData[func_]:=<|"satisfiable"->SatisfiableQ[func],
 "true-outputs-count"->SatisfiabilityCount[func],"input-that-makes-output-true"->
 SatisfiabilityInstances[func,BooleanVariables[func]],"tautology"->TautologyQ[func]|>
+VennDiagram // ClearAll;
+VennDiagram // Attributes = {};
+VennDiagram[ args___ ] := 
+    Module[ { res },
+        update[ ];
+        res = Symbol[ "ResourceFunctionHelpers`VennDiagram" ][ args ];
+        res /; Head @ res =!= Symbol[ "ResourceFunctionHelpers`VennDiagram" ]
+    ];
+update // ClearAll;
+update[ ] := 
+    Once[
+        PacletManager`PacletUpdate[
+            "ResourceFunctionHelpers",
+            "Site" -> "http://pacletserver.wolfram.com",
+            "UpdateSites" -> True
+        ];
+        Quiet @ Block[ { $ContextPath }, Get[ "ResourceFunctionHelpers`" ] ]
+    ];
+    
+TruthTable//ClearAll;
+TruthTable[expr_]:=TableForm[BooleanTable[expr],TableHeadings->{None,expr}]  
+TruthTable[expr_,truevalue_,falsevalue_]:=TableForm[BooleanTable[expr]/.{True->truevalue,False->falsevalue},TableHeadings->{None,expr}]  
 
 
 End[]; (* End `Private` *)
