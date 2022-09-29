@@ -1,0 +1,2671 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[    102550,       2663]
+NotebookOptionsPosition[     90021,       2395]
+NotebookOutlinePosition[     90818,       2421]
+CellTagsIndexPosition[     90738,       2416]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["TruthTable", "ObjectName",
+ CellID->144764723,ExpressionUUID->"7a43324f-c171-42db-8673-52a994efbfbb"],
+
+Cell[TextData[{
+ Cell["   ", "ModInfo",ExpressionUUID->"df59461a-cd29-43fc-8f58-72b6cc8b3e87"],
+ Cell[BoxData[
+  RowBox[{
+   ButtonBox["TruthTable",
+    BaseStyle->"Link",
+    ButtonData->"paclet:PeterBurberyBooleanLogic/ref/TruthTable"], "[", 
+   StyleBox["booleanlogicfunction", "TI"], "]"}]], "InlineFormula",
+  ExpressionUUID->"2a2bfc8a-230b-4524-b0a0-b2db8ef5edb6"],
+ "\[LineSeparator]generates a truth table for the boolean logic function ",
+ Cell[BoxData[
+  StyleBox["booleanlogicfunction", "TI"]], "InlineFormula",ExpressionUUID->
+  "9ae9b5d1-71e6-4224-800e-0454b375da8f"],
+ "\n",
+ Cell["   ", "ModInfo",ExpressionUUID->"8c5638fa-b730-4de6-accd-db2379b50b1b"],
+ Cell[BoxData[
+  RowBox[{
+   ButtonBox["TruthTable",
+    BaseStyle->"Link",
+    ButtonData->"paclet:PeterBurbery/BooleanLogic/ref/TruthTable"], "[", 
+   RowBox[{
+    StyleBox["booleanlogicfunction", "TI"], ",", 
+    RowBox[{"\"\<Symbols\>\"", "->", 
+     RowBox[{"{", 
+      RowBox[{
+       StyleBox["truesymbol", "TI"], ",", 
+       StyleBox["falsesymbol", "TI"]}], "}"}]}]}], "]"}]], "InlineFormula",
+  ExpressionUUID->"0e623907-6db4-4694-8c57-06d45a147c67"],
+ "\[LineSeparator]generates a truth table for the boolean logic function ",
+ Cell[BoxData[
+  StyleBox["booleanlogicfunction", "TI"]], "InlineFormula",ExpressionUUID->
+  "cee2a844-4358-46a8-8f82-bb81ce893d5f"],
+ " with the symbol ",
+ Cell[BoxData[
+  StyleBox["truesymbol", "TI"]], "InlineFormula",ExpressionUUID->
+  "d25e5dab-4bb1-49d6-a271-adc1382d9f47"],
+ " for ",
+ Cell[BoxData[
+  ButtonBox["True",
+   BaseStyle->"Link"]], "InlineFormula",ExpressionUUID->
+  "ae0e1933-7a47-45e5-92a1-5493892d02b9"],
+ " and ",
+ Cell[BoxData[
+  StyleBox["falsesymbol", "TI"]], "InlineFormula",ExpressionUUID->
+  "2b8511b9-3119-4c70-bd62-7324e6ee8eef"],
+ " for ",
+ Cell[BoxData[
+  ButtonBox["False",
+   BaseStyle->"Link"]], "InlineFormula",ExpressionUUID->
+  "6284ee38-5e40-4117-8d28-90bfa1d09007"]
+}], "Usage",
+ CellChangeTimes->{{3.8734001484619837`*^9, 3.873400155673586*^9}, {
+  3.8734598143101635`*^9, 3.8734598730122423`*^9}, {3.873460092365199*^9, 
+  3.8734602118058395`*^9}},
+ CellID->178110090,ExpressionUUID->"de1c3260-3caa-4dd7-969b-64b62c44caa7"],
+
+Cell["\<\
+TruthTable does not accept BooleanFunction as input. It will accept \
+BooleanConvert[BooleanFunction[...][list of variables]], however.\
+\>", "Notes",
+ CellChangeTimes->{{3.8734602290851955`*^9, 3.873460275144597*^9}},
+ CellID->297577997,ExpressionUUID->"eb1857bf-1e7b-4460-9565-9466dc47449c"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Tech Notes",
+ Cell[BoxData[
+  TemplateBox[{"TechNotes", 
+    Cell[
+     BoxData[
+      FrameBox[
+       Cell["Insert links to related tech notes.", "MoreInfoText"], BaseStyle -> 
+       "IFrameBox"]], "MoreInfoTextOuter"]},
+   "MoreInfoOpenerButtonTemplate"]],ExpressionUUID->
+  "bb905534-89fb-40c4-aa67-bfb588ea7a46"]
+}], "TechNotesSection",
+ CellID->145109707,ExpressionUUID->"92293d7a-aa54-4fa1-9cae-6e5a6a96be3c"],
+
+Cell["XXXX", "Tutorials",
+ CellID->99268639,ExpressionUUID->"6dc30f6b-1e03-49fa-b9a9-2431300f4e28"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Related Links",
+ Cell[BoxData[
+  TemplateBox[{"RelatedLinks", 
+    Cell[
+     BoxData[
+      FrameBox[
+       Cell[
+       "Insert links to any related page, including web pages.", 
+        "MoreInfoText"], BaseStyle -> "IFrameBox"]], "MoreInfoTextOuter"]},
+   "MoreInfoOpenerButtonTemplate"]],ExpressionUUID->
+  "38b6c2c4-45e6-4303-a459-699b9787abaf"]
+}], "RelatedLinksSection",
+ CellID->68990619,ExpressionUUID->"62af51c4-b30f-4007-93c3-83bbdc267c51"],
+
+Cell["XXXX", "RelatedLinks",
+ CellID->136318113,ExpressionUUID->"8b520723-7562-4c47-8963-a83e7bebdfd0"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "See Also",
+ Cell[BoxData[
+  TemplateBox[{"SeeAlso", 
+    Cell[
+     BoxData[
+      FrameBox[
+       Cell[
+       "Insert links to any related reference (function) pages. Type a space, \
+a period and then another space between function names. Then click the \
+palette's Inline Listing Toggle button.", "MoreInfoText"], BaseStyle -> 
+       "IFrameBox"]], "MoreInfoTextOuter"]},
+   "MoreInfoOpenerButtonTemplate"]],ExpressionUUID->
+  "b7783813-fef1-4ab0-ac7a-d074eb75487b"]
+}], "SeeAlsoSection",
+ CellID->482038244,ExpressionUUID->"42dfcfaa-8ebe-46ae-939e-db5423112618"],
+
+Cell["XXXX", "SeeAlso",
+ CellID->21769204,ExpressionUUID->"7a40d7ea-fb09-4b93-bbe4-a1336a92baba"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Related Guides", "MoreAboutSection",
+ CellChangeTimes->{{3.843042374232973*^9, 3.843042375545676*^9}},
+ CellID->224909552,ExpressionUUID->"dc3533d5-177e-430a-bb2c-840174d7bb54"],
+
+Cell["XXXX", "MoreAbout",
+ CellID->59768127,ExpressionUUID->"c3d9e039-6975-41a4-ae90-e32683eb77f8"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Examples Initialization",
+ Cell[BoxData[
+  TemplateBox[{"ExamplesInitialization", 
+    Cell[
+     BoxData[
+      FrameBox[
+       Cell[
+       "Input that is to be evaluated before any examples are run, e.g. \
+Needs[\[Ellipsis]].", "MoreInfoText"], BaseStyle -> "IFrameBox"]], 
+     "MoreInfoTextOuter"]},
+   "MoreInfoOpenerButtonTemplate"]],ExpressionUUID->
+  "219add95-e4ba-4f4f-9c5e-23cd6ff73c04"]
+}], "ExamplesInitializationSection",
+ CellID->518116443,ExpressionUUID->"bef499cd-906d-4611-a22e-2378243b8295"],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<PeterBurbery`BooleanLogic`\>\"", 
+  "]"}]], "ExampleInitialization",
+ CellID->90506604,ExpressionUUID->"9fcaedde-0354-4dde-8e9a-dc53c6cf670d"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[GridBox[{
+    {
+     StyleBox[
+      RowBox[{"Basic", " ", "Examples"}], "PrimaryExamplesSection"], 
+     ButtonBox[
+      RowBox[{
+       RowBox[{"More", " ", "Examples"}], " ", "\[RightTriangle]"}],
+      BaseStyle->"ExtendedExamplesLink",
+      ButtonData:>"ExtendedExamples"]}
+   }],
+  $Line = 0; Null]], "PrimaryExamplesSection",
+ CellID->734315766,ExpressionUUID->"67b5cfd8-7be7-4e6e-b91d-63e021220935"],
+
+Cell["Create a truth table for implies:", "ExampleText",
+ CellChangeTimes->{{3.8734001595335054`*^9, 3.8734001641926813`*^9}},
+ CellID->112050044,ExpressionUUID->"c785e450-c161-4945-b292-da11f141eab5"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"TruthTable", "[", 
+  RowBox[{"b", "\[Implies]", "c"}], "]"}]], "Input",
+ CellChangeTimes->{{3.8734001651446548`*^9, 3.8734001719999013`*^9}},
+ CellLabel->"In[1]:=",
+ CellID->578044126,ExpressionUUID->"833dd2f2-63e9-4ed1-86fa-74be4717f0dd"],
+
+Cell[BoxData[
+ TagBox[
+  TagBox[GridBox[{
+     {
+      TagBox["b",
+       HoldForm], 
+      TagBox["c",
+       HoldForm], 
+      TagBox[
+       RowBox[{"b", "\[Implies]", "c"}],
+       HoldForm]},
+     {"True", "True", "True"},
+     {"True", "False", "False"},
+     {"False", "True", "True"},
+     {"False", "False", "True"}
+    },
+    GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+    GridBoxDividers->{
+     "Columns" -> {{False}}, "Rows" -> {False, True, {False}, False}},
+    GridBoxSpacings->{"Columns" -> {
+        Offset[0.27999999999999997`], {
+         Offset[2.0999999999999996`]}, 
+        Offset[0.27999999999999997`]}, "Rows" -> {
+        Offset[0.2], {
+         Offset[0.4]}, 
+        Offset[0.2]}}],
+   {None, OutputFormsDump`HeadedColumns}],
+  Function[BoxForm`e$, 
+   TableForm[
+   BoxForm`e$, TableHeadings -> {None, {$CellContext`b, $CellContext`c, 
+       Implies[$CellContext`b, $CellContext`c]}}]]]], "Output",
+ CellChangeTimes->{
+  3.873400172423631*^9, 3.873400507948022*^9, 3.8734561518342156`*^9, {
+   3.8734585561892033`*^9, 3.8734585579005375`*^9}, 3.873459096434866*^9, 
+   3.8734602924747667`*^9},
+ CellLabel->"Out[1]//TableForm=",
+ CellID->280333979,ExpressionUUID->"a10203f7-b880-48f4-a1c0-68373c4988c8"]
+}, Open  ]],
+
+Cell["Specify the symbol 1 for true and 0 for false:", "ExampleText",
+ CellChangeTimes->{{3.8734591114368844`*^9, 3.873459119400216*^9}},
+ CellID->228452895,ExpressionUUID->"b08ae150-b4c4-4b1c-a192-b1ffd66987ba"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"TruthTable", "[", 
+  RowBox[{
+   RowBox[{"b", "\[Implies]", "c"}], ",", 
+   RowBox[{"\"\<Symbols\>\"", "->", 
+    RowBox[{"{", 
+     RowBox[{"1", ",", "0"}], "}"}]}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.8734586596160192`*^9, 3.8734586693679376`*^9}, {
+  3.8734588660392084`*^9, 3.8734588748809085`*^9}},
+ CellLabel->"In[2]:=",
+ CellID->210029075,ExpressionUUID->"dd6729d9-4b87-4cde-b89c-76c6c719608b"],
+
+Cell[BoxData[
+ TagBox[
+  TagBox[GridBox[{
+     {
+      TagBox["b",
+       HoldForm], 
+      TagBox["c",
+       HoldForm], 
+      TagBox[
+       RowBox[{"b", "\[Implies]", "c"}],
+       HoldForm]},
+     {"1", "1", "1"},
+     {"1", "0", "0"},
+     {"0", "1", "1"},
+     {"0", "0", "1"}
+    },
+    GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+    GridBoxDividers->{
+     "Columns" -> {{False}}, "Rows" -> {False, True, {False}, False}},
+    GridBoxSpacings->{"Columns" -> {
+        Offset[0.27999999999999997`], {
+         Offset[2.0999999999999996`]}, 
+        Offset[0.27999999999999997`]}, "Rows" -> {
+        Offset[0.2], {
+         Offset[0.4]}, 
+        Offset[0.2]}}],
+   {None, OutputFormsDump`HeadedColumns}],
+  Function[BoxForm`e$, 
+   TableForm[
+   BoxForm`e$, TableHeadings -> {None, {$CellContext`b, $CellContext`c, 
+       Implies[$CellContext`b, $CellContext`c]}}]]]], "Output",
+ CellChangeTimes->{{3.873458866976142*^9, 3.8734588756928644`*^9}, 
+   3.873460292646578*^9},
+ CellLabel->"Out[2]//TableForm=",
+ CellID->257550350,ExpressionUUID->"da54a921-2025-4923-ae36-e96c2a0a3e96"]
+}, Open  ]],
+
+Cell["Specify T for true and F for false:", "ExampleText",
+ CellChangeTimes->{{3.873459123229947*^9, 3.8734591301110783`*^9}},
+ CellID->143676706,ExpressionUUID->"c14712c6-dfe1-4910-989e-e97996a06c2a"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"TruthTable", "[", 
+  RowBox[{
+   RowBox[{"b", "\[Implies]", "c"}], ",", 
+   RowBox[{"\"\<Symbols\>\"", "->", 
+    RowBox[{"{", 
+     RowBox[{"\"\<T\>\"", ",", "\"\<F\>\""}], "}"}]}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.8734586596160192`*^9, 3.8734586693679376`*^9}, {
+  3.8734588660392084`*^9, 3.8734588748809085`*^9}, {3.8734591312354417`*^9, 
+  3.8734591426674376`*^9}},
+ CellLabel->"In[3]:=",
+ CellID->563116457,ExpressionUUID->"56984b44-be17-41ed-ba01-d0537d53e623"],
+
+Cell[BoxData[
+ TagBox[
+  TagBox[GridBox[{
+     {
+      TagBox["b",
+       HoldForm], 
+      TagBox["c",
+       HoldForm], 
+      TagBox[
+       RowBox[{"b", "\[Implies]", "c"}],
+       HoldForm]},
+     {"\<\"T\"\>", "\<\"T\"\>", "\<\"T\"\>"},
+     {"\<\"T\"\>", "\<\"F\"\>", "\<\"F\"\>"},
+     {"\<\"F\"\>", "\<\"T\"\>", "\<\"T\"\>"},
+     {"\<\"F\"\>", "\<\"F\"\>", "\<\"T\"\>"}
+    },
+    GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+    GridBoxDividers->{
+     "Columns" -> {{False}}, "Rows" -> {False, True, {False}, False}},
+    GridBoxSpacings->{"Columns" -> {
+        Offset[0.27999999999999997`], {
+         Offset[2.0999999999999996`]}, 
+        Offset[0.27999999999999997`]}, "Rows" -> {
+        Offset[0.2], {
+         Offset[0.4]}, 
+        Offset[0.2]}}],
+   {None, OutputFormsDump`HeadedColumns}],
+  Function[BoxForm`e$, 
+   TableForm[
+   BoxForm`e$, TableHeadings -> {None, {$CellContext`b, $CellContext`c, 
+       Implies[$CellContext`b, $CellContext`c]}}]]]], "Output",
+ CellChangeTimes->{3.8734591431360445`*^9, 3.8734602928340364`*^9},
+ CellLabel->"Out[3]//TableForm=",
+ CellID->505081,ExpressionUUID->"0ca0890e-2c72-4b42-a283-c49e52c7672a"]
+}, Open  ]],
+
+Cell["Create a truth table for two implies in a row:", "ExampleText",
+ CellChangeTimes->{{3.873401105560849*^9, 3.873401115356577*^9}},
+ CellID->495459581,ExpressionUUID->"3e2376ee-5324-4879-9345-0ce069335161"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"TruthTable", "[", 
+  RowBox[{"b", "\[Implies]", 
+   RowBox[{"c", "\[Implies]", "d"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.8734001651446548`*^9, 3.8734001719999013`*^9}, {
+  3.8734005137079806`*^9, 3.8734005168120055`*^9}},
+ CellLabel->"In[4]:=",
+ CellID->355327723,ExpressionUUID->"bc43ee4d-41f4-4ae8-900e-1526b3e49201"],
+
+Cell[BoxData[
+ TagBox[
+  TagBox[GridBox[{
+     {
+      TagBox["b",
+       HoldForm], 
+      TagBox["c",
+       HoldForm], 
+      TagBox["d",
+       HoldForm], 
+      TagBox[
+       RowBox[{"b", "\[Implies]", 
+        RowBox[{"(", 
+         RowBox[{"c", "\[Implies]", "d"}], ")"}]}],
+       HoldForm]},
+     {"True", "True", "True", "True"},
+     {"True", "True", "False", "False"},
+     {"True", "False", "True", "True"},
+     {"True", "False", "False", "True"},
+     {"False", "True", "True", "True"},
+     {"False", "True", "False", "True"},
+     {"False", "False", "True", "True"},
+     {"False", "False", "False", "True"}
+    },
+    GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+    GridBoxDividers->{
+     "Columns" -> {{False}}, "Rows" -> {False, True, {False}, False}},
+    GridBoxSpacings->{"Columns" -> {
+        Offset[0.27999999999999997`], {
+         Offset[2.0999999999999996`]}, 
+        Offset[0.27999999999999997`]}, "Rows" -> {
+        Offset[0.2], {
+         Offset[0.4]}, 
+        Offset[0.2]}}],
+   {None, OutputFormsDump`HeadedColumns}],
+  Function[BoxForm`e$, 
+   TableForm[
+   BoxForm`e$, 
+    TableHeadings -> {None, {$CellContext`b, $CellContext`c, $CellContext`d, 
+       Implies[$CellContext`b, 
+        Implies[$CellContext`c, $CellContext`d]]}}]]]], "Output",
+ CellChangeTimes->{3.873400517211983*^9, 3.8734561535056686`*^9, 
+  3.873459207319379*^9, 3.8734602930058727`*^9},
+ CellLabel->"Out[4]//TableForm=",
+ CellID->75981939,ExpressionUUID->"4091c7cf-c315-4b8f-9b1b-57f3689439fe"]
+}, Open  ]],
+
+Cell["Make a 3 variable truth table for a random boolean function:", \
+"ExampleText",
+ CellChangeTimes->{{3.873401189230798*^9, 3.8734011960118685`*^9}, 
+   3.87340171785602*^9, {3.8734592701977186`*^9, 3.873459277540615*^9}},
+ CellID->203724094,ExpressionUUID->"11e0b4fb-f784-4cd0-b836-75f176134907"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"TruthTable", "[", 
+   RowBox[{"BooleanConvert", "@", 
+    RowBox[{
+     RowBox[{"BooleanFunction", "[", 
+      RowBox[{
+       RowBox[{"RandomInteger", "[", 
+        SuperscriptBox[
+         RowBox[{"2", " "}], 
+         RowBox[{"2", " ", "3"}]], "]"}], ",", "3"}], "]"}], "[", 
+     RowBox[{"b", ",", "c", ",", "d"}], "]"}]}], "]"}], "//", 
+  "TraditionalForm"}]], "Input",
+ CellChangeTimes->{{3.873401197133485*^9, 3.873401205051919*^9}, {
+  3.873459229645211*^9, 3.873459292318853*^9}},
+ CellLabel->"In[5]:=",
+ CellID->256732535,ExpressionUUID->"4ed6108b-336b-4000-9c2a-64276a62ed55"],
+
+Cell[BoxData[
+ FormBox[
+  TagBox[
+   TagBox[GridBox[{
+      {
+       TagBox["b",
+        HoldForm], 
+       TagBox["c",
+        HoldForm], 
+       TagBox["d",
+        HoldForm], 
+       TagBox[
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"b", "\[And]", 
+           RowBox[{"\[Not]", "c"}], "\[And]", 
+           RowBox[{"\[Not]", "d"}]}], ")"}], "\[Or]", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"\[Not]", "b"}], "\[And]", "c", "\[And]", 
+           RowBox[{"\[Not]", "d"}]}], ")"}]}],
+        HoldForm]},
+      {"True", "True", "True", "False"},
+      {"True", "True", "False", "False"},
+      {"True", "False", "True", "False"},
+      {"True", "False", "False", "True"},
+      {"False", "True", "True", "False"},
+      {"False", "True", "False", "True"},
+      {"False", "False", "True", "False"},
+      {"False", "False", "False", "False"}
+     },
+     GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+     GridBoxDividers->{
+      "Columns" -> {{False}}, "Rows" -> {False, True, {False}, False}},
+     GridBoxSpacings->{"Columns" -> {
+         Offset[0.27999999999999997`], {
+          Offset[2.0999999999999996`]}, 
+         Offset[0.27999999999999997`]}, "Rows" -> {
+         Offset[0.2], {
+          Offset[0.4]}, 
+         Offset[0.2]}}],
+    {None, OutputFormsDump`HeadedColumns}],
+   Function[BoxForm`e$, 
+    TableForm[
+    BoxForm`e$, 
+     TableHeadings -> {None, {$CellContext`b, $CellContext`c, $CellContext`d, 
+        Or[
+         And[$CellContext`b, 
+          Not[$CellContext`c], 
+          Not[$CellContext`d]], 
+         And[
+          Not[$CellContext`b], $CellContext`c, 
+          Not[$CellContext`d]]]}}]]], TraditionalForm]], "Output",
+ CellChangeTimes->{
+  3.873401205492905*^9, {3.87340170827765*^9, 3.8734017198320217`*^9}, {
+   3.8734017725976667`*^9, 3.8734017855127115`*^9}, 3.8734018232804613`*^9, 
+   3.8734018921733313`*^9, 3.873454657664399*^9, 3.873456159209794*^9, 
+   3.8734562165813513`*^9, 3.873456315985654*^9, 3.873459219327846*^9, {
+   3.873459252508247*^9, 3.873459292662554*^9}, 3.8734602931933603`*^9},
+ CellLabel->"Out[5]//TraditionalForm=",
+ CellID->272569618,ExpressionUUID->"7887ea88-0655-419f-89e2-21b72807d6bf"]
+}, Open  ]],
+
+Cell["Make a random 7 variable boolean function truth table:", "ExampleText",
+ CellChangeTimes->{{3.8734593145743694`*^9, 3.8734593285497255`*^9}},
+ CellID->114214813,ExpressionUUID->"53840bb1-b3f9-4887-9e28-4e30964511f9"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"TruthTable", "[", 
+   RowBox[{"BooleanConvert", "@", 
+    RowBox[{
+     RowBox[{"BooleanFunction", "[", 
+      RowBox[{
+       RowBox[{"RandomInteger", "[", 
+        SuperscriptBox[
+         RowBox[{"2", " "}], 
+         RowBox[{"2", " ", "5"}]], "]"}], ",", "5"}], "]"}], "[", 
+     RowBox[{"b", ",", "c", ",", "d", ",", "e", ",", "f"}], "]"}]}], "]"}], "//",
+   "TraditionalForm"}]], "Input",
+ CellChangeTimes->{{3.873401197133485*^9, 3.873401205051919*^9}, {
+  3.873459229645211*^9, 3.873459292318853*^9}, {3.8734593307523375`*^9, 
+  3.873459337282555*^9}},
+ CellLabel->"In[6]:=",
+ CellID->386844864,ExpressionUUID->"edd614a0-331f-4ecd-8fca-93c0bcea6099"],
+
+Cell[BoxData[
+ FormBox[
+  TagBox[
+   TagBox[GridBox[{
+      {
+       TagBox["b",
+        HoldForm], 
+       TagBox["c",
+        HoldForm], 
+       TagBox["d",
+        HoldForm], 
+       TagBox["e",
+        HoldForm], 
+       TagBox["f",
+        HoldForm], 
+       TagBox[
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"\[Not]", "b"}], "\[And]", 
+           RowBox[{"\[Not]", "c"}], "\[And]", 
+           RowBox[{"\[Not]", "d"}], "\[And]", 
+           RowBox[{"\[Not]", "e"}]}], ")"}], "\[Or]", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"\[Not]", "b"}], "\[And]", 
+           RowBox[{"\[Not]", "c"}], "\[And]", 
+           RowBox[{"\[Not]", "d"}], "\[And]", 
+           RowBox[{"\[Not]", "f"}]}], ")"}], "\[Or]", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"\[Not]", "b"}], "\[And]", 
+           RowBox[{"\[Not]", "c"}], "\[And]", 
+           RowBox[{"\[Not]", "e"}], "\[And]", 
+           RowBox[{"\[Not]", "f"}]}], ")"}]}],
+        HoldForm]},
+      {"True", "True", "True", "True", "True", "False"},
+      {"True", "True", "True", "True", "False", "False"},
+      {"True", "True", "True", "False", "True", "False"},
+      {"True", "True", "True", "False", "False", "False"},
+      {"True", "True", "False", "True", "True", "False"},
+      {"True", "True", "False", "True", "False", "False"},
+      {"True", "True", "False", "False", "True", "False"},
+      {"True", "True", "False", "False", "False", "False"},
+      {"True", "False", "True", "True", "True", "False"},
+      {"True", "False", "True", "True", "False", "False"},
+      {"True", "False", "True", "False", "True", "False"},
+      {"True", "False", "True", "False", "False", "False"},
+      {"True", "False", "False", "True", "True", "False"},
+      {"True", "False", "False", "True", "False", "False"},
+      {"True", "False", "False", "False", "True", "False"},
+      {"True", "False", "False", "False", "False", "False"},
+      {"False", "True", "True", "True", "True", "False"},
+      {"False", "True", "True", "True", "False", "False"},
+      {"False", "True", "True", "False", "True", "False"},
+      {"False", "True", "True", "False", "False", "False"},
+      {"False", "True", "False", "True", "True", "False"},
+      {"False", "True", "False", "True", "False", "False"},
+      {"False", "True", "False", "False", "True", "False"},
+      {"False", "True", "False", "False", "False", "False"},
+      {"False", "False", "True", "True", "True", "False"},
+      {"False", "False", "True", "True", "False", "False"},
+      {"False", "False", "True", "False", "True", "False"},
+      {"False", "False", "True", "False", "False", "True"},
+      {"False", "False", "False", "True", "True", "False"},
+      {"False", "False", "False", "True", "False", "True"},
+      {"False", "False", "False", "False", "True", "True"},
+      {"False", "False", "False", "False", "False", "True"}
+     },
+     GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+     GridBoxDividers->{
+      "Columns" -> {{False}}, "Rows" -> {False, True, {False}, False}},
+     GridBoxSpacings->{"Columns" -> {
+         Offset[0.27999999999999997`], {
+          Offset[2.0999999999999996`]}, 
+         Offset[0.27999999999999997`]}, "Rows" -> {
+         Offset[0.2], {
+          Offset[0.4]}, 
+         Offset[0.2]}}],
+    {None, OutputFormsDump`HeadedColumns}],
+   Function[BoxForm`e$, 
+    TableForm[
+    BoxForm`e$, 
+     TableHeadings -> {
+      None, {$CellContext`b, $CellContext`c, $CellContext`d, $CellContext`e, \
+$CellContext`f, 
+        Or[
+         And[
+          Not[$CellContext`b], 
+          Not[$CellContext`c], 
+          Not[$CellContext`d], 
+          Not[$CellContext`e]], 
+         And[
+          Not[$CellContext`b], 
+          Not[$CellContext`c], 
+          Not[$CellContext`d], 
+          Not[$CellContext`f]], 
+         And[
+          Not[$CellContext`b], 
+          Not[$CellContext`c], 
+          Not[$CellContext`e], 
+          Not[$CellContext`f]]]}}]]], TraditionalForm]], "Output",
+ CellChangeTimes->{3.8734593376418533`*^9, 3.873460293396413*^9},
+ CellLabel->"Out[6]//TraditionalForm=",
+ CellID->136574836,ExpressionUUID->"d48193a2-6c9e-4ef9-9b28-4d0e7037ba75"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "More Examples",
+ Cell[BoxData[
+  TemplateBox[{"MoreExamples", 
+    Cell[
+     BoxData[
+      FrameBox[
+       Cell["Extended examples in standardized sections.", "MoreInfoText"], 
+       BaseStyle -> "IFrameBox"]], "MoreInfoTextOuter"]},
+   "MoreInfoOpenerButtonTemplate"]],ExpressionUUID->
+  "08dd770e-90aa-408b-86ea-b68993c98f4b"]
+}], "ExtendedExamplesSection",
+ CellTags->"ExtendedExamples",
+ CellID->149933707,ExpressionUUID->"71f8515d-06b5-49e7-bfb6-58a170a9759f"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "Scope", "ExampleSection",ExpressionUUID->
+   "f208a53f-5ca6-495c-b375-4cd359acecd8"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->74519885,ExpressionUUID->"d97353b9-2727-4a6e-a84a-b8e9c6cd46fb"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "Generalizations & Extensions", "ExampleSection",ExpressionUUID->
+   "871479cb-fc0f-41d1-9f43-c6a0e36b2644"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->127098648,ExpressionUUID->"c304160b-e624-4cf5-8388-96c672cde80f"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "Options", "ExampleSection",ExpressionUUID->
+   "b260e5e4-f892-4f23-a28b-ac6c00822ce1"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->533863472,ExpressionUUID->"ba1b8420-8adf-461f-9e3d-4a5aa0f52127"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "XXXX", "ExampleSubsection",ExpressionUUID->
+   "d46e17ca-92c2-465f-9185-656409d9200e"],
+  $Line = 0; Null]], "ExampleSubsection",
+ CellID->867973012,ExpressionUUID->"6a3863e3-5225-4bdf-b773-96c2d58428ed"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "XXXX", "ExampleSubsection",ExpressionUUID->
+   "db1ea1cf-10f5-4f4c-af70-3c0ef6d474af"],
+  $Line = 0; Null]], "ExampleSubsection",
+ CellID->643136613,ExpressionUUID->"c18e83ee-2cf8-4ec7-8b3a-381ab5bdf7d8"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "Applications", "ExampleSection",ExpressionUUID->
+   "449c4ecc-7c03-4737-ba5a-fe9584bcc37f"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->38381072,ExpressionUUID->"59b84446-a5c6-4f45-991f-3af42fe0f232"],
+
+Cell["Make a truth table for different boolean operations:", "ExampleText",
+ CellChangeTimes->{{3.8734594216465435`*^9, 3.8734594308014417`*^9}},
+ CellID->112969613,ExpressionUUID->"fef005a5-288f-4471-889d-9a5f084e1af6"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"Function", "[", 
+    RowBox[{"op", ",", 
+     RowBox[{"TruthTable", "[", 
+      RowBox[{"op", "[", 
+       RowBox[{"b", ",", "c"}], "]"}], "]"}]}], "]"}], "/@", 
+   RowBox[{"{", 
+    RowBox[{
+    "Or", ",", "And", ",", "Xor", ",", "Nor", ",", "Nand", ",", "Xnor", ",", 
+     "Implies", ",", "Equivalent"}], "}"}]}], "//", 
+  "TraditionalForm"}]], "Input",
+ CellChangeTimes->{{3.8734594328643985`*^9, 3.8734595348280697`*^9}},
+ CellLabel->"In[1]:=",
+ CellID->150086004,ExpressionUUID->"c5aca71f-29f3-4108-8be5-b18c7635e0ca"],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"{", 
+   RowBox[{
+    TagBox[
+     TagBox[GridBox[{
+        {
+         TagBox["b",
+          HoldForm], 
+         TagBox["c",
+          HoldForm], 
+         TagBox[
+          RowBox[{"b", "\[Or]", "c"}],
+          HoldForm]},
+        {"True", "True", "True"},
+        {"True", "False", "True"},
+        {"False", "True", "True"},
+        {"False", "False", "False"}
+       },
+       GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+       GridBoxDividers->{
+        "Columns" -> {{False}}, "Rows" -> {False, True, {False}, False}},
+       GridBoxSpacings->{"Columns" -> {
+           Offset[0.27999999999999997`], {
+            Offset[2.0999999999999996`]}, 
+           Offset[0.27999999999999997`]}, "Rows" -> {
+           Offset[0.2], {
+            Offset[0.4]}, 
+           Offset[0.2]}}],
+      {None, OutputFormsDump`HeadedColumns}],
+     Function[BoxForm`e$, 
+      TableForm[
+      BoxForm`e$, TableHeadings -> {None, {$CellContext`b, $CellContext`c, 
+          Or[$CellContext`b, $CellContext`c]}}]]], ",", 
+    TagBox[
+     TagBox[GridBox[{
+        {
+         TagBox["b",
+          HoldForm], 
+         TagBox["c",
+          HoldForm], 
+         TagBox[
+          RowBox[{"b", "\[And]", "c"}],
+          HoldForm]},
+        {"True", "True", "True"},
+        {"True", "False", "False"},
+        {"False", "True", "False"},
+        {"False", "False", "False"}
+       },
+       GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+       GridBoxDividers->{
+        "Columns" -> {{False}}, "Rows" -> {False, True, {False}, False}},
+       GridBoxSpacings->{"Columns" -> {
+           Offset[0.27999999999999997`], {
+            Offset[2.0999999999999996`]}, 
+           Offset[0.27999999999999997`]}, "Rows" -> {
+           Offset[0.2], {
+            Offset[0.4]}, 
+           Offset[0.2]}}],
+      {None, OutputFormsDump`HeadedColumns}],
+     Function[BoxForm`e$, 
+      TableForm[
+      BoxForm`e$, TableHeadings -> {None, {$CellContext`b, $CellContext`c, 
+          And[$CellContext`b, $CellContext`c]}}]]], ",", 
+    TagBox[
+     TagBox[GridBox[{
+        {
+         TagBox["b",
+          HoldForm], 
+         TagBox["c",
+          HoldForm], 
+         TagBox[
+          RowBox[{"b", "\[Xor]", "c"}],
+          HoldForm]},
+        {"True", "True", "False"},
+        {"True", "False", "True"},
+        {"False", "True", "True"},
+        {"False", "False", "False"}
+       },
+       GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+       GridBoxDividers->{
+        "Columns" -> {{False}}, "Rows" -> {False, True, {False}, False}},
+       GridBoxSpacings->{"Columns" -> {
+           Offset[0.27999999999999997`], {
+            Offset[2.0999999999999996`]}, 
+           Offset[0.27999999999999997`]}, "Rows" -> {
+           Offset[0.2], {
+            Offset[0.4]}, 
+           Offset[0.2]}}],
+      {None, OutputFormsDump`HeadedColumns}],
+     Function[BoxForm`e$, 
+      TableForm[
+      BoxForm`e$, TableHeadings -> {None, {$CellContext`b, $CellContext`c, 
+          Xor[$CellContext`b, $CellContext`c]}}]]], ",", 
+    TagBox[
+     TagBox[GridBox[{
+        {
+         TagBox["b",
+          HoldForm], 
+         TagBox["c",
+          HoldForm], 
+         TagBox[
+          RowBox[{"b", "\[Nor]", "c"}],
+          HoldForm]},
+        {"True", "True", "False"},
+        {"True", "False", "False"},
+        {"False", "True", "False"},
+        {"False", "False", "True"}
+       },
+       GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+       GridBoxDividers->{
+        "Columns" -> {{False}}, "Rows" -> {False, True, {False}, False}},
+       GridBoxSpacings->{"Columns" -> {
+           Offset[0.27999999999999997`], {
+            Offset[2.0999999999999996`]}, 
+           Offset[0.27999999999999997`]}, "Rows" -> {
+           Offset[0.2], {
+            Offset[0.4]}, 
+           Offset[0.2]}}],
+      {None, OutputFormsDump`HeadedColumns}],
+     Function[BoxForm`e$, 
+      TableForm[
+      BoxForm`e$, TableHeadings -> {None, {$CellContext`b, $CellContext`c, 
+          Nor[$CellContext`b, $CellContext`c]}}]]], ",", 
+    TagBox[
+     TagBox[GridBox[{
+        {
+         TagBox["b",
+          HoldForm], 
+         TagBox["c",
+          HoldForm], 
+         TagBox[
+          RowBox[{"b", "\[Nand]", "c"}],
+          HoldForm]},
+        {"True", "True", "False"},
+        {"True", "False", "True"},
+        {"False", "True", "True"},
+        {"False", "False", "True"}
+       },
+       GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+       GridBoxDividers->{
+        "Columns" -> {{False}}, "Rows" -> {False, True, {False}, False}},
+       GridBoxSpacings->{"Columns" -> {
+           Offset[0.27999999999999997`], {
+            Offset[2.0999999999999996`]}, 
+           Offset[0.27999999999999997`]}, "Rows" -> {
+           Offset[0.2], {
+            Offset[0.4]}, 
+           Offset[0.2]}}],
+      {None, OutputFormsDump`HeadedColumns}],
+     Function[BoxForm`e$, 
+      TableForm[
+      BoxForm`e$, TableHeadings -> {None, {$CellContext`b, $CellContext`c, 
+          Nand[$CellContext`b, $CellContext`c]}}]]], ",", 
+    TagBox[
+     TagBox[GridBox[{
+        {
+         TagBox["b",
+          HoldForm], 
+         TagBox["c",
+          HoldForm], 
+         TagBox[
+          RowBox[{"b", "\[Xnor]", "c"}],
+          HoldForm]},
+        {"True", "True", "True"},
+        {"True", "False", "False"},
+        {"False", "True", "False"},
+        {"False", "False", "True"}
+       },
+       GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+       GridBoxDividers->{
+        "Columns" -> {{False}}, "Rows" -> {False, True, {False}, False}},
+       GridBoxSpacings->{"Columns" -> {
+           Offset[0.27999999999999997`], {
+            Offset[2.0999999999999996`]}, 
+           Offset[0.27999999999999997`]}, "Rows" -> {
+           Offset[0.2], {
+            Offset[0.4]}, 
+           Offset[0.2]}}],
+      {None, OutputFormsDump`HeadedColumns}],
+     Function[BoxForm`e$, 
+      TableForm[
+      BoxForm`e$, TableHeadings -> {None, {$CellContext`b, $CellContext`c, 
+          Xnor[$CellContext`b, $CellContext`c]}}]]], ",", 
+    TagBox[
+     TagBox[GridBox[{
+        {
+         TagBox["b",
+          HoldForm], 
+         TagBox["c",
+          HoldForm], 
+         TagBox[
+          RowBox[{"b", "\[Implies]", "c"}],
+          HoldForm]},
+        {"True", "True", "True"},
+        {"True", "False", "False"},
+        {"False", "True", "True"},
+        {"False", "False", "True"}
+       },
+       GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+       GridBoxDividers->{
+        "Columns" -> {{False}}, "Rows" -> {False, True, {False}, False}},
+       GridBoxSpacings->{"Columns" -> {
+           Offset[0.27999999999999997`], {
+            Offset[2.0999999999999996`]}, 
+           Offset[0.27999999999999997`]}, "Rows" -> {
+           Offset[0.2], {
+            Offset[0.4]}, 
+           Offset[0.2]}}],
+      {None, OutputFormsDump`HeadedColumns}],
+     Function[BoxForm`e$, 
+      TableForm[
+      BoxForm`e$, TableHeadings -> {None, {$CellContext`b, $CellContext`c, 
+          Implies[$CellContext`b, $CellContext`c]}}]]], ",", 
+    TagBox[
+     TagBox[GridBox[{
+        {
+         TagBox["b",
+          HoldForm], 
+         TagBox["c",
+          HoldForm], 
+         TagBox[
+          RowBox[{"b", "\[Equivalent]", "c"}],
+          HoldForm]},
+        {"True", "True", "True"},
+        {"True", "False", "False"},
+        {"False", "True", "False"},
+        {"False", "False", "True"}
+       },
+       GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+       GridBoxDividers->{
+        "Columns" -> {{False}}, "Rows" -> {False, True, {False}, False}},
+       GridBoxSpacings->{"Columns" -> {
+           Offset[0.27999999999999997`], {
+            Offset[2.0999999999999996`]}, 
+           Offset[0.27999999999999997`]}, "Rows" -> {
+           Offset[0.2], {
+            Offset[0.4]}, 
+           Offset[0.2]}}],
+      {None, OutputFormsDump`HeadedColumns}],
+     Function[BoxForm`e$, 
+      TableForm[
+      BoxForm`e$, TableHeadings -> {None, {$CellContext`b, $CellContext`c, 
+          Equivalent[$CellContext`b, $CellContext`c]}}]]]}], "}"}], 
+  TraditionalForm]], "Output",
+ CellChangeTimes->{{3.873459480104355*^9, 3.873459535398977*^9}, 
+   3.873460298459715*^9},
+ CellLabel->"Out[1]//TraditionalForm=",
+ CellID->328846185,ExpressionUUID->"bfd1da8c-de47-4159-8aed-89c9abc423be"]
+}, Open  ]],
+
+Cell["\<\
+Make a truth table for the median function in The art of computer programming \
+volume 4:\
+\>", "ExampleText",
+ CellChangeTimes->{{3.873459539382699*^9, 3.8734595565374775`*^9}},
+ CellID->304344906,ExpressionUUID->"6bd7836f-e479-4eed-9456-a756da92e32f"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"TruthTable", "[", 
+   RowBox[{"Majority", "[", 
+    RowBox[{"x", ",", "y", ",", "z"}], "]"}], "]"}], "//", 
+  "TraditionalForm"}]], "Input",
+ CellChangeTimes->{{3.8734594328643985`*^9, 3.8734595778207145`*^9}},
+ CellLabel->"In[2]:=",
+ CellID->702791416,ExpressionUUID->"8856480a-1950-4b47-8dfd-d258e4de3688"],
+
+Cell[BoxData[
+ FormBox[
+  TagBox[
+   TagBox[GridBox[{
+      {
+       TagBox["x",
+        HoldForm], 
+       TagBox["y",
+        HoldForm], 
+       TagBox["z",
+        HoldForm], 
+       TagBox[
+        RowBox[{"Majority", "[", 
+         RowBox[{"x", ",", "y", ",", "z"}], "]"}],
+        HoldForm]},
+      {"True", "True", "True", "True"},
+      {"True", "True", "False", "True"},
+      {"True", "False", "True", "True"},
+      {"True", "False", "False", "False"},
+      {"False", "True", "True", "True"},
+      {"False", "True", "False", "False"},
+      {"False", "False", "True", "False"},
+      {"False", "False", "False", "False"}
+     },
+     GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+     GridBoxDividers->{
+      "Columns" -> {{False}}, "Rows" -> {False, True, {False}, False}},
+     GridBoxSpacings->{"Columns" -> {
+         Offset[0.27999999999999997`], {
+          Offset[2.0999999999999996`]}, 
+         Offset[0.27999999999999997`]}, "Rows" -> {
+         Offset[0.2], {
+          Offset[0.4]}, 
+         Offset[0.2]}}],
+    {None, OutputFormsDump`HeadedColumns}],
+   Function[BoxForm`e$, 
+    TableForm[
+    BoxForm`e$, 
+     TableHeadings -> {None, {$CellContext`x, $CellContext`y, $CellContext`z, 
+        Majority[$CellContext`x, $CellContext`y, $CellContext`z]}}]]], 
+  TraditionalForm]], "Output",
+ CellChangeTimes->{{3.8734595697119217`*^9, 3.8734595780720663`*^9}, 
+   3.8734602986471434`*^9},
+ CellLabel->"Out[2]//TraditionalForm=",
+ CellID->134085703,ExpressionUUID->"044e8def-6a7b-474a-a42a-d66bd9c20ebe"]
+}, Open  ]],
+
+Cell["Make a truth table with 3 inputs:", "ExampleText",
+ CellChangeTimes->{{3.873459583547187*^9, 3.873459596886783*^9}},
+ CellID->68507844,ExpressionUUID->"bef2acb1-2e98-4ded-b674-e03b2fca622c"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"TruthTable", "[", 
+   RowBox[{"BooleanConvert", "[", 
+    RowBox[{
+     RowBox[{"BooleanFunction", "[", 
+      RowBox[{
+       RowBox[{"RandomInteger", "[", 
+        SuperscriptBox["2", 
+         RowBox[{"2", " ", "3"}]], "]"}], ",", "3"}], "]"}], "[", 
+     RowBox[{"b", ",", "c", ",", "d"}], "]"}], "]"}], "]"}], "//", 
+  "TraditionalForm"}]], "Input",
+ CellChangeTimes->{{3.8734594328643985`*^9, 3.8734596202794223`*^9}},
+ CellLabel->"In[3]:=",
+ CellID->189094626,ExpressionUUID->"66c2832d-7afd-4d42-b71b-4d2058cd9076"],
+
+Cell[BoxData[
+ FormBox[
+  TagBox[
+   TagBox[GridBox[{
+      {
+       TagBox["c",
+        HoldForm], 
+       TagBox["d",
+        HoldForm], 
+       TagBox[
+        RowBox[{
+         RowBox[{"\[Not]", "c"}], "\[And]", 
+         RowBox[{"\[Not]", "d"}]}],
+        HoldForm]},
+      {"True", "True", "False"},
+      {"True", "False", "False"},
+      {"False", "True", "False"},
+      {"False", "False", "True"}
+     },
+     GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+     GridBoxDividers->{
+      "Columns" -> {{False}}, "Rows" -> {False, True, {False}, False}},
+     GridBoxSpacings->{"Columns" -> {
+         Offset[0.27999999999999997`], {
+          Offset[2.0999999999999996`]}, 
+         Offset[0.27999999999999997`]}, "Rows" -> {
+         Offset[0.2], {
+          Offset[0.4]}, 
+         Offset[0.2]}}],
+    {None, OutputFormsDump`HeadedColumns}],
+   Function[BoxForm`e$, 
+    TableForm[
+    BoxForm`e$, TableHeadings -> {None, {$CellContext`c, $CellContext`d, 
+        And[
+         Not[$CellContext`c], 
+         Not[$CellContext`d]]}}]]], TraditionalForm]], "Output",
+ CellChangeTimes->{{3.8734596146536646`*^9, 3.8734596205772867`*^9}, 
+   3.8734602988346004`*^9},
+ CellLabel->"Out[3]//TraditionalForm=",
+ CellID->293137741,ExpressionUUID->"76535338-cb0d-42d7-96ff-ac5c8250d599"]
+}, Open  ]],
+
+Cell[" Four inputs:", "ExampleText",
+ CellChangeTimes->{{3.873459624558406*^9, 3.8734596278512983`*^9}},
+ CellID->26425039,ExpressionUUID->"c4a74172-9fa5-4c47-923f-ade970f6df4e"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"TruthTable", "[", 
+   RowBox[{"BooleanConvert", "[", 
+    RowBox[{
+     RowBox[{"BooleanFunction", "[", 
+      RowBox[{
+       RowBox[{"RandomInteger", "[", 
+        SuperscriptBox["2", 
+         RowBox[{"2", " ", "4"}]], "]"}], ",", "4"}], "]"}], "[", 
+     RowBox[{"b", ",", "c", ",", "d", ",", "e"}], "]"}], "]"}], "]"}], "//", 
+  "TraditionalForm"}]], "Input",
+ CellChangeTimes->{{3.8734594328643985`*^9, 3.8734596323354783`*^9}},
+ CellLabel->"In[4]:=",
+ CellID->171550856,ExpressionUUID->"633aea25-8401-4e40-add5-9a5e0abc2c05"],
+
+Cell[BoxData[
+ FormBox[
+  TagBox[
+   TagBox[GridBox[{
+      {
+       TagBox["b",
+        HoldForm], 
+       TagBox["c",
+        HoldForm], 
+       TagBox["d",
+        HoldForm], 
+       TagBox["e",
+        HoldForm], 
+       TagBox[
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"\[Not]", "b"}], "\[And]", 
+           RowBox[{"\[Not]", "c"}], "\[And]", "d", "\[And]", 
+           RowBox[{"\[Not]", "e"}]}], ")"}], "\[Or]", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"\[Not]", "b"}], "\[And]", 
+           RowBox[{"\[Not]", "d"}], "\[And]", "e"}], ")"}]}],
+        HoldForm]},
+      {"True", "True", "True", "True", "False"},
+      {"True", "True", "True", "False", "False"},
+      {"True", "True", "False", "True", "False"},
+      {"True", "True", "False", "False", "False"},
+      {"True", "False", "True", "True", "False"},
+      {"True", "False", "True", "False", "False"},
+      {"True", "False", "False", "True", "False"},
+      {"True", "False", "False", "False", "False"},
+      {"False", "True", "True", "True", "False"},
+      {"False", "True", "True", "False", "False"},
+      {"False", "True", "False", "True", "True"},
+      {"False", "True", "False", "False", "False"},
+      {"False", "False", "True", "True", "False"},
+      {"False", "False", "True", "False", "True"},
+      {"False", "False", "False", "True", "True"},
+      {"False", "False", "False", "False", "False"}
+     },
+     GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+     GridBoxDividers->{
+      "Columns" -> {{False}}, "Rows" -> {False, True, {False}, False}},
+     GridBoxSpacings->{"Columns" -> {
+         Offset[0.27999999999999997`], {
+          Offset[2.0999999999999996`]}, 
+         Offset[0.27999999999999997`]}, "Rows" -> {
+         Offset[0.2], {
+          Offset[0.4]}, 
+         Offset[0.2]}}],
+    {None, OutputFormsDump`HeadedColumns}],
+   Function[BoxForm`e$, 
+    TableForm[
+    BoxForm`e$, 
+     TableHeadings -> {
+      None, {$CellContext`b, $CellContext`c, $CellContext`d, $CellContext`e, 
+        Or[
+         And[
+          Not[$CellContext`b], 
+          Not[$CellContext`c], $CellContext`d, 
+          Not[$CellContext`e]], 
+         And[
+          Not[$CellContext`b], 
+          Not[$CellContext`d], $CellContext`e]]}}]]], 
+  TraditionalForm]], "Output",
+ CellChangeTimes->{3.873459632632952*^9, 3.87346029902209*^9},
+ CellLabel->"Out[4]//TraditionalForm=",
+ CellID->42764037,ExpressionUUID->"1663d83d-5eb3-4d54-9495-bd1a3d237019"]
+}, Open  ]],
+
+Cell["Five inputs:", "ExampleText",
+ CellChangeTimes->{{3.873459634872155*^9, 3.8734596367981606`*^9}},
+ CellID->100942728,ExpressionUUID->"372d31f3-26e6-424d-befc-59bbc0f85aff"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"TruthTable", "[", 
+   RowBox[{"BooleanConvert", "[", 
+    RowBox[{
+     RowBox[{"BooleanFunction", "[", 
+      RowBox[{
+       RowBox[{"RandomInteger", "[", 
+        SuperscriptBox["2", 
+         RowBox[{"2", " ", "5"}]], "]"}], ",", "5"}], "]"}], "[", 
+     RowBox[{"b", ",", "c", ",", "d", ",", "e", ",", "f"}], "]"}], "]"}], 
+   "]"}], "//", "TraditionalForm"}]], "Input",
+ CellChangeTimes->{{3.8734594328643985`*^9, 3.873459648942318*^9}},
+ CellLabel->"In[5]:=",
+ CellID->905441053,ExpressionUUID->"c95363a3-9b0e-4dc0-a264-a1522aab135b"],
+
+Cell[BoxData[
+ FormBox[
+  TagBox[
+   TagBox[GridBox[{
+      {
+       TagBox["b",
+        HoldForm], 
+       TagBox["c",
+        HoldForm], 
+       TagBox["d",
+        HoldForm], 
+       TagBox["e",
+        HoldForm], 
+       TagBox["f",
+        HoldForm], 
+       TagBox[
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"\[Not]", "b"}], "\[And]", 
+           RowBox[{"\[Not]", "c"}], "\[And]", "d", "\[And]", 
+           RowBox[{"\[Not]", "e"}]}], ")"}], "\[Or]", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"\[Not]", "b"}], "\[And]", 
+           RowBox[{"\[Not]", "c"}], "\[And]", "d", "\[And]", 
+           RowBox[{"\[Not]", "f"}]}], ")"}], "\[Or]", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"\[Not]", "b"}], "\[And]", 
+           RowBox[{"\[Not]", "d"}], "\[And]", 
+           RowBox[{"\[Not]", "e"}], "\[And]", 
+           RowBox[{"\[Not]", "f"}]}], ")"}]}],
+        HoldForm]},
+      {"True", "True", "True", "True", "True", "False"},
+      {"True", "True", "True", "True", "False", "False"},
+      {"True", "True", "True", "False", "True", "False"},
+      {"True", "True", "True", "False", "False", "False"},
+      {"True", "True", "False", "True", "True", "False"},
+      {"True", "True", "False", "True", "False", "False"},
+      {"True", "True", "False", "False", "True", "False"},
+      {"True", "True", "False", "False", "False", "False"},
+      {"True", "False", "True", "True", "True", "False"},
+      {"True", "False", "True", "True", "False", "False"},
+      {"True", "False", "True", "False", "True", "False"},
+      {"True", "False", "True", "False", "False", "False"},
+      {"True", "False", "False", "True", "True", "False"},
+      {"True", "False", "False", "True", "False", "False"},
+      {"True", "False", "False", "False", "True", "False"},
+      {"True", "False", "False", "False", "False", "False"},
+      {"False", "True", "True", "True", "True", "False"},
+      {"False", "True", "True", "True", "False", "False"},
+      {"False", "True", "True", "False", "True", "False"},
+      {"False", "True", "True", "False", "False", "False"},
+      {"False", "True", "False", "True", "True", "False"},
+      {"False", "True", "False", "True", "False", "False"},
+      {"False", "True", "False", "False", "True", "False"},
+      {"False", "True", "False", "False", "False", "True"},
+      {"False", "False", "True", "True", "True", "False"},
+      {"False", "False", "True", "True", "False", "True"},
+      {"False", "False", "True", "False", "True", "True"},
+      {"False", "False", "True", "False", "False", "True"},
+      {"False", "False", "False", "True", "True", "False"},
+      {"False", "False", "False", "True", "False", "False"},
+      {"False", "False", "False", "False", "True", "False"},
+      {"False", "False", "False", "False", "False", "True"}
+     },
+     GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+     GridBoxDividers->{
+      "Columns" -> {{False}}, "Rows" -> {False, True, {False}, False}},
+     GridBoxSpacings->{"Columns" -> {
+         Offset[0.27999999999999997`], {
+          Offset[2.0999999999999996`]}, 
+         Offset[0.27999999999999997`]}, "Rows" -> {
+         Offset[0.2], {
+          Offset[0.4]}, 
+         Offset[0.2]}}],
+    {None, OutputFormsDump`HeadedColumns}],
+   Function[BoxForm`e$, 
+    TableForm[
+    BoxForm`e$, 
+     TableHeadings -> {
+      None, {$CellContext`b, $CellContext`c, $CellContext`d, $CellContext`e, \
+$CellContext`f, 
+        Or[
+         And[
+          Not[$CellContext`b], 
+          Not[$CellContext`c], $CellContext`d, 
+          Not[$CellContext`e]], 
+         And[
+          Not[$CellContext`b], 
+          Not[$CellContext`c], $CellContext`d, 
+          Not[$CellContext`f]], 
+         And[
+          Not[$CellContext`b], 
+          Not[$CellContext`d], 
+          Not[$CellContext`e], 
+          Not[$CellContext`f]]]}}]]], TraditionalForm]], "Output",
+ CellChangeTimes->{3.8734596493344183`*^9, 3.8734602992095184`*^9},
+ CellLabel->"Out[5]//TraditionalForm=",
+ CellID->20622498,ExpressionUUID->"bf937d99-9c34-4922-8b87-ded53fd575eb"]
+}, Open  ]],
+
+Cell["6 inputs:", "ExampleText",
+ CellChangeTimes->{{3.873459655790536*^9, 3.873459657388762*^9}},
+ CellID->17498666,ExpressionUUID->"c4f32518-03a7-4d18-a09c-d4b379d4a9bf"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"TruthTable", "[", 
+   RowBox[{"BooleanConvert", "[", 
+    RowBox[{
+     RowBox[{"BooleanFunction", "[", 
+      RowBox[{
+       RowBox[{"RandomInteger", "[", 
+        SuperscriptBox["2", 
+         RowBox[{"2", " ", "6"}]], "]"}], ",", "6"}], "]"}], "[", 
+     RowBox[{"b", ",", "c", ",", "d", ",", "e", ",", "f", ",", "g"}], "]"}], 
+    "]"}], "]"}], "//", "TraditionalForm"}]], "Input",
+ CellChangeTimes->{{3.8734594328643985`*^9, 3.873459666206081*^9}},
+ CellLabel->"In[6]:=",
+ CellID->257982320,ExpressionUUID->"0d91b363-1e2d-460c-8a6c-392196d64f11"],
+
+Cell[BoxData[
+ FormBox[
+  TagBox[
+   TagBox[GridBox[{
+      {
+       TagBox["b",
+        HoldForm], 
+       TagBox["c",
+        HoldForm], 
+       TagBox["d",
+        HoldForm], 
+       TagBox["e",
+        HoldForm], 
+       TagBox["f",
+        HoldForm], 
+       TagBox["g",
+        HoldForm], 
+       TagBox[
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"\[Not]", "b"}], "\[And]", 
+           RowBox[{"\[Not]", "c"}], "\[And]", "d", "\[And]", 
+           RowBox[{"\[Not]", "e"}], "\[And]", "f"}], ")"}], "\[Or]", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"\[Not]", "b"}], "\[And]", 
+           RowBox[{"\[Not]", "c"}], "\[And]", 
+           RowBox[{"\[Not]", "d"}], "\[And]", "e", "\[And]", 
+           RowBox[{"\[Not]", "f"}]}], ")"}], "\[Or]", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"\[Not]", "b"}], "\[And]", 
+           RowBox[{"\[Not]", "c"}], "\[And]", 
+           RowBox[{"\[Not]", "d"}], "\[And]", 
+           RowBox[{"\[Not]", "f"}], "\[And]", 
+           RowBox[{"\[Not]", "g"}]}], ")"}]}],
+        HoldForm]},
+      {"True", "True", "True", "True", "True", "True", "False"},
+      {"True", "True", "True", "True", "True", "False", "False"},
+      {"True", "True", "True", "True", "False", "True", "False"},
+      {"True", "True", "True", "True", "False", "False", "False"},
+      {"True", "True", "True", "False", "True", "True", "False"},
+      {"True", "True", "True", "False", "True", "False", "False"},
+      {"True", "True", "True", "False", "False", "True", "False"},
+      {"True", "True", "True", "False", "False", "False", "False"},
+      {"True", "True", "False", "True", "True", "True", "False"},
+      {"True", "True", "False", "True", "True", "False", "False"},
+      {"True", "True", "False", "True", "False", "True", "False"},
+      {"True", "True", "False", "True", "False", "False", "False"},
+      {"True", "True", "False", "False", "True", "True", "False"},
+      {"True", "True", "False", "False", "True", "False", "False"},
+      {"True", "True", "False", "False", "False", "True", "False"},
+      {"True", "True", "False", "False", "False", "False", "False"},
+      {"True", "False", "True", "True", "True", "True", "False"},
+      {"True", "False", "True", "True", "True", "False", "False"},
+      {"True", "False", "True", "True", "False", "True", "False"},
+      {"True", "False", "True", "True", "False", "False", "False"},
+      {"True", "False", "True", "False", "True", "True", "False"},
+      {"True", "False", "True", "False", "True", "False", "False"},
+      {"True", "False", "True", "False", "False", "True", "False"},
+      {"True", "False", "True", "False", "False", "False", "False"},
+      {"True", "False", "False", "True", "True", "True", "False"},
+      {"True", "False", "False", "True", "True", "False", "False"},
+      {"True", "False", "False", "True", "False", "True", "False"},
+      {"True", "False", "False", "True", "False", "False", "False"},
+      {"True", "False", "False", "False", "True", "True", "False"},
+      {"True", "False", "False", "False", "True", "False", "False"},
+      {"True", "False", "False", "False", "False", "True", "False"},
+      {"True", "False", "False", "False", "False", "False", "False"},
+      {"False", "True", "True", "True", "True", "True", "False"},
+      {"False", "True", "True", "True", "True", "False", "False"},
+      {"False", "True", "True", "True", "False", "True", "False"},
+      {"False", "True", "True", "True", "False", "False", "False"},
+      {"False", "True", "True", "False", "True", "True", "False"},
+      {"False", "True", "True", "False", "True", "False", "False"},
+      {"False", "True", "True", "False", "False", "True", "False"},
+      {"False", "True", "True", "False", "False", "False", "False"},
+      {"False", "True", "False", "True", "True", "True", "False"},
+      {"False", "True", "False", "True", "True", "False", "False"},
+      {"False", "True", "False", "True", "False", "True", "False"},
+      {"False", "True", "False", "True", "False", "False", "False"},
+      {"False", "True", "False", "False", "True", "True", "False"},
+      {"False", "True", "False", "False", "True", "False", "False"},
+      {"False", "True", "False", "False", "False", "True", "False"},
+      {"False", "True", "False", "False", "False", "False", "False"},
+      {"False", "False", "True", "True", "True", "True", "False"},
+      {"False", "False", "True", "True", "True", "False", "False"},
+      {"False", "False", "True", "True", "False", "True", "False"},
+      {"False", "False", "True", "True", "False", "False", "False"},
+      {"False", "False", "True", "False", "True", "True", "True"},
+      {"False", "False", "True", "False", "True", "False", "True"},
+      {"False", "False", "True", "False", "False", "True", "False"},
+      {"False", "False", "True", "False", "False", "False", "False"},
+      {"False", "False", "False", "True", "True", "True", "False"},
+      {"False", "False", "False", "True", "True", "False", "False"},
+      {"False", "False", "False", "True", "False", "True", "True"},
+      {"False", "False", "False", "True", "False", "False", "True"},
+      {"False", "False", "False", "False", "True", "True", "False"},
+      {"False", "False", "False", "False", "True", "False", "False"},
+      {"False", "False", "False", "False", "False", "True", "False"},
+      {"False", "False", "False", "False", "False", "False", "True"}
+     },
+     GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+     GridBoxDividers->{
+      "Columns" -> {{False}}, "Rows" -> {False, True, {False}, False}},
+     GridBoxSpacings->{"Columns" -> {
+         Offset[0.27999999999999997`], {
+          Offset[2.0999999999999996`]}, 
+         Offset[0.27999999999999997`]}, "Rows" -> {
+         Offset[0.2], {
+          Offset[0.4]}, 
+         Offset[0.2]}}],
+    {None, OutputFormsDump`HeadedColumns}],
+   Function[BoxForm`e$, 
+    TableForm[
+    BoxForm`e$, 
+     TableHeadings -> {
+      None, {$CellContext`b, $CellContext`c, $CellContext`d, $CellContext`e, \
+$CellContext`f, $CellContext`g, 
+        Or[
+         And[
+          Not[$CellContext`b], 
+          Not[$CellContext`c], $CellContext`d, 
+          Not[$CellContext`e], $CellContext`f], 
+         And[
+          Not[$CellContext`b], 
+          Not[$CellContext`c], 
+          Not[$CellContext`d], $CellContext`e, 
+          Not[$CellContext`f]], 
+         And[
+          Not[$CellContext`b], 
+          Not[$CellContext`c], 
+          Not[$CellContext`d], 
+          Not[$CellContext`f], 
+          Not[$CellContext`g]]]}}]]], TraditionalForm]], "Output",
+ CellChangeTimes->{3.873459666582136*^9, 3.8734602994438715`*^9},
+ CellLabel->"Out[6]//TraditionalForm=",
+ CellID->365554906,ExpressionUUID->"913706b4-9156-4049-ad98-710a70f56ba5"]
+}, Open  ]],
+
+Cell["\<\
+Use T and F to make the six input truth table simpler to read:\
+\>", "ExampleText",
+ CellChangeTimes->{{3.8734596763297987`*^9, 3.8734596954868636`*^9}},
+ CellID->687383736,ExpressionUUID->"f6ed6c0f-3056-4f39-b14d-07b65ffb48ea"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"TruthTable", "[", 
+   RowBox[{
+    RowBox[{"BooleanConvert", "[", 
+     RowBox[{
+      RowBox[{"BooleanFunction", "[", 
+       RowBox[{
+        RowBox[{"RandomInteger", "[", 
+         SuperscriptBox["2", 
+          RowBox[{"2", " ", "6"}]], "]"}], ",", "6"}], "]"}], "[", 
+      RowBox[{"b", ",", "c", ",", "d", ",", "e", ",", "f", ",", "g"}], "]"}], 
+     "]"}], ",", 
+    RowBox[{"\"\<Symbols\>\"", "->", 
+     RowBox[{"{", 
+      RowBox[{"\"\<T\>\"", ",", "\"\<F\>\""}], "}"}]}]}], "]"}], "//", 
+  "TraditionalForm"}]], "Input",
+ CellChangeTimes->{{3.8734594328643985`*^9, 3.873459666206081*^9}, {
+  3.8734596967252684`*^9, 3.8734597157830935`*^9}},
+ CellLabel->"In[7]:=",
+ CellID->13526235,ExpressionUUID->"a2e0a337-7990-43b6-9124-5efa62c71abd"],
+
+Cell[BoxData[
+ FormBox[
+  TagBox[
+   TagBox[GridBox[{
+      {
+       TagBox["b",
+        HoldForm], 
+       TagBox["c",
+        HoldForm], 
+       TagBox["d",
+        HoldForm], 
+       TagBox["e",
+        HoldForm], 
+       TagBox["f",
+        HoldForm], 
+       TagBox["g",
+        HoldForm], 
+       TagBox[
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"\[Not]", "b"}], "\[And]", 
+           RowBox[{"\[Not]", "c"}], "\[And]", "d", "\[And]", 
+           RowBox[{"\[Not]", "e"}], "\[And]", 
+           RowBox[{"\[Not]", "g"}]}], ")"}], "\[Or]", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"\[Not]", "b"}], "\[And]", 
+           RowBox[{"\[Not]", "c"}], "\[And]", 
+           RowBox[{"\[Not]", "d"}], "\[And]", "e", "\[And]", 
+           RowBox[{"\[Not]", "g"}]}], ")"}], "\[Or]", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"\[Not]", "b"}], "\[And]", 
+           RowBox[{"\[Not]", "c"}], "\[And]", 
+           RowBox[{"\[Not]", "e"}], "\[And]", "f", "\[And]", 
+           RowBox[{"\[Not]", "g"}]}], ")"}]}],
+        HoldForm]},
+      {"\<\"T\"\>", "\<\"T\"\>", "\<\"T\"\>", "\<\"T\"\>", "\<\"T\"\>", \
+"\<\"T\"\>", "\<\"F\"\>"},
+      {"\<\"T\"\>", "\<\"T\"\>", "\<\"T\"\>", "\<\"T\"\>", "\<\"T\"\>", \
+"\<\"F\"\>", "\<\"F\"\>"},
+      {"\<\"T\"\>", "\<\"T\"\>", "\<\"T\"\>", "\<\"T\"\>", "\<\"F\"\>", \
+"\<\"T\"\>", "\<\"F\"\>"},
+      {"\<\"T\"\>", "\<\"T\"\>", "\<\"T\"\>", "\<\"T\"\>", "\<\"F\"\>", \
+"\<\"F\"\>", "\<\"F\"\>"},
+      {"\<\"T\"\>", "\<\"T\"\>", "\<\"T\"\>", "\<\"F\"\>", "\<\"T\"\>", \
+"\<\"T\"\>", "\<\"F\"\>"},
+      {"\<\"T\"\>", "\<\"T\"\>", "\<\"T\"\>", "\<\"F\"\>", "\<\"T\"\>", \
+"\<\"F\"\>", "\<\"F\"\>"},
+      {"\<\"T\"\>", "\<\"T\"\>", "\<\"T\"\>", "\<\"F\"\>", "\<\"F\"\>", \
+"\<\"T\"\>", "\<\"F\"\>"},
+      {"\<\"T\"\>", "\<\"T\"\>", "\<\"T\"\>", "\<\"F\"\>", "\<\"F\"\>", \
+"\<\"F\"\>", "\<\"F\"\>"},
+      {"\<\"T\"\>", "\<\"T\"\>", "\<\"F\"\>", "\<\"T\"\>", "\<\"T\"\>", \
+"\<\"T\"\>", "\<\"F\"\>"},
+      {"\<\"T\"\>", "\<\"T\"\>", "\<\"F\"\>", "\<\"T\"\>", "\<\"T\"\>", \
+"\<\"F\"\>", "\<\"F\"\>"},
+      {"\<\"T\"\>", "\<\"T\"\>", "\<\"F\"\>", "\<\"T\"\>", "\<\"F\"\>", \
+"\<\"T\"\>", "\<\"F\"\>"},
+      {"\<\"T\"\>", "\<\"T\"\>", "\<\"F\"\>", "\<\"T\"\>", "\<\"F\"\>", \
+"\<\"F\"\>", "\<\"F\"\>"},
+      {"\<\"T\"\>", "\<\"T\"\>", "\<\"F\"\>", "\<\"F\"\>", "\<\"T\"\>", \
+"\<\"T\"\>", "\<\"F\"\>"},
+      {"\<\"T\"\>", "\<\"T\"\>", "\<\"F\"\>", "\<\"F\"\>", "\<\"T\"\>", \
+"\<\"F\"\>", "\<\"F\"\>"},
+      {"\<\"T\"\>", "\<\"T\"\>", "\<\"F\"\>", "\<\"F\"\>", "\<\"F\"\>", \
+"\<\"T\"\>", "\<\"F\"\>"},
+      {"\<\"T\"\>", "\<\"T\"\>", "\<\"F\"\>", "\<\"F\"\>", "\<\"F\"\>", \
+"\<\"F\"\>", "\<\"F\"\>"},
+      {"\<\"T\"\>", "\<\"F\"\>", "\<\"T\"\>", "\<\"T\"\>", "\<\"T\"\>", \
+"\<\"T\"\>", "\<\"F\"\>"},
+      {"\<\"T\"\>", "\<\"F\"\>", "\<\"T\"\>", "\<\"T\"\>", "\<\"T\"\>", \
+"\<\"F\"\>", "\<\"F\"\>"},
+      {"\<\"T\"\>", "\<\"F\"\>", "\<\"T\"\>", "\<\"T\"\>", "\<\"F\"\>", \
+"\<\"T\"\>", "\<\"F\"\>"},
+      {"\<\"T\"\>", "\<\"F\"\>", "\<\"T\"\>", "\<\"T\"\>", "\<\"F\"\>", \
+"\<\"F\"\>", "\<\"F\"\>"},
+      {"\<\"T\"\>", "\<\"F\"\>", "\<\"T\"\>", "\<\"F\"\>", "\<\"T\"\>", \
+"\<\"T\"\>", "\<\"F\"\>"},
+      {"\<\"T\"\>", "\<\"F\"\>", "\<\"T\"\>", "\<\"F\"\>", "\<\"T\"\>", \
+"\<\"F\"\>", "\<\"F\"\>"},
+      {"\<\"T\"\>", "\<\"F\"\>", "\<\"T\"\>", "\<\"F\"\>", "\<\"F\"\>", \
+"\<\"T\"\>", "\<\"F\"\>"},
+      {"\<\"T\"\>", "\<\"F\"\>", "\<\"T\"\>", "\<\"F\"\>", "\<\"F\"\>", \
+"\<\"F\"\>", "\<\"F\"\>"},
+      {"\<\"T\"\>", "\<\"F\"\>", "\<\"F\"\>", "\<\"T\"\>", "\<\"T\"\>", \
+"\<\"T\"\>", "\<\"F\"\>"},
+      {"\<\"T\"\>", "\<\"F\"\>", "\<\"F\"\>", "\<\"T\"\>", "\<\"T\"\>", \
+"\<\"F\"\>", "\<\"F\"\>"},
+      {"\<\"T\"\>", "\<\"F\"\>", "\<\"F\"\>", "\<\"T\"\>", "\<\"F\"\>", \
+"\<\"T\"\>", "\<\"F\"\>"},
+      {"\<\"T\"\>", "\<\"F\"\>", "\<\"F\"\>", "\<\"T\"\>", "\<\"F\"\>", \
+"\<\"F\"\>", "\<\"F\"\>"},
+      {"\<\"T\"\>", "\<\"F\"\>", "\<\"F\"\>", "\<\"F\"\>", "\<\"T\"\>", \
+"\<\"T\"\>", "\<\"F\"\>"},
+      {"\<\"T\"\>", "\<\"F\"\>", "\<\"F\"\>", "\<\"F\"\>", "\<\"T\"\>", \
+"\<\"F\"\>", "\<\"F\"\>"},
+      {"\<\"T\"\>", "\<\"F\"\>", "\<\"F\"\>", "\<\"F\"\>", "\<\"F\"\>", \
+"\<\"T\"\>", "\<\"F\"\>"},
+      {"\<\"T\"\>", "\<\"F\"\>", "\<\"F\"\>", "\<\"F\"\>", "\<\"F\"\>", \
+"\<\"F\"\>", "\<\"F\"\>"},
+      {"\<\"F\"\>", "\<\"T\"\>", "\<\"T\"\>", "\<\"T\"\>", "\<\"T\"\>", \
+"\<\"T\"\>", "\<\"F\"\>"},
+      {"\<\"F\"\>", "\<\"T\"\>", "\<\"T\"\>", "\<\"T\"\>", "\<\"T\"\>", \
+"\<\"F\"\>", "\<\"F\"\>"},
+      {"\<\"F\"\>", "\<\"T\"\>", "\<\"T\"\>", "\<\"T\"\>", "\<\"F\"\>", \
+"\<\"T\"\>", "\<\"F\"\>"},
+      {"\<\"F\"\>", "\<\"T\"\>", "\<\"T\"\>", "\<\"T\"\>", "\<\"F\"\>", \
+"\<\"F\"\>", "\<\"F\"\>"},
+      {"\<\"F\"\>", "\<\"T\"\>", "\<\"T\"\>", "\<\"F\"\>", "\<\"T\"\>", \
+"\<\"T\"\>", "\<\"F\"\>"},
+      {"\<\"F\"\>", "\<\"T\"\>", "\<\"T\"\>", "\<\"F\"\>", "\<\"T\"\>", \
+"\<\"F\"\>", "\<\"F\"\>"},
+      {"\<\"F\"\>", "\<\"T\"\>", "\<\"T\"\>", "\<\"F\"\>", "\<\"F\"\>", \
+"\<\"T\"\>", "\<\"F\"\>"},
+      {"\<\"F\"\>", "\<\"T\"\>", "\<\"T\"\>", "\<\"F\"\>", "\<\"F\"\>", \
+"\<\"F\"\>", "\<\"F\"\>"},
+      {"\<\"F\"\>", "\<\"T\"\>", "\<\"F\"\>", "\<\"T\"\>", "\<\"T\"\>", \
+"\<\"T\"\>", "\<\"F\"\>"},
+      {"\<\"F\"\>", "\<\"T\"\>", "\<\"F\"\>", "\<\"T\"\>", "\<\"T\"\>", \
+"\<\"F\"\>", "\<\"F\"\>"},
+      {"\<\"F\"\>", "\<\"T\"\>", "\<\"F\"\>", "\<\"T\"\>", "\<\"F\"\>", \
+"\<\"T\"\>", "\<\"F\"\>"},
+      {"\<\"F\"\>", "\<\"T\"\>", "\<\"F\"\>", "\<\"T\"\>", "\<\"F\"\>", \
+"\<\"F\"\>", "\<\"F\"\>"},
+      {"\<\"F\"\>", "\<\"T\"\>", "\<\"F\"\>", "\<\"F\"\>", "\<\"T\"\>", \
+"\<\"T\"\>", "\<\"F\"\>"},
+      {"\<\"F\"\>", "\<\"T\"\>", "\<\"F\"\>", "\<\"F\"\>", "\<\"T\"\>", \
+"\<\"F\"\>", "\<\"F\"\>"},
+      {"\<\"F\"\>", "\<\"T\"\>", "\<\"F\"\>", "\<\"F\"\>", "\<\"F\"\>", \
+"\<\"T\"\>", "\<\"F\"\>"},
+      {"\<\"F\"\>", "\<\"T\"\>", "\<\"F\"\>", "\<\"F\"\>", "\<\"F\"\>", \
+"\<\"F\"\>", "\<\"F\"\>"},
+      {"\<\"F\"\>", "\<\"F\"\>", "\<\"T\"\>", "\<\"T\"\>", "\<\"T\"\>", \
+"\<\"T\"\>", "\<\"F\"\>"},
+      {"\<\"F\"\>", "\<\"F\"\>", "\<\"T\"\>", "\<\"T\"\>", "\<\"T\"\>", \
+"\<\"F\"\>", "\<\"F\"\>"},
+      {"\<\"F\"\>", "\<\"F\"\>", "\<\"T\"\>", "\<\"T\"\>", "\<\"F\"\>", \
+"\<\"T\"\>", "\<\"F\"\>"},
+      {"\<\"F\"\>", "\<\"F\"\>", "\<\"T\"\>", "\<\"T\"\>", "\<\"F\"\>", \
+"\<\"F\"\>", "\<\"F\"\>"},
+      {"\<\"F\"\>", "\<\"F\"\>", "\<\"T\"\>", "\<\"F\"\>", "\<\"T\"\>", \
+"\<\"T\"\>", "\<\"F\"\>"},
+      {"\<\"F\"\>", "\<\"F\"\>", "\<\"T\"\>", "\<\"F\"\>", "\<\"T\"\>", \
+"\<\"F\"\>", "\<\"T\"\>"},
+      {"\<\"F\"\>", "\<\"F\"\>", "\<\"T\"\>", "\<\"F\"\>", "\<\"F\"\>", \
+"\<\"T\"\>", "\<\"F\"\>"},
+      {"\<\"F\"\>", "\<\"F\"\>", "\<\"T\"\>", "\<\"F\"\>", "\<\"F\"\>", \
+"\<\"F\"\>", "\<\"T\"\>"},
+      {"\<\"F\"\>", "\<\"F\"\>", "\<\"F\"\>", "\<\"T\"\>", "\<\"T\"\>", \
+"\<\"T\"\>", "\<\"F\"\>"},
+      {"\<\"F\"\>", "\<\"F\"\>", "\<\"F\"\>", "\<\"T\"\>", "\<\"T\"\>", \
+"\<\"F\"\>", "\<\"T\"\>"},
+      {"\<\"F\"\>", "\<\"F\"\>", "\<\"F\"\>", "\<\"T\"\>", "\<\"F\"\>", \
+"\<\"T\"\>", "\<\"F\"\>"},
+      {"\<\"F\"\>", "\<\"F\"\>", "\<\"F\"\>", "\<\"T\"\>", "\<\"F\"\>", \
+"\<\"F\"\>", "\<\"T\"\>"},
+      {"\<\"F\"\>", "\<\"F\"\>", "\<\"F\"\>", "\<\"F\"\>", "\<\"T\"\>", \
+"\<\"T\"\>", "\<\"F\"\>"},
+      {"\<\"F\"\>", "\<\"F\"\>", "\<\"F\"\>", "\<\"F\"\>", "\<\"T\"\>", \
+"\<\"F\"\>", "\<\"T\"\>"},
+      {"\<\"F\"\>", "\<\"F\"\>", "\<\"F\"\>", "\<\"F\"\>", "\<\"F\"\>", \
+"\<\"T\"\>", "\<\"F\"\>"},
+      {"\<\"F\"\>", "\<\"F\"\>", "\<\"F\"\>", "\<\"F\"\>", "\<\"F\"\>", \
+"\<\"F\"\>", "\<\"F\"\>"}
+     },
+     GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+     GridBoxDividers->{
+      "Columns" -> {{False}}, "Rows" -> {False, True, {False}, False}},
+     GridBoxSpacings->{"Columns" -> {
+         Offset[0.27999999999999997`], {
+          Offset[2.0999999999999996`]}, 
+         Offset[0.27999999999999997`]}, "Rows" -> {
+         Offset[0.2], {
+          Offset[0.4]}, 
+         Offset[0.2]}}],
+    {None, OutputFormsDump`HeadedColumns}],
+   Function[BoxForm`e$, 
+    TableForm[
+    BoxForm`e$, 
+     TableHeadings -> {
+      None, {$CellContext`b, $CellContext`c, $CellContext`d, $CellContext`e, \
+$CellContext`f, $CellContext`g, 
+        Or[
+         And[
+          Not[$CellContext`b], 
+          Not[$CellContext`c], $CellContext`d, 
+          Not[$CellContext`e], 
+          Not[$CellContext`g]], 
+         And[
+          Not[$CellContext`b], 
+          Not[$CellContext`c], 
+          Not[$CellContext`d], $CellContext`e, 
+          Not[$CellContext`g]], 
+         And[
+          Not[$CellContext`b], 
+          Not[$CellContext`c], 
+          Not[$CellContext`e], $CellContext`f, 
+          Not[$CellContext`g]]]}}]]], TraditionalForm]], "Output",
+ CellChangeTimes->{{3.8734597059097433`*^9, 3.873459716033383*^9}, 
+   3.8734602997094097`*^9},
+ CellLabel->"Out[7]//TraditionalForm=",
+ CellID->443231525,ExpressionUUID->"63f9159c-5030-4daf-8a42-7e5b0b9227b7"]
+}, Open  ]],
+
+Cell["Use the color white for true and black for false:", "ExampleText",
+ CellChangeTimes->{{3.873459721670969*^9, 3.87345973009744*^9}},
+ CellID->153004559,ExpressionUUID->"9cec031f-daa4-4527-86fa-5486a0b1ec32"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"TruthTable", "[", 
+   RowBox[{
+    RowBox[{"BooleanConvert", "[", 
+     RowBox[{
+      RowBox[{"BooleanFunction", "[", 
+       RowBox[{
+        RowBox[{"RandomInteger", "[", 
+         SuperscriptBox["2", 
+          RowBox[{"2", " ", "3"}]], "]"}], ",", "3"}], "]"}], "[", 
+      RowBox[{"b", ",", "c", ",", "d", ",", "e", ",", "f", ",", "g"}], "]"}], 
+     "]"}], ",", 
+    RowBox[{"\"\<Symbols\>\"", "->", 
+     RowBox[{"{", 
+      RowBox[{"White", ",", "Black"}], "}"}]}]}], "]"}], "//", 
+  "TraditionalForm"}]], "Input",
+ CellChangeTimes->{{3.8734594328643985`*^9, 3.873459666206081*^9}, {
+  3.8734596967252684`*^9, 3.873459743033121*^9}},
+ CellLabel->"In[8]:=",
+ CellID->607691360,ExpressionUUID->"7de348fc-8cf8-4ad4-817f-b47ec1821dbb"],
+
+Cell[BoxData[
+ FormBox[
+  TagBox[
+   TagBox[GridBox[{
+      {
+       TagBox["b",
+        HoldForm], 
+       TagBox["c",
+        HoldForm], 
+       TagBox["d",
+        HoldForm], 
+       TagBox[
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"b", "\[And]", 
+           RowBox[{"\[Not]", "c"}]}], ")"}], "\[Or]", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"\[Not]", "b"}], "\[And]", "c", "\[And]", "d"}], ")"}], 
+         "\[Or]", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"\[Not]", "c"}], "\[And]", 
+           RowBox[{"\[Not]", "d"}]}], ")"}]}],
+        HoldForm]},
+      {
+       TemplateBox[<|"color" -> GrayLevel[1]|>,
+        "GrayLevelColorSwatchTemplate"], 
+       TemplateBox[<|"color" -> GrayLevel[1]|>,
+        "GrayLevelColorSwatchTemplate"], 
+       TemplateBox[<|"color" -> GrayLevel[1]|>,
+        "GrayLevelColorSwatchTemplate"], 
+       TemplateBox[<|"color" -> GrayLevel[0]|>,
+        "GrayLevelColorSwatchTemplate"]},
+      {
+       TemplateBox[<|"color" -> GrayLevel[1]|>,
+        "GrayLevelColorSwatchTemplate"], 
+       TemplateBox[<|"color" -> GrayLevel[1]|>,
+        "GrayLevelColorSwatchTemplate"], 
+       TemplateBox[<|"color" -> GrayLevel[0]|>,
+        "GrayLevelColorSwatchTemplate"], 
+       TemplateBox[<|"color" -> GrayLevel[0]|>,
+        "GrayLevelColorSwatchTemplate"]},
+      {
+       TemplateBox[<|"color" -> GrayLevel[1]|>,
+        "GrayLevelColorSwatchTemplate"], 
+       TemplateBox[<|"color" -> GrayLevel[0]|>,
+        "GrayLevelColorSwatchTemplate"], 
+       TemplateBox[<|"color" -> GrayLevel[1]|>,
+        "GrayLevelColorSwatchTemplate"], 
+       TemplateBox[<|"color" -> GrayLevel[1]|>,
+        "GrayLevelColorSwatchTemplate"]},
+      {
+       TemplateBox[<|"color" -> GrayLevel[1]|>,
+        "GrayLevelColorSwatchTemplate"], 
+       TemplateBox[<|"color" -> GrayLevel[0]|>,
+        "GrayLevelColorSwatchTemplate"], 
+       TemplateBox[<|"color" -> GrayLevel[0]|>,
+        "GrayLevelColorSwatchTemplate"], 
+       TemplateBox[<|"color" -> GrayLevel[1]|>,
+        "GrayLevelColorSwatchTemplate"]},
+      {
+       TemplateBox[<|"color" -> GrayLevel[0]|>,
+        "GrayLevelColorSwatchTemplate"], 
+       TemplateBox[<|"color" -> GrayLevel[1]|>,
+        "GrayLevelColorSwatchTemplate"], 
+       TemplateBox[<|"color" -> GrayLevel[1]|>,
+        "GrayLevelColorSwatchTemplate"], 
+       TemplateBox[<|"color" -> GrayLevel[1]|>,
+        "GrayLevelColorSwatchTemplate"]},
+      {
+       TemplateBox[<|"color" -> GrayLevel[0]|>,
+        "GrayLevelColorSwatchTemplate"], 
+       TemplateBox[<|"color" -> GrayLevel[1]|>,
+        "GrayLevelColorSwatchTemplate"], 
+       TemplateBox[<|"color" -> GrayLevel[0]|>,
+        "GrayLevelColorSwatchTemplate"], 
+       TemplateBox[<|"color" -> GrayLevel[0]|>,
+        "GrayLevelColorSwatchTemplate"]},
+      {
+       TemplateBox[<|"color" -> GrayLevel[0]|>,
+        "GrayLevelColorSwatchTemplate"], 
+       TemplateBox[<|"color" -> GrayLevel[0]|>,
+        "GrayLevelColorSwatchTemplate"], 
+       TemplateBox[<|"color" -> GrayLevel[1]|>,
+        "GrayLevelColorSwatchTemplate"], 
+       TemplateBox[<|"color" -> GrayLevel[0]|>,
+        "GrayLevelColorSwatchTemplate"]},
+      {
+       TemplateBox[<|"color" -> GrayLevel[0]|>,
+        "GrayLevelColorSwatchTemplate"], 
+       TemplateBox[<|"color" -> GrayLevel[0]|>,
+        "GrayLevelColorSwatchTemplate"], 
+       TemplateBox[<|"color" -> GrayLevel[0]|>,
+        "GrayLevelColorSwatchTemplate"], 
+       TemplateBox[<|"color" -> GrayLevel[1]|>,
+        "GrayLevelColorSwatchTemplate"]}
+     },
+     GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+     GridBoxDividers->{
+      "Columns" -> {{False}}, "Rows" -> {False, True, {False}, False}},
+     GridBoxSpacings->{"Columns" -> {
+         Offset[0.27999999999999997`], {
+          Offset[2.0999999999999996`]}, 
+         Offset[0.27999999999999997`]}, "Rows" -> {
+         Offset[0.2], {
+          Offset[0.4]}, 
+         Offset[0.2]}}],
+    {None, OutputFormsDump`HeadedColumns}],
+   Function[BoxForm`e$, 
+    TableForm[
+    BoxForm`e$, 
+     TableHeadings -> {None, {$CellContext`b, $CellContext`c, $CellContext`d, 
+        Or[
+         And[$CellContext`b, 
+          Not[$CellContext`c]], 
+         And[
+          Not[$CellContext`b], $CellContext`c, $CellContext`d], 
+         And[
+          Not[$CellContext`c], 
+          Not[$CellContext`d]]]}}]]], TraditionalForm]], "Output",
+ CellChangeTimes->{3.8734597433162403`*^9, 3.8734602998969116`*^9},
+ CellLabel->"Out[8]//TraditionalForm=",
+ CellID->280396371,ExpressionUUID->"f4946407-77d2-4375-8946-076c902be220"]
+}, Open  ]],
+
+Cell["Use yes for true and no for false:", "ExampleText",
+ CellChangeTimes->{{3.873459761034528*^9, 3.8734597667179728`*^9}},
+ CellID->944166931,ExpressionUUID->"f473ba71-b806-4418-992d-abf5adbdb766"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"TruthTable", "[", 
+   RowBox[{
+    RowBox[{"BooleanConvert", "[", 
+     RowBox[{
+      RowBox[{"BooleanFunction", "[", 
+       RowBox[{
+        RowBox[{"RandomInteger", "[", 
+         SuperscriptBox["2", 
+          RowBox[{"2", " ", "3"}]], "]"}], ",", "3"}], "]"}], "[", 
+      RowBox[{"b", ",", "c", ",", "d", ",", "e", ",", "f", ",", "g"}], "]"}], 
+     "]"}], ",", 
+    RowBox[{"\"\<Symbols\>\"", "->", 
+     RowBox[{"{", 
+      RowBox[{"\"\<Yes\>\"", ",", "\"\<No\>\""}], "}"}]}]}], "]"}], "//", 
+  "TraditionalForm"}]], "Input",
+ CellChangeTimes->{{3.8734594328643985`*^9, 3.873459666206081*^9}, {
+  3.8734596967252684`*^9, 3.873459784159117*^9}},
+ CellLabel->"In[9]:=",
+ CellID->140236611,ExpressionUUID->"fdf2b24a-0187-4bb6-bf33-bcfe9c54fa48"],
+
+Cell[BoxData[
+ FormBox[
+  TagBox[
+   TagBox[GridBox[{
+      {
+       TagBox["b",
+        HoldForm], 
+       TagBox["c",
+        HoldForm], 
+       TagBox["d",
+        HoldForm], 
+       TagBox[
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"b", "\[And]", 
+           RowBox[{"\[Not]", "c"}]}], ")"}], "\[Or]", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"\[Not]", "c"}], "\[And]", "d"}], ")"}]}],
+        HoldForm]},
+      {"\<\"Yes\"\>", "\<\"Yes\"\>", "\<\"Yes\"\>", "\<\"No\"\>"},
+      {"\<\"Yes\"\>", "\<\"Yes\"\>", "\<\"No\"\>", "\<\"No\"\>"},
+      {"\<\"Yes\"\>", "\<\"No\"\>", "\<\"Yes\"\>", "\<\"Yes\"\>"},
+      {"\<\"Yes\"\>", "\<\"No\"\>", "\<\"No\"\>", "\<\"Yes\"\>"},
+      {"\<\"No\"\>", "\<\"Yes\"\>", "\<\"Yes\"\>", "\<\"No\"\>"},
+      {"\<\"No\"\>", "\<\"Yes\"\>", "\<\"No\"\>", "\<\"No\"\>"},
+      {"\<\"No\"\>", "\<\"No\"\>", "\<\"Yes\"\>", "\<\"Yes\"\>"},
+      {"\<\"No\"\>", "\<\"No\"\>", "\<\"No\"\>", "\<\"No\"\>"}
+     },
+     GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+     GridBoxDividers->{
+      "Columns" -> {{False}}, "Rows" -> {False, True, {False}, False}},
+     GridBoxSpacings->{"Columns" -> {
+         Offset[0.27999999999999997`], {
+          Offset[2.0999999999999996`]}, 
+         Offset[0.27999999999999997`]}, "Rows" -> {
+         Offset[0.2], {
+          Offset[0.4]}, 
+         Offset[0.2]}}],
+    {None, OutputFormsDump`HeadedColumns}],
+   Function[BoxForm`e$, 
+    TableForm[
+    BoxForm`e$, 
+     TableHeadings -> {None, {$CellContext`b, $CellContext`c, $CellContext`d, 
+        Or[
+         And[$CellContext`b, 
+          Not[$CellContext`c]], 
+         And[
+          Not[$CellContext`c], $CellContext`d]]}}]]], 
+  TraditionalForm]], "Output",
+ CellChangeTimes->{{3.8734597793873777`*^9, 3.8734597844355974`*^9}, 
+   3.873460300209329*^9},
+ CellLabel->"Out[9]//TraditionalForm=",
+ CellID->744059565,ExpressionUUID->"022e7a7d-2a40-4033-9fb7-c3ba61f8bca8"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "Properties & Relations", "ExampleSection",ExpressionUUID->
+   "567003ea-8df9-4bcc-bbbf-b78d0cb41f74"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->901407269,ExpressionUUID->"0d73c7f1-41d7-445d-bd5f-b5185564790b"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "Possible Issues", "ExampleSection",ExpressionUUID->
+   "0c370ae7-1049-46ae-8fd6-0510135cfc16"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->15500579,ExpressionUUID->"51b0c30a-3154-4835-b883-a985aaa433c4"],
+
+Cell["The function does not take BooleanFunction as input:", "ExampleText",
+ CellChangeTimes->{{3.8734591713192167`*^9, 3.873459181345449*^9}},
+ CellID->22321087,ExpressionUUID->"6cc5ff87-c84f-478c-9aea-b6b1f31f224d"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"TruthTable", "[", 
+  RowBox[{"BooleanFunction", "[", 
+   RowBox[{"1", ",", "3"}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.8734586596160192`*^9, 3.8734586693679376`*^9}, {
+  3.8734587058017073`*^9, 3.8734587111614447`*^9}},
+ CellLabel->"In[35]:=",
+ CellID->27307812,ExpressionUUID->"29921cd3-b95f-442b-bfab-a4e9ede0fbf4"],
+
+Cell[BoxData[
+ RowBox[{"TruthTable", "[", 
+  InterpretationBox[
+   RowBox[{
+    TagBox["BooleanFunction",
+     "SummaryHead"], "[", 
+    DynamicModuleBox[{Typeset`open$$ = False, Typeset`embedState$$ = "Ready"}, 
+     TemplateBox[{
+       PaneSelectorBox[{False -> GridBox[{{
+             PaneBox[
+              ButtonBox[
+               DynamicBox[
+                FEPrivate`FrontEndResource["FEBitmaps", "SummaryBoxOpener"]], 
+               ButtonFunction :> (Typeset`open$$ = True), Appearance -> None, 
+               BaseStyle -> {}, Evaluator -> Automatic, Method -> 
+               "Preemptive"], Alignment -> {Center, Center}, ImageSize -> 
+              Dynamic[{
+                Automatic, 
+                 3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                  Magnification])}]], 
+             GraphicsBox[{{
+                Hue[0.6, 0.7, 0.5], 
+                Opacity[0.7], 
+                Arrowheads[0.028937842778793414`], 
+                ArrowBox[{{0., 3.}, {1., 2.}}, 0.030239520958083826`], 
+                ArrowBox[
+                 BezierCurveBox[CompressedData["
+1:eJxTTMoPSmViYGBQBWIQjQo4HGCskPM3jr6ezw7nb/KQrNhliuCL5xwUyznI
+Bue3WV5cyOCM4P/dANLACufXXVKvvaSO4HPMyzvL380C588UluUyeMIM55sY
+gwCCfwWkvZYJzi+UOQ5EjHC+kCAIIPgbWaM3sEYzwPkLvnjO/+L53x7Gv3cX
+BP7C+bIg4wr/wPkxG0AG/Ibz08Dgm/3CTStXMc/Osd+xLNTLhuErlN9jbz71
+d8XrpZ/tq0r+8xuJL7B/YBjxqTj8E1R+jf2GmuxtV0U+2vdPDrkrFbnNPuJ1
+VpfinvdQ9QfsF1nm2HqlvbU/8mbluXXPjto7PbnVqqrxGqr/jL3p623Jmxlf
+2nMl/w+UkLpkX+3HcP3zp2f2x9onfr1lctNexsa8dVLqY3tFl7aL/ufv27+/
+ayMeIfHAnu/Mu6LdXx7ZP0tXkuoUu2V/66C35IqDT+19ajLOrq+5Yl/GfOt2
+rt8Le/VP0yd4HDtn/2jCzF08s1/ZV++ZKXp28lF7mayurS3L39jLrV8TfOvw
+Lnv1/jVnrha/s5/Ha266+NAKaPh8gIcTAPT6yCQ=
+                  "]], 0.030239520958083826`], 
+                ArrowBox[
+                 BezierCurveBox[CompressedData["
+1:eJxTTMoPSmViYGCQAWIQDQEf7KEMBxh/+byN3dft/9vD+EkTjT6UZP+zZ4Ty
+9W406d5o+guX5yle5MzY9gfO/5UI0vAbwV/iD0II9TZ3Z8mL/YTzDdWtRBJO
+fIfz08DgG5y/GKz9C5z/2KIPiD7D3aOsBAKf4PKJ3NsSuLd9gPPtX062ezn5
+HZy/ZzcIvIbzLUHGPX4B54N0J3A/g/ONweAxnA8OnvwHcP45/u4pjctvw90j
+nnNQLOfgNbi8ZMUuU3udS3D+ivQ3j76ePw3nT7EDOfAwnP/g5bU/Gzx2wvn/
+tM508rGugPNhMQcApt6NHA==
+                  "]], 0.030239520958083826`], 
+                ArrowBox[{{1., 2.}, {2., 1.}}, 0.030239520958083826`], 
+                ArrowBox[{{2., 1.}, {1., 0.}}, 0.030239520958083826`], 
+                ArrowBox[{{2., 1.}, {2., 0.}}, 0.030239520958083826`]}, {
+                Hue[0.6, 0.2, 0.8], 
+                EdgeForm[{
+                  GrayLevel[0], 
+                  Opacity[0.7]}], 
+                DiskBox[{0., 3.}, 0.1], 
+                DiskBox[{1., 2.}, 0.1], 
+                
+                RectangleBox[{0.9117647, -0.08823530000000002}, {1.0882353, 
+                 0.08823530000000002}], 
+                DiskBox[{2., 1.}, 0.1], 
+                
+                RectangleBox[{1.9117647, -0.08823530000000002}, {2.0882353, 
+                 0.08823530000000002}]}}, FrameTicks -> None, GridLinesStyle -> 
+              Directive[
+                GrayLevel[0.5, 0.4]], Background -> GrayLevel[0.93], 
+              PlotRangePadding -> Scaled[0.1], FrameStyle -> Directive[
+                Thickness[Tiny], 
+                GrayLevel[0.7]], Axes -> False, AspectRatio -> 1, ImageSize -> 
+              Dynamic[{
+                Automatic, 
+                 3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                  Magnification])}], Frame -> True, FrameTicks -> None, 
+              FrameStyle -> Directive[
+                Opacity[0.5], 
+                Thickness[Tiny], 
+                RGBColor[0.368417, 0.506779, 0.709798]]], 
+             GridBox[{{
+                RowBox[{
+                  TagBox[
+                  "\"Number of variables: \"", "SummaryItemAnnotation"], 
+                  "\[InvisibleSpace]", 
+                  TagBox["3", "SummaryItem"]}]}, {
+                RowBox[{
+                  TagBox["\"Function index: \"", "SummaryItemAnnotation"], 
+                  "\[InvisibleSpace]", 
+                  TagBox["1", "SummaryItem"]}]}}, 
+              GridBoxAlignment -> {
+               "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+              False, 
+              GridBoxItemSize -> {
+               "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+              GridBoxSpacings -> {
+               "Columns" -> {{2}}, "Rows" -> {{Automatic}}}, 
+              BaseStyle -> {
+               ShowStringCharacters -> False, NumberMarks -> False, 
+                PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+           GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+           AutoDelete -> False, 
+           GridBoxItemSize -> {
+            "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+           BaselinePosition -> {1, 1}], True -> GridBox[{{
+             PaneBox[
+              ButtonBox[
+               DynamicBox[
+                FEPrivate`FrontEndResource["FEBitmaps", "SummaryBoxCloser"]], 
+               ButtonFunction :> (Typeset`open$$ = False), Appearance -> None,
+                BaseStyle -> {}, Evaluator -> Automatic, Method -> 
+               "Preemptive"], Alignment -> {Center, Center}, ImageSize -> 
+              Dynamic[{
+                Automatic, 
+                 3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                  Magnification])}]], 
+             GraphicsBox[{{
+                Hue[0.6, 0.7, 0.5], 
+                Opacity[0.7], 
+                Arrowheads[0.028937842778793414`], 
+                ArrowBox[{{0., 3.}, {1., 2.}}, 0.030239520958083826`], 
+                ArrowBox[
+                 BezierCurveBox[CompressedData["
+1:eJxTTMoPSmViYGBQBWIQjQo4HGCskPM3jr6ezw7nb/KQrNhliuCL5xwUyznI
+Bue3WV5cyOCM4P/dANLACufXXVKvvaSO4HPMyzvL380C588UluUyeMIM55sY
+gwCCfwWkvZYJzi+UOQ5EjHC+kCAIIPgbWaM3sEYzwPkLvnjO/+L53x7Gv3cX
+BP7C+bIg4wr/wPkxG0AG/Ibz08Dgm/3CTStXMc/Osd+xLNTLhuErlN9jbz71
+d8XrpZ/tq0r+8xuJL7B/YBjxqTj8E1R+jf2GmuxtV0U+2vdPDrkrFbnNPuJ1
+VpfinvdQ9QfsF1nm2HqlvbU/8mbluXXPjto7PbnVqqrxGqr/jL3p623Jmxlf
+2nMl/w+UkLpkX+3HcP3zp2f2x9onfr1lctNexsa8dVLqY3tFl7aL/ufv27+/
+ayMeIfHAnu/Mu6LdXx7ZP0tXkuoUu2V/66C35IqDT+19ajLOrq+5Yl/GfOt2
+rt8Le/VP0yd4HDtn/2jCzF08s1/ZV++ZKXp28lF7mayurS3L39jLrV8TfOvw
+Lnv1/jVnrha/s5/Ha266+NAKaPh8gIcTAPT6yCQ=
+                  "]], 0.030239520958083826`], 
+                ArrowBox[
+                 BezierCurveBox[CompressedData["
+1:eJxTTMoPSmViYGCQAWIQDQEf7KEMBxh/+byN3dft/9vD+EkTjT6UZP+zZ4Ty
+9W406d5o+guX5yle5MzY9gfO/5UI0vAbwV/iD0II9TZ3Z8mL/YTzDdWtRBJO
+fIfz08DgG5y/GKz9C5z/2KIPiD7D3aOsBAKf4PKJ3NsSuLd9gPPtX062ezn5
+HZy/ZzcIvIbzLUHGPX4B54N0J3A/g/ONweAxnA8OnvwHcP45/u4pjctvw90j
+nnNQLOfgNbi8ZMUuU3udS3D+ivQ3j76ePw3nT7EDOfAwnP/g5bU/Gzx2wvn/
+tM508rGugPNhMQcApt6NHA==
+                  "]], 0.030239520958083826`], 
+                ArrowBox[{{1., 2.}, {2., 1.}}, 0.030239520958083826`], 
+                ArrowBox[{{2., 1.}, {1., 0.}}, 0.030239520958083826`], 
+                ArrowBox[{{2., 1.}, {2., 0.}}, 0.030239520958083826`]}, {
+                Hue[0.6, 0.2, 0.8], 
+                EdgeForm[{
+                  GrayLevel[0], 
+                  Opacity[0.7]}], 
+                DiskBox[{0., 3.}, 0.1], 
+                DiskBox[{1., 2.}, 0.1], 
+                
+                RectangleBox[{0.9117647, -0.08823530000000002}, {1.0882353, 
+                 0.08823530000000002}], 
+                DiskBox[{2., 1.}, 0.1], 
+                
+                RectangleBox[{1.9117647, -0.08823530000000002}, {2.0882353, 
+                 0.08823530000000002}]}}, FrameTicks -> None, GridLinesStyle -> 
+              Directive[
+                GrayLevel[0.5, 0.4]], Background -> GrayLevel[0.93], 
+              PlotRangePadding -> Scaled[0.1], FrameStyle -> Directive[
+                Thickness[Tiny], 
+                GrayLevel[0.7]], Axes -> False, AspectRatio -> 1, ImageSize -> 
+              Dynamic[{
+                Automatic, 
+                 3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                  Magnification])}], Frame -> True, FrameTicks -> None, 
+              FrameStyle -> Directive[
+                Opacity[0.5], 
+                Thickness[Tiny], 
+                RGBColor[0.368417, 0.506779, 0.709798]]], 
+             GridBox[{{
+                RowBox[{
+                  TagBox[
+                  "\"Number of variables: \"", "SummaryItemAnnotation"], 
+                  "\[InvisibleSpace]", 
+                  TagBox["3", "SummaryItem"]}]}, {
+                RowBox[{
+                  TagBox["\"Function index: \"", "SummaryItemAnnotation"], 
+                  "\[InvisibleSpace]", 
+                  TagBox["1", "SummaryItem"]}]}, {
+                RowBox[{
+                  TagBox[
+                  "\"Satisfiability count: \"", "SummaryItemAnnotation"], 
+                  "\[InvisibleSpace]", 
+                  TagBox["1", "SummaryItem"]}]}, {
+                RowBox[{
+                  TagBox["\"Number of nodes: \"", "SummaryItemAnnotation"], 
+                  "\[InvisibleSpace]", 
+                  TagBox["4", "SummaryItem"]}]}}, 
+              GridBoxAlignment -> {
+               "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+              False, GridBoxItemSize -> {
+               "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+              GridBoxSpacings -> {
+               "Columns" -> {{2}}, "Rows" -> {{Automatic}}}, 
+              BaseStyle -> {
+               ShowStringCharacters -> False, NumberMarks -> False, 
+                PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+           GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+           AutoDelete -> False, 
+           GridBoxItemSize -> {
+            "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+           BaselinePosition -> {1, 1}]}, 
+        Dynamic[Typeset`open$$], ImageSize -> Automatic]},
+      "SummaryPanel"],
+     DynamicModuleValues:>{}], "]"}],
+   BooleanFunction["BDD" -> {-3, 0, 1, 2, 1, 1, 3, 2, 1, -1}],
+   Editable->False,
+   SelectWithContents->True,
+   Selectable->False], "]"}]], "Output",
+ CellChangeTimes->{
+  3.873458711582876*^9, {3.8734587612402945`*^9, 3.8734587950913973`*^9}, 
+   3.873459048782916*^9, 3.873459184465894*^9},
+ CellLabel->"Out[35]=",
+ CellID->212331030,ExpressionUUID->"857d94d1-3367-411c-9320-3ba8a07d0c4b"]
+}, Open  ]],
+
+Cell["\<\
+The function will accept BooleanFunction if BooleanConvert is used and \
+variables are specified:\
+\>", "ExampleText",
+ CellChangeTimes->{{3.873460308302702*^9, 3.8734603350101147`*^9}},
+ CellID->355196368,ExpressionUUID->"fbd539b2-2807-4251-bf0d-3aee6c23dcd3"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"TruthTable", "[", 
+   RowBox[{"BooleanConvert", "[", 
+    RowBox[{
+     RowBox[{"BooleanFunction", "[", 
+      RowBox[{
+       RowBox[{"RandomInteger", "[", 
+        SuperscriptBox["2", 
+         RowBox[{"2", " ", "3"}]], "]"}], ",", "3"}], "]"}], "[", 
+     RowBox[{"b", ",", "c", ",", "d"}], "]"}], "]"}], "]"}], "//", 
+  "TraditionalForm"}]], "Input",
+ CellChangeTimes->{{3.8734586596160192`*^9, 3.8734586693679376`*^9}, {
+  3.8734587058017073`*^9, 3.8734587111614447`*^9}, {3.8734603361661043`*^9, 
+  3.8734603518916583`*^9}},
+ CellLabel->"In[12]:=",
+ CellID->7311661,ExpressionUUID->"b10ca2aa-5adb-4edb-b9f7-a0a660d86b7d"],
+
+Cell[BoxData[
+ FormBox[
+  TagBox[
+   TagBox[GridBox[{
+      {
+       TagBox["b",
+        HoldForm], 
+       TagBox["c",
+        HoldForm], 
+       TagBox["d",
+        HoldForm], 
+       TagBox[
+        RowBox[{"b", "\[And]", 
+         RowBox[{"\[Not]", "c"}], "\[And]", 
+         RowBox[{"\[Not]", "d"}]}],
+        HoldForm]},
+      {"True", "True", "True", "False"},
+      {"True", "True", "False", "False"},
+      {"True", "False", "True", "False"},
+      {"True", "False", "False", "True"},
+      {"False", "True", "True", "False"},
+      {"False", "True", "False", "False"},
+      {"False", "False", "True", "False"},
+      {"False", "False", "False", "False"}
+     },
+     GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+     GridBoxDividers->{
+      "Columns" -> {{False}}, "Rows" -> {False, True, {False}, False}},
+     GridBoxSpacings->{"Columns" -> {
+         Offset[0.27999999999999997`], {
+          Offset[2.0999999999999996`]}, 
+         Offset[0.27999999999999997`]}, "Rows" -> {
+         Offset[0.2], {
+          Offset[0.4]}, 
+         Offset[0.2]}}],
+    {None, OutputFormsDump`HeadedColumns}],
+   Function[BoxForm`e$, 
+    TableForm[
+    BoxForm`e$, 
+     TableHeadings -> {None, {$CellContext`b, $CellContext`c, $CellContext`d, 
+        And[$CellContext`b, 
+         Not[$CellContext`c], 
+         Not[$CellContext`d]]}}]]], TraditionalForm]], "Output",
+ CellChangeTimes->{{3.8734603424696035`*^9, 3.8734603523599663`*^9}},
+ CellLabel->"Out[12]//TraditionalForm=",
+ CellID->400155217,ExpressionUUID->"ddabf389-965f-4085-b828-43eac30b9621"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "Interactive Examples", "ExampleSection",ExpressionUUID->
+   "d5196b10-0686-42d9-a217-de52873ca877"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->574942629,ExpressionUUID->"79e3f0c5-8fb3-4cea-b584-92c650e9f88a"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "Neat Examples", "ExampleSection",ExpressionUUID->
+   "b760f4c5-5f8a-4e7c-93c7-65df6623c0f6"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->812235549,ExpressionUUID->"1cd0e725-46a1-46b2-bd3b-c7769efad9a8"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Metadata", "MetadataSection",
+ CellID->273631166,ExpressionUUID->"96f1cb93-fa42-4a0b-88d5-f0b3753fbd9e"],
+
+Cell[TextData[{
+ "New in: ",
+ Cell["XX", "HistoryData",
+  CellTags->"New",ExpressionUUID->"d32d4b7a-05e1-4e4f-b88c-51b35f3441cb"],
+ " | Modified in: ",
+ Cell[" ", "HistoryData",
+  CellTags->"Modified",ExpressionUUID->"be11c687-bc7a-43c8-88cb-25c0baa0ae54"],
+ " | Obsolete in: ",
+ Cell[" ", "HistoryData",
+  CellTags->"Obsolete",ExpressionUUID->"00eefc28-d9ff-404d-be1e-378de1cdbaea"]
+}], "History",
+ CellID->45377671,ExpressionUUID->"e30c52b0-8e5c-4a8e-b647-c6925031e281"],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Categorization",
+ Cell[BoxData[
+  TemplateBox[{"Metadata", 
+    Cell[
+     BoxData[
+      FrameBox[
+       Cell[
+       "Metadata such as page URI, context, and type of documentation page.", 
+        "MoreInfoText"], BaseStyle -> "IFrameBox"]], "MoreInfoTextOuter"]},
+   "MoreInfoOpenerButtonTemplate"]],ExpressionUUID->
+  "c07eedef-ec62-4d70-8730-b06f76e7562d"]
+}], "CategorizationSection",
+ CellID->96308659,ExpressionUUID->"8e08c05d-7d18-4101-921d-ff36a8858e91"],
+
+Cell["Symbol", "Categorization",
+ CellLabel->"Entity Type",
+ CellID->176571264,ExpressionUUID->"6a7b39e9-56ab-44c9-b802-797be530f028"],
+
+Cell["PeterBurbery/BooleanLogic", "Categorization",
+ CellLabel->"Paclet Name",
+ CellID->75508771,ExpressionUUID->"9d39dc3d-9660-406a-a797-c630295fe647"],
+
+Cell["PeterBurbery`BooleanLogic`", "Categorization",
+ CellLabel->"Context",
+ CellID->456618691,ExpressionUUID->"c63d9e58-4361-4d91-b8c2-8a72030ca775"],
+
+Cell["PeterBurbery/BooleanLogic/ref/TruthTable", "Categorization",
+ CellLabel->"URI",
+ CellID->120837681,ExpressionUUID->"98e1a3d7-e2db-4c57-a6b8-2ff674209b84"]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Keywords", "KeywordsSection",
+ CellID->48571955,ExpressionUUID->"3b3a9d80-2551-4b7b-b034-b52919a32dd8"],
+
+Cell["XXXX", "Keywords",
+ CellID->170553346,ExpressionUUID->"53cb3471-b8c1-45db-92c6-240f3e6ba538"]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Syntax Templates", "TemplatesSection",
+ CellID->728953778,ExpressionUUID->"a598564d-f7a2-4cae-a114-03b1be29e74b"],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Additional Function Template",
+ CellID->680969136,ExpressionUUID->"6f48ffe1-a211-4cc6-9279-1531e48b6bc9"],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Arguments Pattern",
+ CellID->145362209,ExpressionUUID->"7c4ff58e-1381-4588-a8a5-72adfe0e0c36"],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Local Variables",
+ CellID->63438354,ExpressionUUID->"fc936275-6253-4cc9-954b-658405762e09"],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Color Equal Signs",
+ CellID->219322015,ExpressionUUID->"f2cfa2e4-2edc-40ba-a8fb-7cbc6519dc91"]
+}, Closed]]
+}, Open  ]]
+},
+WindowSize->{1440., 741.75},
+WindowMargins->{{-6, Automatic}, {Automatic, -6}},
+TaggingRules-><|"Paclet" -> "PeterBurbery/BooleanLogic"|>,
+CellContext->"Global`",
+FrontEndVersion->"13.1 for Microsoft Windows (64-bit) (June 16, 2022)",
+StyleDefinitions->FrontEnd`FileName[{"Wolfram"}, "FunctionPageStylesExt.nb", 
+  CharacterEncoding -> "UTF-8"],
+ExpressionUUID->"4ee38a86-d5a3-4871-97e4-2366f2a8aeb2"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{
+ "ExtendedExamples"->{
+  Cell[22647, 651, 487, 13, 57, "ExtendedExamplesSection",ExpressionUUID->"71f8515d-06b5-49e7-bfb6-58a170a9759f",
+   CellTags->"ExtendedExamples",
+   CellID->149933707]}
+ }
+*)
+(*CellTagsIndex
+CellTagsIndex->{
+ {"ExtendedExamples", 90544, 2409}
+ }
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 107, 1, 74, "ObjectName",ExpressionUUID->"7a43324f-c171-42db-8673-52a994efbfbb",
+ CellID->144764723],
+Cell[690, 25, 2171, 54, 141, "Usage",ExpressionUUID->"de1c3260-3caa-4dd7-969b-64b62c44caa7",
+ CellID->178110090],
+Cell[2864, 81, 303, 5, 45, "Notes",ExpressionUUID->"eb1857bf-1e7b-4460-9565-9466dc47449c",
+ CellID->297577997]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3204, 91, 435, 12, 46, "TechNotesSection",ExpressionUUID->"92293d7a-aa54-4fa1-9cae-6e5a6a96be3c",
+ CellID->145109707],
+Cell[3642, 105, 99, 1, 19, "Tutorials",ExpressionUUID->"6dc30f6b-1e03-49fa-b9a9-2431300f4e28",
+ CellID->99268639]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3778, 111, 471, 13, 33, "RelatedLinksSection",ExpressionUUID->"62af51c4-b30f-4007-93c3-83bbdc267c51",
+ CellID->68990619],
+Cell[4252, 126, 103, 1, 19, "RelatedLinks",ExpressionUUID->"8b520723-7562-4c47-8963-a83e7bebdfd0",
+ CellID->136318113]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4392, 132, 586, 15, 33, "SeeAlsoSection",ExpressionUUID->"42dfcfaa-8ebe-46ae-939e-db5423112618",
+ CellID->482038244],
+Cell[4981, 149, 97, 1, 19, "SeeAlso",ExpressionUUID->"7a40d7ea-fb09-4b93-bbe4-a1336a92baba",
+ CellID->21769204]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5115, 155, 183, 2, 33, "MoreAboutSection",ExpressionUUID->"dc3533d5-177e-430a-bb2c-840174d7bb54",
+ CellID->224909552],
+Cell[5301, 159, 99, 1, 19, "MoreAbout",ExpressionUUID->"c3d9e039-6975-41a4-ae90-e32683eb77f8",
+ CellID->59768127]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5437, 165, 530, 14, 69, "ExamplesInitializationSection",ExpressionUUID->"bef499cd-906d-4611-a22e-2378243b8295",
+ CellID->518116443],
+Cell[5970, 181, 184, 3, 45, "ExampleInitialization",ExpressionUUID->"9fcaedde-0354-4dde-8e9a-dc53c6cf670d",
+ CellID->90506604]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6191, 189, 442, 12, 71, "PrimaryExamplesSection",ExpressionUUID->"67b5cfd8-7be7-4e6e-b91d-63e021220935",
+ CellID->734315766],
+Cell[6636, 203, 201, 2, 24, "ExampleText",ExpressionUUID->"c785e450-c161-4945-b292-da11f141eab5",
+ CellID->112050044],
+Cell[CellGroupData[{
+Cell[6862, 209, 263, 5, 25, "Input",ExpressionUUID->"833dd2f2-63e9-4ed1-86fa-74be4717f0dd",
+ CellID->578044126],
+Cell[7128, 216, 1257, 36, 91, "Output",ExpressionUUID->"a10203f7-b880-48f4-a1c0-68373c4988c8",
+ CellID->280333979]
+}, Open  ]],
+Cell[8400, 255, 212, 2, 24, "ExampleText",ExpressionUUID->"b08ae150-b4c4-4b1c-a192-b1ffd66987ba",
+ CellID->228452895],
+Cell[CellGroupData[{
+Cell[8637, 261, 430, 10, 25, "Input",ExpressionUUID->"dd6729d9-4b87-4cde-b89c-76c6c719608b",
+ CellID->210029075],
+Cell[9070, 273, 1115, 34, 88, "Output",ExpressionUUID->"da54a921-2025-4923-ae36-e96c2a0a3e96",
+ CellID->257550350]
+}, Open  ]],
+Cell[10200, 310, 201, 2, 24, "ExampleText",ExpressionUUID->"c14712c6-dfe1-4910-989e-e97996a06c2a",
+ CellID->143676706],
+Cell[CellGroupData[{
+Cell[10426, 316, 499, 11, 25, "Input",ExpressionUUID->"56984b44-be17-41ed-ba01-d0537d53e623",
+ CellID->563116457],
+Cell[10928, 329, 1182, 33, 88, "Output",ExpressionUUID->"0ca0890e-2c72-4b42-a283-c49e52c7672a",
+ CellID->505081]
+}, Open  ]],
+Cell[12125, 365, 210, 2, 24, "ExampleText",ExpressionUUID->"3e2376ee-5324-4879-9345-0ce069335161",
+ CellID->495459581],
+Cell[CellGroupData[{
+Cell[12360, 371, 349, 7, 25, "Input",ExpressionUUID->"bc43ee4d-41f4-4ae8-900e-1526b3e49201",
+ CellID->355327723],
+Cell[12712, 380, 1532, 44, 158, "Output",ExpressionUUID->"4091c7cf-c315-4b8f-9b1b-57f3689439fe",
+ CellID->75981939]
+}, Open  ]],
+Cell[14259, 427, 301, 4, 24, "ExampleText",ExpressionUUID->"11e0b4fb-f784-4cd0-b836-75f176134907",
+ CellID->203724094],
+Cell[CellGroupData[{
+Cell[14585, 435, 622, 16, 47, "Input",ExpressionUUID->"4ed6108b-336b-4000-9c2a-64276a62ed55",
+ CellID->256732535],
+Cell[15210, 453, 2218, 60, 159, "Output",ExpressionUUID->"7887ea88-0655-419f-89e2-21b72807d6bf",
+ CellID->272569618]
+}, Open  ]],
+Cell[17443, 516, 222, 2, 24, "ExampleText",ExpressionUUID->"53840bb1-b3f9-4887-9e28-4e30964511f9",
+ CellID->114214813],
+Cell[CellGroupData[{
+Cell[17690, 522, 693, 17, 66, "Input",ExpressionUUID->"edd614a0-331f-4ecd-8fca-93c0bcea6099",
+ CellID->386844864],
+Cell[18386, 541, 4212, 104, 562, "Output",ExpressionUUID->"d48193a2-6c9e-4ef9-9b28-4d0e7037ba75",
+ CellID->136574836]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[22647, 651, 487, 13, 57, "ExtendedExamplesSection",ExpressionUUID->"71f8515d-06b5-49e7-bfb6-58a170a9759f",
+ CellTags->"ExtendedExamples",
+ CellID->149933707],
+Cell[23137, 666, 240, 5, 35, "ExampleSection",ExpressionUUID->"d97353b9-2727-4a6e-a84a-b8e9c6cd46fb",
+ CellID->74519885],
+Cell[23380, 673, 264, 5, 23, "ExampleSection",ExpressionUUID->"c304160b-e624-4cf5-8388-96c672cde80f",
+ CellID->127098648],
+Cell[CellGroupData[{
+Cell[23669, 682, 243, 5, 23, "ExampleSection",ExpressionUUID->"ba1b8420-8adf-461f-9e3d-4a5aa0f52127",
+ CellID->533863472],
+Cell[23915, 689, 246, 5, 26, "ExampleSubsection",ExpressionUUID->"6a3863e3-5225-4bdf-b773-96c2d58428ed",
+ CellID->867973012],
+Cell[24164, 696, 246, 5, 22, "ExampleSubsection",ExpressionUUID->"c18e83ee-2cf8-4ec7-8b3a-381ab5bdf7d8",
+ CellID->643136613]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[24447, 706, 247, 5, 35, "ExampleSection",ExpressionUUID->"59b84446-a5c6-4f45-991f-3af42fe0f232",
+ CellID->38381072],
+Cell[24697, 713, 220, 2, 24, "ExampleText",ExpressionUUID->"fef005a5-288f-4471-889d-9a5f084e1af6",
+ CellID->112969613],
+Cell[CellGroupData[{
+Cell[24942, 719, 570, 15, 43, "Input",ExpressionUUID->"c5aca71f-29f3-4108-8be5-b18c7635e0ca",
+ CellID->150086004],
+Cell[25515, 736, 8460, 248, 290, "Output",ExpressionUUID->"bfd1da8c-de47-4159-8aed-89c9abc423be",
+ CellID->328846185]
+}, Open  ]],
+Cell[33990, 987, 263, 5, 24, "ExampleText",ExpressionUUID->"6bd7836f-e479-4eed-9456-a756da92e32f",
+ CellID->304344906],
+Cell[CellGroupData[{
+Cell[34278, 996, 343, 8, 25, "Input",ExpressionUUID->"8856480a-1950-4b47-8dfd-d258e4de3688",
+ CellID->702791416],
+Cell[34624, 1006, 1551, 44, 158, "Output",ExpressionUUID->"044e8def-6a7b-474a-a42a-d66bd9c20ebe",
+ CellID->134085703]
+}, Open  ]],
+Cell[36190, 1053, 196, 2, 24, "ExampleText",ExpressionUUID->"bef2acb1-2e98-4ded-b674-e03b2fca622c",
+ CellID->68507844],
+Cell[CellGroupData[{
+Cell[36411, 1059, 557, 14, 47, "Input",ExpressionUUID->"66c2832d-7afd-4d42-b71b-4d2058cd9076",
+ CellID->189094626],
+Cell[36971, 1075, 1308, 39, 92, "Output",ExpressionUUID->"76535338-cb0d-42d7-96ff-ac5c8250d599",
+ CellID->293137741]
+}, Open  ]],
+Cell[38294, 1117, 178, 2, 24, "ExampleText",ExpressionUUID->"c4a74172-9fa5-4c47-923f-ade970f6df4e",
+ CellID->26425039],
+Cell[CellGroupData[{
+Cell[38497, 1123, 567, 14, 66, "Input",ExpressionUUID->"633aea25-8401-4e40-add5-9a5e0abc2c05",
+ CellID->171550856],
+Cell[39067, 1139, 2511, 69, 293, "Output",ExpressionUUID->"1663d83d-5eb3-4d54-9495-bd1a3d237019",
+ CellID->42764037]
+}, Open  ]],
+Cell[41593, 1211, 178, 2, 24, "ExampleText",ExpressionUUID->"372d31f3-26e6-424d-befc-59bbc0f85aff",
+ CellID->100942728],
+Cell[CellGroupData[{
+Cell[41796, 1217, 576, 14, 66, "Input",ExpressionUUID->"c95363a3-9b0e-4dc0-a264-a1522aab135b",
+ CellID->905441053],
+Cell[42375, 1233, 4116, 100, 562, "Output",ExpressionUUID->"bf937d99-9c34-4922-8b87-ded53fd575eb",
+ CellID->20622498]
+}, Open  ]],
+Cell[46506, 1336, 172, 2, 24, "ExampleText",ExpressionUUID->"c4f32518-03a7-4d18-a09c-d4b379d4a9bf",
+ CellID->17498666],
+Cell[CellGroupData[{
+Cell[46703, 1342, 587, 14, 66, "Input",ExpressionUUID->"0d91b363-1e2d-460c-8a6c-392196d64f11",
+ CellID->257982320],
+Cell[47293, 1358, 6807, 138, 1100, "Output",ExpressionUUID->"913706b4-9156-4049-ad98-710a70f56ba5",
+ CellID->365554906]
+}, Open  ]],
+Cell[54115, 1499, 238, 4, 24, "ExampleText",ExpressionUUID->"f6ed6c0f-3056-4f39-b14d-07b65ffb48ea",
+ CellID->687383736],
+Cell[CellGroupData[{
+Cell[54378, 1507, 784, 20, 68, "Input",ExpressionUUID->"a2e0a337-7990-43b6-9124-5efa62c71abd",
+ CellID->13526235],
+Cell[55165, 1529, 8954, 203, 1036, "Output",ExpressionUUID->"63f9159c-5030-4daf-8a42-7e5b0b9227b7",
+ CellID->443231525]
+}, Open  ]],
+Cell[64134, 1735, 212, 2, 24, "ExampleText",ExpressionUUID->"9cec031f-daa4-4527-86fa-5486a0b1ec32",
+ CellID->153004559],
+Cell[CellGroupData[{
+Cell[64371, 1741, 775, 20, 68, "Input",ExpressionUUID->"7de348fc-8cf8-4ad4-817f-b47ec1821dbb",
+ CellID->607691360],
+Cell[65149, 1763, 4610, 123, 159, "Output",ExpressionUUID->"f4946407-77d2-4375-8946-076c902be220",
+ CellID->280396371]
+}, Open  ]],
+Cell[69774, 1889, 200, 2, 24, "ExampleText",ExpressionUUID->"f473ba71-b806-4418-992d-abf5adbdb766",
+ CellID->944166931],
+Cell[CellGroupData[{
+Cell[69999, 1895, 786, 20, 68, "Input",ExpressionUUID->"fdf2b24a-0187-4bb6-bf33-bcfe9c54fa48",
+ CellID->140236611],
+Cell[70788, 1917, 1960, 53, 151, "Output",ExpressionUUID->"022e7a7d-2a40-4033-9fb7-c3ba61f8bca8",
+ CellID->744059565]
+}, Open  ]]
+}, Open  ]],
+Cell[72775, 1974, 258, 5, 35, "ExampleSection",ExpressionUUID->"0d73c7f1-41d7-445d-bd5f-b5185564790b",
+ CellID->901407269],
+Cell[CellGroupData[{
+Cell[73058, 1983, 250, 5, 23, "ExampleSection",ExpressionUUID->"51b0c30a-3154-4835-b883-a985aaa433c4",
+ CellID->15500579],
+Cell[73311, 1990, 217, 2, 24, "ExampleText",ExpressionUUID->"6cc5ff87-c84f-478c-9aea-b6b1f31f224d",
+ CellID->22321087],
+Cell[CellGroupData[{
+Cell[73553, 1996, 350, 7, 25, "Input",ExpressionUUID->"29921cd3-b95f-442b-bfab-a4e9ede0fbf4",
+ CellID->27307812],
+Cell[73906, 2005, 10289, 212, 55, "Output",ExpressionUUID->"857d94d1-3367-411c-9320-3ba8a07d0c4b",
+ CellID->212331030]
+}, Open  ]],
+Cell[84210, 2220, 271, 5, 24, "ExampleText",ExpressionUUID->"fbd539b2-2807-4251-bf0d-3aee6c23dcd3",
+ CellID->355196368],
+Cell[CellGroupData[{
+Cell[84506, 2229, 662, 16, 47, "Input",ExpressionUUID->"b10ca2aa-5adb-4edb-b9f7-a0a660d86b7d",
+ CellID->7311661],
+Cell[85171, 2247, 1577, 45, 159, "Output",ExpressionUUID->"ddabf389-965f-4085-b828-43eac30b9621",
+ CellID->400155217]
+}, Open  ]]
+}, Open  ]],
+Cell[86775, 2296, 256, 5, 35, "ExampleSection",ExpressionUUID->"79e3f0c5-8fb3-4cea-b584-92c650e9f88a",
+ CellID->574942629],
+Cell[87034, 2303, 249, 5, 23, "ExampleSection",ExpressionUUID->"1cd0e725-46a1-46b2-bd3b-c7769efad9a8",
+ CellID->812235549]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[87320, 2313, 110, 1, 62, "MetadataSection",ExpressionUUID->"96f1cb93-fa42-4a0b-88d5-f0b3753fbd9e",
+ CellID->273631166],
+Cell[87433, 2316, 472, 11, 26, "History",ExpressionUUID->"e30c52b0-8e5c-4a8e-b647-c6925031e281",
+ CellID->45377671],
+Cell[CellGroupData[{
+Cell[87930, 2331, 483, 13, 31, "CategorizationSection",ExpressionUUID->"8e08c05d-7d18-4101-921d-ff36a8858e91",
+ CellID->96308659],
+Cell[88416, 2346, 134, 2, 35, "Categorization",ExpressionUUID->"6a7b39e9-56ab-44c9-b802-797be530f028",
+ CellID->176571264],
+Cell[88553, 2350, 152, 2, 35, "Categorization",ExpressionUUID->"9d39dc3d-9660-406a-a797-c630295fe647",
+ CellID->75508771],
+Cell[88708, 2354, 150, 2, 35, "Categorization",ExpressionUUID->"c63d9e58-4361-4d91-b8c2-8a72030ca775",
+ CellID->456618691],
+Cell[88861, 2358, 160, 2, 35, "Categorization",ExpressionUUID->"98e1a3d7-e2db-4c57-a6b8-2ff674209b84",
+ CellID->120837681]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[89058, 2365, 109, 1, 21, "KeywordsSection",ExpressionUUID->"3b3a9d80-2551-4b7b-b034-b52919a32dd8",
+ CellID->48571955],
+Cell[89170, 2368, 99, 1, 70, "Keywords",ExpressionUUID->"53cb3471-b8c1-45db-92c6-240f3e6ba538",
+ CellID->170553346]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[89306, 2374, 119, 1, 21, "TemplatesSection",ExpressionUUID->"a598564d-f7a2-4cae-a114-03b1be29e74b",
+ CellID->728953778],
+Cell[89428, 2377, 148, 2, 70, "Template",ExpressionUUID->"6f48ffe1-a211-4cc6-9279-1531e48b6bc9",
+ CellID->680969136],
+Cell[89579, 2381, 137, 2, 70, "Template",ExpressionUUID->"7c4ff58e-1381-4588-a8a5-72adfe0e0c36",
+ CellID->145362209],
+Cell[89719, 2385, 134, 2, 70, "Template",ExpressionUUID->"fc936275-6253-4cc9-954b-658405762e09",
+ CellID->63438354],
+Cell[89856, 2389, 137, 2, 70, "Template",ExpressionUUID->"f2cfa2e4-2edc-40ba-a8fb-7cbc6519dc91",
+ CellID->219322015]
+}, Closed]]
+}, Open  ]]
+}
+]
+*)
+
