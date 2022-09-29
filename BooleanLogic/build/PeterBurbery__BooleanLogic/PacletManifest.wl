@@ -11,7 +11,7 @@
             ,
             "Hash"
             ->
-            "50eb58d25762c7e89bf7edcfc08f2ead02bb7d555b98637aee2395e8652b04c2"
+            "d08f65608c8f488d4fbd2c8317608f287a469b8b24e8ff2f8444a3e4e73018e6"
                 
         |>
         ,
@@ -24,7 +24,21 @@
             ,
             "Hash"
             ->
-            "edc950b00677f7acefc359ad8904192200dcbbfbf490a3761c7dbcaf34cbb8f4"
+            "67de9c4fe8a21a2b4bce71a969b77d5f519a43743152e89d0022c9ee3765604a"
+                
+        |>
+        ,
+        <|
+            "File"
+            ->
+            File[
+                "Documentation\\English\\ReferencePages\\Symbols\\BooleanCompose.nb"
+                    
+            ]
+            ,
+            "Hash"
+            ->
+            "eb1b70a7a25d7ad81beff585e47af81865f0114d22b98c05d5ba777f5b73a6c6"
                 
         |>
         ,
@@ -38,7 +52,7 @@
             ,
             "Hash"
             ->
-            "5f97c083a18610ce668f149e9b8da96eb50f26689375ad2f8fbbc80d69570f21"
+            "8e55640ffff666b5aa97440e50d4ba07545e92d9fa2a893e2080c9ca2fa38c05"
                 
         |>
         ,
@@ -52,7 +66,7 @@
             ,
             "Hash"
             ->
-            "7df81aeb24bb5b4182544607c0c50cb02896009c41b2bb1004eafa1c47a36d4e"
+            "d0b6c2e3fec37e7b54fad6d5bbc65106556bd6beb682c758b44272d58b1fe054"
                 
         |>
         ,
@@ -66,7 +80,21 @@
             ,
             "Hash"
             ->
-            "fb73f1ab909bdc50eca51cfad8223218c122aa31e758a9f40bbfe954405d7c29"
+            "51f849cb65194a6737d869987c2fe7845d711586e3c6a06200d7fe65cae2ad4e"
+                
+        |>
+        ,
+        <|
+            "File"
+            ->
+            File[
+                "Documentation\\English\\ReferencePages\\Symbols\\TruthTable.nb"
+                    
+            ]
+            ,
+            "Hash"
+            ->
+            "327915f57f101c67a9093ea6bc7ef9d3ed32e02cb38cfec36310fa284ed15aff"
                 
         |>
         ,
@@ -80,7 +108,7 @@
             ,
             "Hash"
             ->
-            "fee3cca03e6a913a85527a8ad08084a48f0ff40212a583d4b5542212cd505c35"
+            "97b1c23bc90134c1f4e2a4dc6906dfbb69b66c39e64aedf753548ab313c54ad6"
                 
         |>
     }

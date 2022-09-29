@@ -3,11 +3,11 @@
 PacletObject[
   <|
     "Name" -> "PeterBurbery/BooleanLogic",
-    "Description" -> "Boolean logic",
+    "Description" -> "Work with logical functions and boolean values",
     "Creator" -> "Peter Cullen Burbery",
     "License" -> "MIT",
     "PublisherID" -> "PeterBurbery",
-    "Version" -> "1.16.0",
+    "Version" -> "1.18.0",
     "WolframVersion" -> "13.1+",
     "Extensions" -> {
       {
@@ -20,9 +20,11 @@ PacletObject[
           }
         },
         "Symbols" -> {
+          "PeterBurbery`BooleanLogic`BooleanCompose",
           "PeterBurbery`BooleanLogic`BooleanStructureData",
           "PeterBurbery`BooleanLogic`BooleanTruthInputData",
           "PeterBurbery`BooleanLogic`FindBooleanAlternative",
+          "PeterBurbery`BooleanLogic`TruthTable",
           "PeterBurbery`BooleanLogic`VennDiagram"
         }
       },

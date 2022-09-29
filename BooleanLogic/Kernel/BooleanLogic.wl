@@ -10,7 +10,6 @@ BooleanTruthInputData;
 VennDiagram;
 TruthTable;
 BooleanCompose;
-
 Begin["`Private`"];
 
 
