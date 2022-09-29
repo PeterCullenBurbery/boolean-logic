@@ -1,0 +1,781 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     30475,        771]
+NotebookOptionsPosition[     26706,        690]
+NotebookOutlinePosition[     28897,        745]
+CellTagsIndexPosition[     28812,        740]
+WindowTitle->AllMinimalBooleanForms
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[GridBox[{
+   {GridBox[{
+      {
+       ItemBox[Cell[BoxData[
+         RowBox[{
+          TemplateBox[{12},
+           "Spacer1"], Cell[
+          "PETER BURBERY/ BOOLEAN LOGIC SYMBOL", "PacletNameCell",
+           TextAlignment->Center,ExpressionUUID->
+           "45f04811-9b93-41e5-b8c7-ec009a6a9bfc"], 
+          TemplateBox[{8},
+           "Spacer1"]}]],
+         TextAlignment->Center,ExpressionUUID->
+         "85a57cb6-26ff-4d6c-b98d-258ed32321c7"],
+        Background->RGBColor[0.490196, 0.576471, 0.690196],
+        ItemSize->Full], ""}
+     },
+     GridBoxAlignment->{"Rows" -> {{Center}}},
+     GridBoxItemSize->{"Columns" -> {Full, 
+         Scaled[0.02]}, "Rows" -> {{2.5}}}], Cell[TextData[{
+     Cell[BoxData[
+      TagBox[
+       ActionMenuBox[
+        FrameBox[Cell[TextData[{
+          "Related Guides",
+          " ",
+          Cell[BoxData[
+           GraphicsBox[
+            {GrayLevel[0.66667], Thickness[0.13], 
+             LineBox[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]},
+            AspectRatio->1,
+            ImageSize->20,
+            PlotRange->{{-3, 4}, {-1, 1}}]],ExpressionUUID->
+           "c2865719-d356-40ed-a4eb-3dd2a787a31f"]
+         }],ExpressionUUID->"4ad60b95-2368-4de4-89d5-703a858e733e"],
+         StripOnInput->False], {"\<\"Logic\"\>":>Documentation`HelpLookup[
+        "paclet:PeterBurbery/BooleanLogic/guide/Logic"]},
+        Appearance->None,
+        MenuAppearance->Automatic,
+        MenuStyle->"MoreAbout"],
+       MouseAppearanceTag["LinkHand"]]],
+      LineSpacing->{1.4, 0},ExpressionUUID->
+      "48e04fe7-8fba-4680-9cfe-6f0b37c46e5b"],
+     "\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\
+\[ThickSpace]",
+     Cell[BoxData[
+      TagBox[
+       ActionMenuBox[
+        FrameBox[Cell[TextData[{
+          "URL",
+          " ",
+          Cell[BoxData[
+           GraphicsBox[
+            {GrayLevel[0.66667], Thickness[0.13], 
+             LineBox[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]},
+            AspectRatio->1,
+            ImageSize->20,
+            PlotRange->{{-3, 4}, {-1, 1}}]],ExpressionUUID->
+           "8321b7f2-8afe-4eca-9efe-f2325fea0a73"]
+         }],ExpressionUUID->"56643272-3768-4451-8095-d28163b85704"],
+         StripOnInput->
+          False], {"\<\"PeterBurbery/BooleanLogic/ref/AllMinimalBooleanForms\"\
+\>":>None, "\<\"Copy Wolfram Documentation Center URL\"\>":>
+        Module[{DocumentationSearch`Private`nb$}, 
+         DocumentationSearch`Private`nb$ = NotebookPut[
+            Notebook[{
+              Cell["PeterBurbery/BooleanLogic/ref/AllMinimalBooleanForms"]}, 
+             Visible -> False]]; 
+         SelectionMove[DocumentationSearch`Private`nb$, All, Notebook]; 
+         FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
+         NotebookClose[DocumentationSearch`Private`nb$]; Null], 
+        Delimiter, "\<\"Copy web URL\"\>":>
+        Module[{DocumentationSearch`Private`nb$}, 
+         DocumentationSearch`Private`nb$ = NotebookPut[
+            Notebook[{
+              Cell[
+               BoxData[
+                MakeBoxes[
+                 Hyperlink[
+                 "http://reference.wolfram.com/language/PeterBurbery/\
+BooleanLogic/ref/AllMinimalBooleanForms.html"], StandardForm]], "Input", 
+               TextClipboardType -> "PlainText"]}, Visible -> False]]; 
+         SelectionMove[DocumentationSearch`Private`nb$, All, Notebook]; 
+         FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
+         NotebookClose[DocumentationSearch`Private`nb$]; 
+         Null], "\<\"Go to web URL\"\>":>FrontEndExecute[{
+          NotebookLocate[{
+            URL[If[
+               TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$74902], 
+               "http://reference.wolfram.com/system-modeler/", 
+               "http://reference.wolfram.com/language/"] <> 
+             "PeterBurbery/BooleanLogic/ref/AllMinimalBooleanForms" <> 
+             ".html"], None}]}]},
+        Appearance->None,
+        MenuAppearance->Automatic,
+        MenuStyle->"URLMenu"],
+       MouseAppearanceTag["LinkHand"]]],
+      LineSpacing->{1.4, 0},ExpressionUUID->
+      "b31445cb-100e-42d2-a3dd-c18d1a777f2a"]
+    }], "AnchorBar",
+     CacheGraphics->False,ExpressionUUID->
+     "baafb313-bc37-4fc3-a6a9-bb6de41e05ff"]}
+  }]], "AnchorBarGrid",
+ GridBoxOptions->{GridBoxItemSize->{"Columns" -> {
+     Scaled[0.65], {
+      Scaled[0.34]}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+   "RowsIndexed" -> {}}},
+ CellID->1,ExpressionUUID->"f887013f-e0a0-46fe-aca2-cca660457367"],
+
+Cell["PeterBurbery`BooleanLogic`", "ContextNameCell",ExpressionUUID->"6cb33cc6-e6a3-43eb-aaa3-be80202c5147"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[GridBox[{
+   {Cell[TextData[{
+     Cell[
+     "AllMinimalBooleanForms", "ObjectName",ExpressionUUID->
+      "1a36fe84-553f-4972-a2e2-65dfdfa42f34"],
+     Cell[BoxData[
+      TemplateBox[{8},
+       "Spacer1"]],ExpressionUUID->"a331040e-a8c6-4237-b16e-9859edbd5a8d"],
+     Cell[BoxData[
+     ""], "ObjectNameTranslation",ExpressionUUID->
+      "7000c672-d10e-439d-9fc4-bbfba44fbac2"]
+    }],ExpressionUUID->"5c00d8f5-fa70-4a6e-9f5b-138a7827676b"], 
+    "\[SpanFromLeft]"}
+  }]], "ObjectNameGrid",ExpressionUUID->"567b4894-fae3-44da-ae52-\
+ca3e092ed2df"],
+
+Cell[BoxData[GridBox[{
+   {"", Cell[TextData[{
+     Cell[BoxData[
+      RowBox[{
+       TemplateBox[{
+         Cell[
+          TextData["AllMinimalBooleanForms"]], 
+         "paclet:PeterBurberyBooleanLogic/ref/AllMinimalBooleanForms", 
+         "PeterBurberyBooleanLogic Package Symbol"},
+        "PackageLink",
+        BaseStyle->"InlineFormula"], "[", 
+       StyleBox["func", "TI"], "]"}]], "InlineFormula",
+      FontFamily->"Source Sans Pro",ExpressionUUID->
+      "63943301-3d04-4f66-836f-5851447f7b23"],
+     "\[LineSeparator]finds all minimal forms of the boolean function ",
+     Cell[BoxData[
+      StyleBox["func", "TI"]], "InlineFormula",
+      FontFamily->"Source Sans Pro",ExpressionUUID->
+      "8f6e465e-3eb6-473e-9ee2-b5af3bd4e107"]
+    }],ExpressionUUID->"4d02e05f-eba0-43c6-8423-4f21e7415cc4"]}
+  }]], "Usage",
+ CellID->1956783,ExpressionUUID->"28b9dade-6713-4ee0-a619-7a439dc4052e"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ Cell[BoxData[
+  DynamicBox[ToBoxes[
+    If[
+     MatchQ[
+      CurrentValue[
+       EvaluationNotebook[], {
+       TaggingRules, "Openers", "PrimaryExamplesSection"}, Open], 
+      Alternatives[True, Open]], 
+     Style[
+      Graphics[{
+        Thickness[0.18], 
+        RGBColor[0.8509803921568627, 0.396078431372549, 0], 
+        Line[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]}, AspectRatio -> 1, 
+       PlotRange -> {{-3, 4}, {-1, 1}}, ImageSize -> 20], Magnification -> 
+      0.68 Inherited], 
+     Rotate[
+      Style[
+       Graphics[{
+         Thickness[0.18], 
+         RGBColor[0.8509803921568627, 0.396078431372549, 0], 
+         Line[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]}, AspectRatio -> 1, 
+        PlotRange -> {{-3, 4}, {-1, 1}}, ImageSize -> 20], Magnification -> 
+       0.68 Inherited], Rational[1, 2] Pi, {-1.65, -1}]]],
+   ImageSizeCache->{13.600000000000001`, {5., 8.600000000000001}}]],
+  ExpressionUUID->"8499aea1-b7af-420c-905c-a1e8f0508e6e"],
+ Cell[BoxData[
+  TemplateBox[{1},
+   "Spacer1"]],ExpressionUUID->"163708e5-cfb6-4004-bc21-fdee6e8c1ab3"],
+ "Examples",
+ "\[NonBreakingSpace]\[NonBreakingSpace]",
+ Cell["(1)", "ExampleCount",ExpressionUUID->
+  "49b2f322-67f3-4a0b-aab9-2f9c6b76d0b5"]
+}], "PrimaryExamplesSection",
+ WholeCellGroupOpener->True,
+ CacheGraphics->False,
+ CellTags->"PrimaryExamplesSection",
+ CellID->59956633,ExpressionUUID->"34d2e361-d5a7-48c5-bd41-2f40a41dad28"],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<PeterBurbery`BooleanLogic`\>\"", "]"}]], "Input", \
+"ExampleInitialization",
+ CellLabel->"In[1]:=",
+ CellID->4160386,ExpressionUUID->"ff28c423-a1ef-4382-b3a3-cc35eb3dd57c"],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ Cell[BoxData[
+  DynamicBox[ToBoxes[
+    If[
+     MatchQ[
+      CurrentValue[
+       EvaluationNotebook[], {TaggingRules, "Openers", "ExampleSection", "0"},
+        Closed], 
+      Alternatives[Open, True]], 
+     Style[
+      Graphics[{
+        Thickness[0.18], 
+        RGBColor[0.8509803921568627, 0.396078431372549, 0], 
+        Line[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]}, AspectRatio -> 1, 
+       PlotRange -> {{-3, 4}, {-1, 1}}, ImageSize -> 20], Magnification -> 
+      0.68 Inherited], 
+     Rotate[
+      Style[
+       Graphics[{
+         Thickness[0.18], 
+         RGBColor[0.8509803921568627, 0.396078431372549, 0], 
+         Line[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]}, AspectRatio -> 1, 
+        PlotRange -> {{-3, 4}, {-1, 1}}, ImageSize -> 20], Magnification -> 
+       0.68 Inherited], Rational[1, 2] Pi, {-1.65, -1}]]],
+   ImageSizeCache->{13.600000000000001`, {5., 8.600000000000001}}]],
+  ExpressionUUID->"f96f4d47-c271-4432-9973-c9315620ae88"],
+ Cell[BoxData[
+  TemplateBox[{1},
+   "Spacer1"]],ExpressionUUID->"5436b3ae-33a7-4b80-8372-8523905572c2"],
+ "Basic Examples",
+ "\[NonBreakingSpace]\[NonBreakingSpace]",
+ Cell["(1)", "ExampleCount",ExpressionUUID->
+  "290025e6-e5ef-4f2f-877d-57a3a33700a0"]
+}], "ExampleSection", "ExampleSection",
+ WholeCellGroupOpener->True,
+ CacheGraphics->False,
+ CellID->740350087,ExpressionUUID->"e958848c-2c6f-4d90-b6b8-74d69a3f316d"],
+
+Cell["\<\
+Find all boolean minimal forms of a random boolean function with 7 inputs:\
+\>", "ExampleText",
+ CellID->407978499,ExpressionUUID->"a343bf8d-da86-445c-91e2-3a2abbd0a0f4"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"AllMinimalBooleanForms", "[", 
+   RowBox[{"RandomBooleanFunction", "[", "7", "]"}], "]"}], "//", 
+  "TraditionalForm"}]], "Input",
+ CellProlog:>Needs["PeterBurbery`BooleanLogic`"],
+ CellLabel->"In[1]:=",
+ CellID->188461030,ExpressionUUID->"c06914c6-c046-4ebe-95c4-08b2b8e34243"],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"\[LeftAssociation]", 
+   RowBox[{
+    RowBox[{"\<\"DNF\"\>", "\[Rule]", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"\[Not]", "#1"}], "\[And]", 
+          RowBox[{"\[Not]", "#2"}], "\[And]", 
+          RowBox[{"\[Not]", "#3"}], "\[And]", 
+          RowBox[{"\[Not]", "#4"}], "\[And]", 
+          RowBox[{"\[Not]", "#5"}], "\[And]", "#7"}], ")"}], "\[Or]", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"\[Not]", "#1"}], "\[And]", 
+          RowBox[{"\[Not]", "#2"}], "\[And]", 
+          RowBox[{"\[Not]", "#3"}], "\[And]", "#5", "\[And]", 
+          RowBox[{"\[Not]", "#6"}]}], ")"}], "\[Or]", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"\[Not]", "#1"}], "\[And]", 
+          RowBox[{"\[Not]", "#2"}], "\[And]", 
+          RowBox[{"\[Not]", "#3"}], "\[And]", 
+          RowBox[{"\[Not]", "#5"}], "\[And]", "#6", "\[And]", "#7"}], ")"}], 
+        "\[Or]", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"\[Not]", "#1"}], "\[And]", 
+          RowBox[{"\[Not]", "#2"}], "\[And]", 
+          RowBox[{"\[Not]", "#3"}], "\[And]", 
+          RowBox[{"\[Not]", "#6"}], "\[And]", 
+          RowBox[{"\[Not]", "#7"}]}], ")"}]}], "&"}], ")"}]}], ",", 
+    RowBox[{"\<\"SOP\"\>", "\[Rule]", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"\[Not]", "#1"}], "\[And]", 
+          RowBox[{"\[Not]", "#2"}], "\[And]", 
+          RowBox[{"\[Not]", "#3"}], "\[And]", 
+          RowBox[{"\[Not]", "#4"}], "\[And]", 
+          RowBox[{"\[Not]", "#5"}], "\[And]", "#7"}], ")"}], "\[Or]", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"\[Not]", "#1"}], "\[And]", 
+          RowBox[{"\[Not]", "#2"}], "\[And]", 
+          RowBox[{"\[Not]", "#3"}], "\[And]", "#5", "\[And]", 
+          RowBox[{"\[Not]", "#6"}]}], ")"}], "\[Or]", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"\[Not]", "#1"}], "\[And]", 
+          RowBox[{"\[Not]", "#2"}], "\[And]", 
+          RowBox[{"\[Not]", "#3"}], "\[And]", 
+          RowBox[{"\[Not]", "#5"}], "\[And]", "#6", "\[And]", "#7"}], ")"}], 
+        "\[Or]", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"\[Not]", "#1"}], "\[And]", 
+          RowBox[{"\[Not]", "#2"}], "\[And]", 
+          RowBox[{"\[Not]", "#3"}], "\[And]", 
+          RowBox[{"\[Not]", "#6"}], "\[And]", 
+          RowBox[{"\[Not]", "#7"}]}], ")"}]}], "&"}], ")"}]}], ",", 
+    RowBox[{"\<\"CNF\"\>", "\[Rule]", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"\[Not]", "#1"}], "\[And]", 
+        RowBox[{"\[Not]", "#2"}], "\[And]", 
+        RowBox[{"\[Not]", "#3"}], "\[And]", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"\[Not]", "#4"}], "\[Or]", "#5", "\[Or]", "#6", "\[Or]", 
+          RowBox[{"\[Not]", "#7"}]}], ")"}], "\[And]", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"\[Not]", "#5"}], "\[Or]", 
+          RowBox[{"\[Not]", "#6"}]}], ")"}], "\[And]", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"\[Not]", "#6"}], "\[Or]", "#7"}], ")"}]}], "&"}], ")"}]}], 
+    ",", 
+    RowBox[{"\<\"POS\"\>", "\[Rule]", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"\[Not]", "#1"}], "\[And]", 
+        RowBox[{"\[Not]", "#2"}], "\[And]", 
+        RowBox[{"\[Not]", "#3"}], "\[And]", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"\[Not]", "#4"}], "\[Or]", "#5", "\[Or]", "#6", "\[Or]", 
+          RowBox[{"\[Not]", "#7"}]}], ")"}], "\[And]", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"\[Not]", "#5"}], "\[Or]", 
+          RowBox[{"\[Not]", "#6"}]}], ")"}], "\[And]", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"\[Not]", "#6"}], "\[Or]", "#7"}], ")"}]}], "&"}], ")"}]}], 
+    ",", 
+    RowBox[{"\<\"ANF\"\>", "\[Rule]", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"\[Not]", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"#1", "\[And]", "#2"}], ")"}], "\[Xor]", 
+          RowBox[{"(", 
+           RowBox[{"#1", "\[And]", "#3"}], ")"}], "\[Xor]", 
+          RowBox[{"(", 
+           RowBox[{"#1", "\[And]", "#6"}], ")"}], "\[Xor]", 
+          RowBox[{"(", 
+           RowBox[{"#2", "\[And]", "#3"}], ")"}], "\[Xor]", 
+          RowBox[{"(", 
+           RowBox[{"#2", "\[And]", "#6"}], ")"}], "\[Xor]", 
+          RowBox[{"(", 
+           RowBox[{"#3", "\[And]", "#6"}], ")"}], "\[Xor]", 
+          RowBox[{"(", 
+           RowBox[{"#4", "\[And]", "#7"}], ")"}], "\[Xor]", 
+          RowBox[{"(", 
+           RowBox[{"#6", "\[And]", "#7"}], ")"}], "\[Xor]", 
+          RowBox[{"(", 
+           RowBox[{"#1", "\[And]", "#2", "\[And]", "#3"}], ")"}], "\[Xor]", 
+          RowBox[{"(", 
+           RowBox[{"#1", "\[And]", "#2", "\[And]", "#6"}], ")"}], "\[Xor]", 
+          RowBox[{"(", 
+           RowBox[{"#1", "\[And]", "#3", "\[And]", "#6"}], ")"}], "\[Xor]", 
+          RowBox[{"(", 
+           RowBox[{"#1", "\[And]", "#4", "\[And]", "#7"}], ")"}], "\[Xor]", 
+          RowBox[{"(", 
+           RowBox[{"#1", "\[And]", "#6", "\[And]", "#7"}], ")"}], "\[Xor]", 
+          RowBox[{"(", 
+           RowBox[{"#2", "\[And]", "#3", "\[And]", "#6"}], ")"}], "\[Xor]", 
+          RowBox[{"(", 
+           RowBox[{"#2", "\[And]", "#4", "\[And]", "#7"}], ")"}], "\[Xor]", 
+          RowBox[{"(", 
+           RowBox[{"#2", "\[And]", "#6", "\[And]", "#7"}], ")"}], "\[Xor]", 
+          RowBox[{"(", 
+           RowBox[{"#3", "\[And]", "#4", "\[And]", "#7"}], ")"}], "\[Xor]", 
+          RowBox[{"(", 
+           RowBox[{"#3", "\[And]", "#6", "\[And]", "#7"}], ")"}], "\[Xor]", 
+          RowBox[{"(", 
+           RowBox[{"#4", "\[And]", "#5", "\[And]", "#7"}], ")"}], "\[Xor]", 
+          RowBox[{"(", 
+           RowBox[{"#4", "\[And]", "#6", "\[And]", "#7"}], ")"}], "\[Xor]", 
+          RowBox[{"(", 
+           RowBox[{"#5", "\[And]", "#6", "\[And]", "#7"}], ")"}], "\[Xor]", 
+          RowBox[{"(", 
+           RowBox[{"#1", "\[And]", "#2", "\[And]", "#3", "\[And]", "#6"}], 
+           ")"}], "\[Xor]", 
+          RowBox[{"(", 
+           RowBox[{"#1", "\[And]", "#2", "\[And]", "#4", "\[And]", "#7"}], 
+           ")"}], "\[Xor]", 
+          RowBox[{"(", 
+           RowBox[{"#1", "\[And]", "#2", "\[And]", "#6", "\[And]", "#7"}], 
+           ")"}], "\[Xor]", 
+          RowBox[{"(", 
+           RowBox[{"#1", "\[And]", "#3", "\[And]", "#4", "\[And]", "#7"}], 
+           ")"}], "\[Xor]", 
+          RowBox[{"(", 
+           RowBox[{"#1", "\[And]", "#3", "\[And]", "#6", "\[And]", "#7"}], 
+           ")"}], "\[Xor]", 
+          RowBox[{"(", 
+           RowBox[{"#1", "\[And]", "#4", "\[And]", "#5", "\[And]", "#7"}], 
+           ")"}], "\[Xor]", 
+          RowBox[{"(", 
+           RowBox[{"#1", "\[And]", "#4", "\[And]", "#6", "\[And]", "#7"}], 
+           ")"}], "\[Xor]", 
+          RowBox[{"(", 
+           RowBox[{"#1", "\[And]", "#5", "\[And]", "#6", "\[And]", "#7"}], 
+           ")"}], "\[Xor]", 
+          RowBox[{"(", 
+           RowBox[{"#2", "\[And]", "#3", "\[And]", "#4", "\[And]", "#7"}], 
+           ")"}], "\[Xor]", 
+          RowBox[{"(", 
+           RowBox[{"#2", "\[And]", "#3", "\[And]", "#6", "\[And]", "#7"}], 
+           ")"}], "\[Xor]", 
+          RowBox[{"(", 
+           RowBox[{"#2", "\[And]", "#4", "\[And]", "#5", "\[And]", "#7"}], 
+           ")"}], "\[Xor]", 
+          RowBox[{"(", 
+           RowBox[{"#2", "\[And]", "#4", "\[And]", "#6", "\[And]", "#7"}], 
+           ")"}], "\[Xor]", 
+          RowBox[{"(", 
+           RowBox[{"#2", "\[And]", "#5", "\[And]", "#6", "\[And]", "#7"}], 
+           ")"}], "\[Xor]", 
+          RowBox[{"(", 
+           RowBox[{"#3", "\[And]", "#4", "\[And]", "#5", "\[And]", "#7"}], 
+           ")"}], "\[Xor]", 
+          RowBox[{"(", 
+           RowBox[{"#3", "\[And]", "#4", "\[And]", "#6", "\[And]", "#7"}], 
+           ")"}], "\[Xor]", 
+          RowBox[{"(", 
+           RowBox[{"#3", "\[And]", "#5", "\[And]", "#6", "\[And]", "#7"}], 
+           ")"}], "\[Xor]", 
+          RowBox[{"(", 
+           RowBox[{"#4", "\[And]", "#5", "\[And]", "#6", "\[And]", "#7"}], 
+           ")"}], "\[Xor]", 
+          RowBox[{"(", 
+           RowBox[{
+           "#1", "\[And]", "#2", "\[And]", "#3", "\[And]", "#4", "\[And]", 
+            "#7"}], ")"}], "\[Xor]", 
+          RowBox[{"(", 
+           RowBox[{
+           "#1", "\[And]", "#2", "\[And]", "#3", "\[And]", "#6", "\[And]", 
+            "#7"}], ")"}], "\[Xor]", 
+          RowBox[{"(", 
+           RowBox[{
+           "#1", "\[And]", "#2", "\[And]", "#4", "\[And]", "#5", "\[And]", 
+            "#7"}], ")"}], "\[Xor]", 
+          RowBox[{"(", 
+           RowBox[{
+           "#1", "\[And]", "#2", "\[And]", "#4", "\[And]", "#6", "\[And]", 
+            "#7"}], ")"}], "\[Xor]", 
+          RowBox[{"(", 
+           RowBox[{
+           "#1", "\[And]", "#2", "\[And]", "#5", "\[And]", "#6", "\[And]", 
+            "#7"}], ")"}], "\[Xor]", 
+          RowBox[{"(", 
+           RowBox[{
+           "#1", "\[And]", "#3", "\[And]", "#4", "\[And]", "#5", "\[And]", 
+            "#7"}], ")"}], "\[Xor]", 
+          RowBox[{"(", 
+           RowBox[{
+           "#1", "\[And]", "#3", "\[And]", "#4", "\[And]", "#6", "\[And]", 
+            "#7"}], ")"}], "\[Xor]", 
+          RowBox[{"(", 
+           RowBox[{
+           "#1", "\[And]", "#3", "\[And]", "#5", "\[And]", "#6", "\[And]", 
+            "#7"}], ")"}], "\[Xor]", 
+          RowBox[{"(", 
+           RowBox[{
+           "#1", "\[And]", "#4", "\[And]", "#5", "\[And]", "#6", "\[And]", 
+            "#7"}], ")"}], "\[Xor]", 
+          RowBox[{"(", 
+           RowBox[{
+           "#2", "\[And]", "#3", "\[And]", "#4", "\[And]", "#5", "\[And]", 
+            "#7"}], ")"}], "\[Xor]", 
+          RowBox[{"(", 
+           RowBox[{
+           "#2", "\[And]", "#3", "\[And]", "#4", "\[And]", "#6", "\[And]", 
+            "#7"}], ")"}], "\[Xor]", 
+          RowBox[{"(", 
+           RowBox[{
+           "#2", "\[And]", "#3", "\[And]", "#5", "\[And]", "#6", "\[And]", 
+            "#7"}], ")"}], "\[Xor]", 
+          RowBox[{"(", 
+           RowBox[{
+           "#2", "\[And]", "#4", "\[And]", "#5", "\[And]", "#6", "\[And]", 
+            "#7"}], ")"}], "\[Xor]", 
+          RowBox[{"(", 
+           RowBox[{
+           "#3", "\[And]", "#4", "\[And]", "#5", "\[And]", "#6", "\[And]", 
+            "#7"}], ")"}], "\[Xor]", 
+          RowBox[{"(", 
+           RowBox[{
+           "#1", "\[And]", "#2", "\[And]", "#3", "\[And]", "#4", "\[And]", 
+            "#5", "\[And]", "#7"}], ")"}], "\[Xor]", 
+          RowBox[{"(", 
+           RowBox[{
+           "#1", "\[And]", "#2", "\[And]", "#3", "\[And]", "#4", "\[And]", 
+            "#6", "\[And]", "#7"}], ")"}], "\[Xor]", 
+          RowBox[{"(", 
+           RowBox[{
+           "#1", "\[And]", "#2", "\[And]", "#3", "\[And]", "#5", "\[And]", 
+            "#6", "\[And]", "#7"}], ")"}], "\[Xor]", 
+          RowBox[{"(", 
+           RowBox[{
+           "#1", "\[And]", "#2", "\[And]", "#4", "\[And]", "#5", "\[And]", 
+            "#6", "\[And]", "#7"}], ")"}], "\[Xor]", 
+          RowBox[{"(", 
+           RowBox[{
+           "#1", "\[And]", "#3", "\[And]", "#4", "\[And]", "#5", "\[And]", 
+            "#6", "\[And]", "#7"}], ")"}], "\[Xor]", 
+          RowBox[{"(", 
+           RowBox[{
+           "#2", "\[And]", "#3", "\[And]", "#4", "\[And]", "#5", "\[And]", 
+            "#6", "\[And]", "#7"}], ")"}], "\[Xor]", 
+          RowBox[{"(", 
+           RowBox[{
+           "#1", "\[And]", "#2", "\[And]", "#3", "\[And]", "#4", "\[And]", 
+            "#5", "\[And]", "#6", "\[And]", "#7"}], ")"}], "\[Xor]", "#1", 
+          "\[Xor]", "#2", "\[Xor]", "#3", "\[Xor]", "#6"}], ")"}]}], "&"}], 
+      ")"}]}], ",", 
+    RowBox[{"\<\"NOR\"\>", "\[Rule]", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"#1", "\[Nor]", "#2", "\[Nor]", "#3", "\[Nor]", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"\[Not]", "#4"}], "\[Nor]", "#5", "\[Nor]", "#6", "\[Nor]", 
+          RowBox[{"\[Not]", "#7"}]}], ")"}], "\[Nor]", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"\[Not]", "#5"}], "\[Nor]", 
+          RowBox[{"\[Not]", "#6"}]}], ")"}], "\[Nor]", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"\[Not]", "#6"}], "\[Nor]", "#7"}], ")"}]}], "&"}], ")"}]}],
+     ",", 
+    RowBox[{"\<\"NAND\"\>", "\[Rule]", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"\[Not]", "#1"}], "\[Nand]", 
+          RowBox[{"\[Not]", "#2"}], "\[Nand]", 
+          RowBox[{"\[Not]", "#3"}], "\[Nand]", 
+          RowBox[{"\[Not]", "#4"}], "\[Nand]", 
+          RowBox[{"\[Not]", "#5"}], "\[Nand]", "#7"}], ")"}], "\[Nand]", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"\[Not]", "#1"}], "\[Nand]", 
+          RowBox[{"\[Not]", "#2"}], "\[Nand]", 
+          RowBox[{"\[Not]", "#3"}], "\[Nand]", "#5", "\[Nand]", 
+          RowBox[{"\[Not]", "#6"}]}], ")"}], "\[Nand]", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"\[Not]", "#1"}], "\[Nand]", 
+          RowBox[{"\[Not]", "#2"}], "\[Nand]", 
+          RowBox[{"\[Not]", "#3"}], "\[Nand]", 
+          RowBox[{"\[Not]", "#5"}], "\[Nand]", "#6", "\[Nand]", "#7"}], ")"}],
+         "\[Nand]", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"\[Not]", "#1"}], "\[Nand]", 
+          RowBox[{"\[Not]", "#2"}], "\[Nand]", 
+          RowBox[{"\[Not]", "#3"}], "\[Nand]", 
+          RowBox[{"\[Not]", "#6"}], "\[Nand]", 
+          RowBox[{"\[Not]", "#7"}]}], ")"}]}], "&"}], ")"}]}], ",", 
+    RowBox[{"\<\"AND\"\>", "\[Rule]", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"\[Not]", "#1"}], "\[And]", 
+        RowBox[{"\[Not]", "#2"}], "\[And]", 
+        RowBox[{"\[Not]", "#3"}], "\[And]", 
+        RowBox[{"\[Not]", 
+         RowBox[{"(", 
+          RowBox[{"#4", "\[And]", 
+           RowBox[{"\[Not]", "#5"}], "\[And]", 
+           RowBox[{"\[Not]", "#6"}], "\[And]", "#7"}], ")"}]}], "\[And]", 
+        RowBox[{"\[Not]", 
+         RowBox[{"(", 
+          RowBox[{"#5", "\[And]", "#6"}], ")"}]}], "\[And]", 
+        RowBox[{"\[Not]", 
+         RowBox[{"(", 
+          RowBox[{"#6", "\[And]", 
+           RowBox[{"\[Not]", "#7"}]}], ")"}]}]}], "&"}], ")"}]}], ",", 
+    RowBox[{"\<\"OR\"\>", "\[Rule]", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"\[Not]", 
+         RowBox[{"(", 
+          RowBox[{
+          "#1", "\[Or]", "#2", "\[Or]", "#3", "\[Or]", "#4", "\[Or]", "#5", 
+           "\[Or]", 
+           RowBox[{"\[Not]", "#7"}]}], ")"}]}], "\[Or]", 
+        RowBox[{"\[Not]", 
+         RowBox[{"(", 
+          RowBox[{"#1", "\[Or]", "#2", "\[Or]", "#3", "\[Or]", 
+           RowBox[{"\[Not]", "#5"}], "\[Or]", "#6"}], ")"}]}], "\[Or]", 
+        RowBox[{"\[Not]", 
+         RowBox[{"(", 
+          RowBox[{"#1", "\[Or]", "#2", "\[Or]", "#3", "\[Or]", "#5", "\[Or]", 
+           RowBox[{"\[Not]", "#6"}], "\[Or]", 
+           RowBox[{"\[Not]", "#7"}]}], ")"}]}], "\[Or]", 
+        RowBox[{"\[Not]", 
+         RowBox[{"(", 
+          RowBox[{
+          "#1", "\[Or]", "#2", "\[Or]", "#3", "\[Or]", "#6", "\[Or]", "#7"}], 
+          ")"}]}]}], "&"}], ")"}]}]}], "\[RightAssociation]"}], 
+  TraditionalForm]], "Output",
+ CellLabel->"Out[1]//TraditionalForm=",
+ CellID->472468042,ExpressionUUID->"8042b4d7-66e4-41c3-b53a-23edadc0f4b3"]
+}, Open  ]]
+}, Dynamic[CurrentValue[
+ EvaluationNotebook[], {TaggingRules, "Openers", "ExampleSection", "0"}, 
+  Closed]]]]
+}, Dynamic[CurrentValue[
+ EvaluationNotebook[], {TaggingRules, "Openers", "PrimaryExamplesSection"}, 
+  Closed]]]],
+
+Cell[BoxData[GridBox[{
+   {
+    DynamicBox[FEPrivate`ImportImage[
+      FrontEnd`FileName[{"Documentation", "FooterIcons"}, "RelatedGuide.png"]],
+     ImageSizeCache->{50., {27., 33.}}], GridBox[{
+      {
+       StyleBox[
+        RowBox[{"Related", " ", "Guides"}], "MoreAboutSection"]},
+      {
+       RowBox[{"\[FilledVerySmallSquare]", Cell[BoxData[
+         TemplateBox[{
+           Cell[
+            TextData["Logic"]], 
+           "paclet:PeterBurbery/BooleanLogic/guide/Logic"},
+          "RefLinkPlain",
+          BaseStyle->{"MoreAbout"}]], "MoreAbout",ExpressionUUID->
+         "477f3cb1-8e54-40d8-b9bb-8905231052e2"]}]}
+     }]}
+  }]], "MoreAboutSection",ExpressionUUID->"b003d299-09dd-4b16-8d74-\
+1fb0abefba2f"],
+
+Cell[" ", "FooterCell",ExpressionUUID->"413840db-b234-436e-8303-c0cff170a03f"]
+},
+Saveable->False,
+ScreenStyleEnvironment->"Working",
+WindowSize->{900., 765.75},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+WindowTitle->"AllMinimalBooleanForms",
+TaggingRules->{
+ "ModificationHighlight" -> False, "ColorType" -> "", "LinkTrails" -> "", 
+  "HasOptions" -> True, "ExampleCounter" -> 1, 
+  "Openers" -> {
+   "PrimaryExamplesSection" -> Open, "ExampleSection" -> {"0" -> Open}}, 
+  "NewStyles" -> True, "CitationPopupData" -> $Failed, "ShowCitation" -> 
+  False, "RootCaptions" -> "", 
+  "Metadata" -> {
+   "built" -> "{2022, 9, 29, 18, 36, 23.6612914}", 
+    "history" -> {"XX", "", "", ""}, "context" -> 
+    "PeterBurbery`BooleanLogic`", "keywords" -> {}, "specialkeywords" -> {}, 
+    "tutorialcollectionlinks" -> {}, "index" -> True, "label" -> 
+    "Peter Burbery/ Boolean Logic Symbol", "language" -> "en", "paclet" -> 
+    "PeterBurbery/BooleanLogic", "status" -> "None", "summary" -> 
+    "AllMinimalBooleanForms[func] finds all minimal forms of the boolean \
+function func", "synonyms" -> {}, "tabletags" -> {}, "title" -> 
+    "AllMinimalBooleanForms", "titlemodifier" -> "", "windowtitle" -> 
+    "AllMinimalBooleanForms", "type" -> "Symbol", "uri" -> 
+    "PeterBurbery/BooleanLogic/ref/AllMinimalBooleanForms"}},
+CellContext->"Global`",
+FrontEndVersion->"13.1 for Microsoft Windows (64-bit) (June 16, 2022)",
+StyleDefinitions->Notebook[{
+   Cell[
+    StyleData[
+    StyleDefinitions -> FrontEnd`FileName[{"Wolfram"}, "Reference.nb"]]], 
+   Cell[
+    StyleData["Input"], CellContext -> "Global`"], 
+   Cell[
+    StyleData["Output"], CellContext -> "Global`"]}, Visible -> False, 
+  FrontEndVersion -> "13.1 for Microsoft Windows (64-bit) (June 16, 2022)", 
+  StyleDefinitions -> "Default.nb"],
+ExpressionUUID->"aaace25b-39ed-4728-875d-73ec045203e3"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{
+ "PrimaryExamplesSection"->{
+  Cell[6750, 176, 1419, 37, 35, "PrimaryExamplesSection",ExpressionUUID->"34d2e361-d5a7-48c5-bd41-2f40a41dad28",
+   CellTags->"PrimaryExamplesSection",
+   CellID->59956633]}
+ }
+*)
+(*CellTagsIndex
+CellTagsIndex->{
+ {"PrimaryExamplesSection", 28614, 733}
+ }
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[594, 21, 4512, 107, 56, "AnchorBarGrid",ExpressionUUID->"f887013f-e0a0-46fe-aca2-cca660457367",
+ CellID->1],
+Cell[5109, 130, 108, 0, 23, "ContextNameCell",ExpressionUUID->"6cb33cc6-e6a3-43eb-aaa3-be80202c5147"],
+Cell[CellGroupData[{
+Cell[5242, 134, 565, 14, 56, "ObjectNameGrid",ExpressionUUID->"567b4894-fae3-44da-ae52-ca3e092ed2df"],
+Cell[5810, 150, 903, 21, 111, "Usage",ExpressionUUID->"28b9dade-6713-4ee0-a619-7a439dc4052e",
+ CellID->1956783]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6750, 176, 1419, 37, 35, "PrimaryExamplesSection",ExpressionUUID->"34d2e361-d5a7-48c5-bd41-2f40a41dad28",
+ CellTags->"PrimaryExamplesSection",
+ CellID->59956633],
+Cell[8172, 215, 214, 4, 26, "Input",ExpressionUUID->"ff28c423-a1ef-4382-b3a3-cc35eb3dd57c",
+ CellID->4160386],
+Cell[CellGroupData[{
+Cell[8411, 223, 1398, 36, 30, "ExampleSection",ExpressionUUID->"e958848c-2c6f-4d90-b6b8-74d69a3f316d",
+ CellID->740350087],
+Cell[9812, 261, 180, 3, 38, "ExampleText",ExpressionUUID->"a343bf8d-da86-445c-91e2-3a2abbd0a0f4",
+ CellID->407978499],
+Cell[CellGroupData[{
+Cell[10017, 268, 313, 7, 26, "Input",ExpressionUUID->"c06914c6-c046-4ebe-95c4-08b2b8e34243",
+ CellID->188461030],
+Cell[10333, 277, 15323, 381, 396, "Output",ExpressionUUID->"8042b4d7-66e4-41c3-b53a-23edadc0f4b3",
+ CellID->472468042]
+}, Open  ]]
+}, Dynamic[CurrentValue[EvaluationNotebook[], {TaggingRules, "Openers", "ExampleSection", "0"}, Closed]]]]
+}, Dynamic[CurrentValue[EvaluationNotebook[], {TaggingRules, "Openers", "PrimaryExamplesSection"}, Closed]]]],
+Cell[25898, 667, 723, 19, 114, "MoreAboutSection",ExpressionUUID->"b003d299-09dd-4b16-8d74-1fb0abefba2f"],
+Cell[26624, 688, 78, 0, 70, "FooterCell",ExpressionUUID->"413840db-b234-436e-8303-c0cff170a03f"]
+}
+]
+*)
+
+(* End of internal cache information *)
+

@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     14331,        370]
-NotebookOptionsPosition[     11215,        305]
-NotebookOutlinePosition[     12818,        345]
-CellTagsIndexPosition[     12775,        342]
+NotebookDataLength[     22521,        575]
+NotebookOptionsPosition[     17591,        479]
+NotebookOutlinePosition[     19194,        519]
+CellTagsIndexPosition[     19151,        516]
 WindowTitle->Logic
 WindowFrame->Normal*)
 
@@ -28,11 +28,11 @@ Cell[BoxData[GridBox[{
            "Spacer1"], Cell[
           "PETER BURBERY/ BOOLEAN LOGIC GUIDE", "PacletNameCell",
            TextAlignment->Center,ExpressionUUID->
-           "01101e9b-f4b9-48ff-84e9-ebd1d53cd3ad"], 
+           "237773aa-a959-4ed2-9d81-52c03e059e3a"], 
           TemplateBox[{8},
            "Spacer1"]}]],
          TextAlignment->Center,ExpressionUUID->
-         "f59e49e3-e040-42e6-896f-e172432c39ae"],
+         "253660f4-7dd7-46d0-aa37-046583d52f63"],
         Background->RGBColor[0.85098, 0.396078, 0],
         ItemSize->Full], ""}
      },
@@ -52,11 +52,13 @@ Cell[BoxData[GridBox[{
             AspectRatio->1,
             ImageSize->20,
             PlotRange->{{-3, 4}, {-1, 1}}]],ExpressionUUID->
-           "117c0a31-5875-46a1-9525-9de784ba0d23"]
-         }],ExpressionUUID->"539fc0b2-9372-47da-b7d7-bd2013590a9a"],
+           "5c54b905-7176-4e77-b35b-16e498c3bd52"]
+         }],ExpressionUUID->"ea8d3ac9-878a-43f3-a9da-1cf9f49c7020"],
          StripOnInput->False], {"\<\"AllBooleanForms\"\>":>
         Documentation`HelpLookup[
         "paclet:PeterBurbery/BooleanLogic/ref/AllBooleanForms"], \
+"\<\"AllMinimalBooleanForms\"\>":>Documentation`HelpLookup[
+        "paclet:PeterBurbery/BooleanLogic/ref/AllMinimalBooleanForms"], \
 "\<\"BooleanCompose\"\>":>Documentation`HelpLookup[
         "paclet:PeterBurbery/BooleanLogic/ref/BooleanCompose"], \
 "\<\"BooleanStructureData\"\>":>Documentation`HelpLookup[
@@ -78,7 +80,33 @@ Cell[BoxData[GridBox[{
         MenuStyle->"GuideFunction"],
        MouseAppearanceTag["LinkHand"]]],
       LineSpacing->{1.4, 0},ExpressionUUID->
-      "f37b438e-7967-4dd4-ba4a-c81446c999fd"],
+      "e954b205-5fab-4762-82dc-c647b10af5a0"],
+     "\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\
+\[ThickSpace]",
+     Cell[BoxData[
+      TagBox[
+       ActionMenuBox[
+        FrameBox[Cell[TextData[{
+          "Tech Notes",
+          " ",
+          Cell[BoxData[
+           GraphicsBox[
+            {GrayLevel[0.66667], Thickness[0.13], 
+             LineBox[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]},
+            AspectRatio->1,
+            ImageSize->20,
+            PlotRange->{{-3, 4}, {-1, 1}}]],ExpressionUUID->
+           "a11e8c08-5dd2-4576-bb23-427b1e8181b9"]
+         }],ExpressionUUID->"77691790-61e2-4814-b21f-478a9d404057"],
+         StripOnInput->False], {"\<\"Boolean Basics\"\>":>
+        Documentation`HelpLookup[
+        "paclet:PeterBurbery/BooleanLogic/tutorial/Boolean Basics"]},
+        Appearance->None,
+        MenuAppearance->Automatic,
+        MenuStyle->"GuideTutorial"],
+       MouseAppearanceTag["LinkHand"]]],
+      LineSpacing->{1.4, 0},ExpressionUUID->
+      "30435531-a1a8-4c31-984e-3c58fc6f9dd7"],
      "\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\
 \[ThickSpace]",
      Cell[BoxData[
@@ -94,8 +122,8 @@ Cell[BoxData[GridBox[{
             AspectRatio->1,
             ImageSize->20,
             PlotRange->{{-3, 4}, {-1, 1}}]],ExpressionUUID->
-           "32ff9641-e593-4e01-b9e1-9b7d29bdb4a2"]
-         }],ExpressionUUID->"971094c6-0cd8-448c-b656-c08689daa255"],
+           "b2350308-517e-4d8b-92d5-c6520975f1e9"]
+         }],ExpressionUUID->"ad2967b0-f6b7-47b9-bf48-865409b60aa1"],
          StripOnInput->
           False], {"\<\"PeterBurbery/BooleanLogic/guide/Logic\"\>":>
         None, "\<\"Copy Wolfram Documentation Center URL\"\>":>
@@ -124,7 +152,7 @@ BooleanLogic/guide/Logic.html"], StandardForm]], "Input", TextClipboardType ->
          Null], "\<\"Go to web URL\"\>":>FrontEndExecute[{
           NotebookLocate[{
             URL[If[
-               TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$27768], 
+               TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$74065], 
                "http://reference.wolfram.com/system-modeler/", 
                "http://reference.wolfram.com/language/"] <> 
              "PeterBurbery/BooleanLogic/guide/Logic" <> ".html"], None}]}]},
@@ -133,16 +161,12 @@ BooleanLogic/guide/Logic.html"], StandardForm]], "Input", TextClipboardType ->
         MenuStyle->"URLMenu"],
        MouseAppearanceTag["LinkHand"]]],
       LineSpacing->{1.4, 0},ExpressionUUID->
-      "51c58529-b9c9-421a-bda1-ed3ac8e9f185"]
+      "f2b3cbdd-8336-4e57-a785-4d2e999da66e"]
     }], "AnchorBar",
      CacheGraphics->False,ExpressionUUID->
-     "ea08d1c8-0c6c-4af6-baa2-39f80e1fc1a8"]}
+     "bfcc17ab-9c10-4e30-9810-5bd1d61d7517"]}
   }]], "AnchorBarGrid",
- GridBoxOptions->{GridBoxItemSize->{"Columns" -> {
-     Scaled[0.65], {
-      Scaled[0.34]}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
-   "RowsIndexed" -> {}}},
- CellID->1,ExpressionUUID->"d7aebe99-2950-4052-814b-fb22cfab251a"],
+ CellID->1,ExpressionUUID->"0659e038-007b-45ad-a15e-8fd3ec1a535b"],
 
 Cell[CellGroupData[{
 
@@ -153,7 +177,7 @@ Cell["The paclet has functions that are useful for studying logic.", \
 "GuideAbstract",
  CellID->198244811,ExpressionUUID->"9e763923-ab2e-4b6d-b4f6-8e257523ffc5"],
 
-Cell["\t", "GuideDelimiterSubsection",ExpressionUUID->"72a8070a-98df-46f8-a61f-c035fa442045"],
+Cell["\t", "GuideDelimiterSubsection",ExpressionUUID->"41422e21-cb85-44b7-9fbf-ad9e1c1adbd7"],
 
 Cell[TextData[{
  Cell[BoxData[
@@ -288,6 +312,22 @@ Cell[TextData[{
  Cell[BoxData[
   TemplateBox[{
     Cell[
+     TextData["AllMinimalBooleanForms"]], 
+    "paclet:PeterBurbery/BooleanLogic/ref/AllMinimalBooleanForms", 
+    "PeterBurbery Package Symbol"},
+   "PackageLink",
+   BaseStyle->"InlineFunctionSans"]], "InlineFunctionSans",ExpressionUUID->
+  "c045e36f-b8f0-4e7b-98d6-b351d92aac16"],
+ " ",
+ StyleBox["\[LongDash]", "GuideEmDash"],
+ " compute all minimal forms of a boolean function"
+}], "GuideText",
+ CellID->26449758,ExpressionUUID->"b95046ed-7df1-45c7-9c1b-fa2fff77048b"],
+
+Cell[TextData[{
+ Cell[BoxData[
+  TemplateBox[{
+    Cell[
      TextData["RandomBooleanFunction"]], 
     "paclet:PeterBurbery/BooleanLogic/ref/RandomBooleanFunction", 
     "PeterBurbery Package Symbol"},
@@ -298,10 +338,144 @@ Cell[TextData[{
  StyleBox["\[LongDash]", "GuideEmDash"],
  " generate a random boolean function"
 }], "GuideText",
- CellID->33584124,ExpressionUUID->"54fdd226-2d4b-428c-b9fd-1cfc1a7ec874"]
+ CellID->33584124,ExpressionUUID->"54fdd226-2d4b-428c-b9fd-1cfc1a7ec874"],
+
+Cell[CellGroupData[{
+
+Cell["Future Research Ideas", "GuideFunctionsSubsection",
+ CellID->180145764,ExpressionUUID->"b500aafd-ab41-4a82-82ee-6cd661aa1880"],
+
+Cell["\<\
+I hope to implement these functions eventually. I don't know how to implement \
+them currently.\
+\>", "GuideAbstract",
+ CellID->158139708,ExpressionUUID->"65758b37-4fee-41b5-8c22-0692ad7f98ad"],
+
+Cell[TextData[{
+ Cell["AffineBooleanFunctionQ", "InlineFunctionSansUnlinked",ExpressionUUID->
+  "6177fa57-c7d7-4af6-8feb-500bcb646fad"],
+ " ",
+ StyleBox["\[LongDash]", "GuideEmDash"],
+ " checks if the input is an affine boolean function"
+}], "GuideText",
+ CellID->266824048,ExpressionUUID->"64fb6392-986e-464d-b88a-7a10ffc5e236"],
+
+Cell[TextData[{
+ Cell["BentBooleanFunctionQ", "InlineFunctionSansUnlinked",ExpressionUUID->
+  "61a37c87-1532-46f6-9c52-aa645a5a9550"],
+ " ",
+ StyleBox["\[LongDash]", "GuideEmDash"],
+ " checks if the input is a bent boolean function"
+}], "GuideText",
+ CellID->295915881,ExpressionUUID->"75bb59ce-37f9-4ea8-8f2d-1ebf9fd1fb90"],
+
+Cell[TextData[{
+ Cell["CanalizingBooleanFunctionQ", "InlineFunctionSansUnlinked",
+  ExpressionUUID->"af0d99c4-39ca-4308-9e54-05d6d59258d0"],
+ " ",
+ StyleBox["\[LongDash]", "GuideEmDash"],
+ " checks if the input is a canalizing boolean function"
+}], "GuideText",
+ CellID->154098901,ExpressionUUID->"2e359fb7-9c77-4184-9a05-6e7783105739"],
+
+Cell[TextData[{
+ Cell["HornBooleanFunctionQ", "InlineFunctionSansUnlinked",ExpressionUUID->
+  "db51307c-6db6-4e60-bf97-ce3c2e5097c6"],
+ " ",
+ StyleBox["\[LongDash]", "GuideEmDash"],
+ " checks if the input is functionally equivalent to a Horn boolean function"
+}], "GuideText",
+ CellID->681210923,ExpressionUUID->"f622e5c8-1687-44f6-96e4-47e4a9d4a289"],
+
+Cell[TextData[{
+ Cell["DefiniteHornBooleanFunctionQ", "InlineFunctionSansUnlinked",
+  ExpressionUUID->"a8f8ccf1-0160-4fc6-9139-f91845909a0d"],
+ " ",
+ StyleBox["\[LongDash]", "GuideEmDash"],
+ " checks if the input is functionally equivalent to a definite Horn boolean \
+function"
+}], "GuideText",
+ CellID->182275618,ExpressionUUID->"30dbafa3-ed7e-4373-8f95-20ef0ec35445"],
+
+Cell[TextData[{
+ Cell["KromBooleanFunctionQ", "InlineFunctionSansUnlinked",ExpressionUUID->
+  "4671669a-206f-49d0-b96c-3e666e7a8646"],
+ " ",
+ StyleBox["\[LongDash]", "GuideEmDash"],
+ " checks if the input is functionally equivalent to a Krom boolean function"
+}], "GuideText",
+ CellID->194703518,ExpressionUUID->"6fc8d4f7-512b-4866-98eb-629acf891e0e"],
+
+Cell[TextData[{
+ Cell["SymmetricBooleanFunctionQ", "InlineFunctionSansUnlinked",
+  ExpressionUUID->"972d837d-fc57-4e5c-a29e-56ba7c040fe0"],
+ " ",
+ StyleBox["\[LongDash]", "GuideEmDash"],
+ " checks if the input is a symmetric boolean function"
+}], "GuideText",
+ CellID->55830684,ExpressionUUID->"57a2e67a-b322-49ea-a178-d3b7e0d39ca4"],
+
+Cell[TextData[{
+ Cell["ThresholdBooleanFunctionQ", "InlineFunctionSansUnlinked",
+  ExpressionUUID->"a438c3e3-96ca-4747-8169-c1ccae0d7b3b"],
+ " ",
+ StyleBox["\[LongDash]", "GuideEmDash"],
+ " checks if the input is a threshold boolean function"
+}], "GuideText",
+ CellID->169586431,ExpressionUUID->"e4d1c1bf-fd7a-40a4-9bac-61b9370ceb9f"],
+
+Cell[TextData[{
+ Cell["KarnaughMap", "InlineFunctionSansUnlinked",ExpressionUUID->
+  "0acd2708-4a4b-4c94-aa04-13c9c2786de1"],
+ " ",
+ StyleBox["\[LongDash]", "GuideEmDash"],
+ " reduce a boolean expression with a Karnaugh map algorithm"
+}], "GuideText",
+ CellID->98888192,ExpressionUUID->"42f4a3f6-70d1-4442-85b5-56e91d3d1e10"],
+
+Cell[TextData[{
+ Cell["PrimeImplicantList", "InlineFunctionSansUnlinked",ExpressionUUID->
+  "c8542f62-2695-4826-8d1f-e0e7a079b6a2"],
+ " ",
+ StyleBox["\[LongDash]", "GuideEmDash"],
+ " outputs the prime implicants of a boolean expression"
+}], "GuideText",
+ CellID->454848950,ExpressionUUID->"f0c83085-c52a-4033-b924-ae8ae8483ba8"],
+
+Cell[TextData[{
+ Cell["DisjunctivePrimeForm", "InlineFunctionSansUnlinked",ExpressionUUID->
+  "6aef6914-2ac4-4973-a45e-1f7b06f2dfa0"],
+ " ",
+ StyleBox["\[LongDash]", "GuideEmDash"],
+ " find the disjunctive prime form"
+}], "GuideText",
+ CellID->41057021,ExpressionUUID->"3a93b19b-0d56-417b-be85-251a1f036599"]
+}, Open  ]]
 }, Open  ]],
 
-Cell[" ", "FooterCell",ExpressionUUID->"0148b0d5-3c36-42aa-86f9-302ba449a762"]
+Cell[BoxData[GridBox[{
+   {
+    DynamicBox[FEPrivate`ImportImage[
+      FrontEnd`FileName[{"Documentation", "FooterIcons"}, 
+       "RelatedTutorial.png"]],
+     ImageSizeCache->{50., {27., 33.}}], GridBox[{
+      {
+       StyleBox[
+        RowBox[{"Tech", " ", "Notes"}], "GuideTutorialsSection"]},
+      {
+       RowBox[{"\[FilledVerySmallSquare]", Cell[BoxData[
+         TemplateBox[{
+           Cell[
+            TextData["Boolean Basics"]], 
+           "paclet:PeterBurbery/BooleanLogic/tutorial/Boolean Basics"},
+          "RefLinkPlain",
+          BaseStyle->{"GuideTutorial"}]], "GuideTutorial",ExpressionUUID->
+         "85280a9b-cc71-4278-b535-52805dbbe570"]}]}
+     }]}
+  }]], "GuideTutorialsSection",ExpressionUUID->"a773513d-e867-47d7-94a2-\
+3c06da248b58"],
+
+Cell[" ", "FooterCell",ExpressionUUID->"d5b807b0-a83b-406a-b556-8b814d492651"]
 },
 Saveable->False,
 ScreenStyleEnvironment->"Working",
@@ -316,7 +490,7 @@ TaggingRules->{
   "NewStyles" -> True, "CitationPopupData" -> {"", ""}, "ShowCitation" -> 
   False, "RootCaptions" -> "", 
   "Metadata" -> {
-   "built" -> "{2022, 9, 29, 14, 58, 58.6894001}", 
+   "built" -> "{2022, 9, 29, 18, 36, 22.6771442}", 
     "history" -> {"??", "", "", ""}, "context" -> 
     "PeterBurbery`BooleanLogic`", "keywords" -> {}, "specialkeywords" -> {}, 
     "tutorialcollectionlinks" -> {}, "index" -> True, "label" -> 
@@ -324,14 +498,14 @@ TaggingRules->{
     "PeterBurbery/BooleanLogic", "status" -> "None", "summary" -> 
     "The paclet has functions that are useful for studying logic.", 
     "synonyms" -> {}, "tabletags" -> 
-    DocumentationBuild`Make`Private`tabletaggingrules$27729, "title" -> 
+    DocumentationBuild`Make`Private`tabletaggingrules$74022, "title" -> 
     "Logic", "titlemodifier" -> "", "windowtitle" -> "Logic", "type" -> 
     "Guide", "uri" -> "PeterBurbery/BooleanLogic/guide/Logic"}},
 CacheGraphics->False,
 FrontEndVersion->"13.1 for Microsoft Windows (64-bit) (June 16, 2022)",
 StyleDefinitions->FrontEnd`FileName[{"Wolfram"}, "Reference.nb", 
   CharacterEncoding -> "UTF-8"],
-ExpressionUUID->"d6a9758e-2c79-4d28-8882-6a4998e0bbf5"
+ExpressionUUID->"db218e4d-c037-46b3-9f30-6c4e46ad418c"
 ]
 (* End of Notebook Content *)
 
@@ -344,34 +518,65 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[577, 21, 5445, 123, 70, "AnchorBarGrid",ExpressionUUID->"d7aebe99-2950-4052-814b-fb22cfab251a",
+Cell[577, 21, 6419, 147, 70, "AnchorBarGrid",ExpressionUUID->"0659e038-007b-45ad-a15e-8fd3ec1a535b",
  CellID->1],
 Cell[CellGroupData[{
-Cell[6047, 148, 101, 1, 70, "GuideTitle",ExpressionUUID->"10cefa28-19d9-486e-b834-2b40325cbbad",
+Cell[7021, 172, 101, 1, 70, "GuideTitle",ExpressionUUID->"10cefa28-19d9-486e-b834-2b40325cbbad",
  CellID->33626661],
-Cell[6151, 151, 162, 2, 70, "GuideAbstract",ExpressionUUID->"9e763923-ab2e-4b6d-b4f6-8e257523ffc5",
+Cell[7125, 175, 162, 2, 70, "GuideAbstract",ExpressionUUID->"9e763923-ab2e-4b6d-b4f6-8e257523ffc5",
  CellID->198244811],
-Cell[6316, 155, 93, 0, 70, "GuideDelimiterSubsection",ExpressionUUID->"72a8070a-98df-46f8-a61f-c035fa442045"],
-Cell[6412, 157, 530, 14, 70, "GuideText",ExpressionUUID->"9df1a737-4c86-437a-992c-2b72d846826d",
+Cell[7290, 179, 93, 0, 70, "GuideDelimiterSubsection",ExpressionUUID->"41422e21-cb85-44b7-9fbf-ad9e1c1adbd7"],
+Cell[7386, 181, 530, 14, 70, "GuideText",ExpressionUUID->"9df1a737-4c86-437a-992c-2b72d846826d",
  CellID->988884050],
-Cell[6945, 173, 549, 14, 70, "GuideText",ExpressionUUID->"d924964d-7c83-4293-bee8-099bed7c1217",
+Cell[7919, 197, 549, 14, 70, "GuideText",ExpressionUUID->"d924964d-7c83-4293-bee8-099bed7c1217",
  CellID->42031201],
-Cell[7497, 189, 565, 15, 70, "GuideText",ExpressionUUID->"446e8604-5e0a-4816-a3ec-de0ccc82416d",
+Cell[8471, 213, 565, 15, 70, "GuideText",ExpressionUUID->"446e8604-5e0a-4816-a3ec-de0ccc82416d",
  CellID->10618612],
-Cell[8065, 206, 499, 14, 70, "GuideText",ExpressionUUID->"a25a391a-61fa-4d5d-a593-295315a5e782",
+Cell[9039, 230, 499, 14, 70, "GuideText",ExpressionUUID->"a25a391a-61fa-4d5d-a593-295315a5e782",
  CellID->107069428],
-Cell[8567, 222, 482, 14, 70, "GuideText",ExpressionUUID->"66a26057-c5dd-4d34-8967-dfdb00f2096a",
+Cell[9541, 246, 482, 14, 70, "GuideText",ExpressionUUID->"66a26057-c5dd-4d34-8967-dfdb00f2096a",
  CellID->517397554],
-Cell[9052, 238, 509, 14, 70, "GuideText",ExpressionUUID->"bd2bbff5-e937-4704-bdab-5dbf61442bb1",
+Cell[10026, 262, 509, 14, 70, "GuideText",ExpressionUUID->"bd2bbff5-e937-4704-bdab-5dbf61442bb1",
  CellID->134182872],
-Cell[9564, 254, 524, 14, 70, "GuideText",ExpressionUUID->"b1370fc3-f55c-45a7-9a3c-cafde93ee547",
+Cell[10538, 278, 524, 14, 70, "GuideText",ExpressionUUID->"b1370fc3-f55c-45a7-9a3c-cafde93ee547",
  CellID->54065389],
-Cell[10091, 270, 509, 14, 70, "GuideText",ExpressionUUID->"e18975e1-7b17-4075-9f00-5df0f69ef4ea",
+Cell[11065, 294, 509, 14, 70, "GuideText",ExpressionUUID->"e18975e1-7b17-4075-9f00-5df0f69ef4ea",
  CellID->296904622],
-Cell[10603, 286, 515, 14, 70, "GuideText",ExpressionUUID->"54fdd226-2d4b-428c-b9fd-1cfc1a7ec874",
- CellID->33584124]
+Cell[11577, 310, 530, 14, 70, "GuideText",ExpressionUUID->"b95046ed-7df1-45c7-9c1b-fa2fff77048b",
+ CellID->26449758],
+Cell[12110, 326, 515, 14, 70, "GuideText",ExpressionUUID->"54fdd226-2d4b-428c-b9fd-1cfc1a7ec874",
+ CellID->33584124],
+Cell[CellGroupData[{
+Cell[12650, 344, 132, 1, 70, "GuideFunctionsSubsection",ExpressionUUID->"b500aafd-ab41-4a82-82ee-6cd661aa1880",
+ CellID->180145764],
+Cell[12785, 347, 203, 4, 70, "GuideAbstract",ExpressionUUID->"65758b37-4fee-41b5-8c22-0692ad7f98ad",
+ CellID->158139708],
+Cell[12991, 353, 329, 7, 70, "GuideText",ExpressionUUID->"64fb6392-986e-464d-b88a-7a10ffc5e236",
+ CellID->266824048],
+Cell[13323, 362, 324, 7, 70, "GuideText",ExpressionUUID->"75bb59ce-37f9-4ea8-8f2d-1ebf9fd1fb90",
+ CellID->295915881],
+Cell[13650, 371, 336, 7, 70, "GuideText",ExpressionUUID->"2e359fb7-9c77-4184-9a05-6e7783105739",
+ CellID->154098901],
+Cell[13989, 380, 351, 7, 70, "GuideText",ExpressionUUID->"f622e5c8-1687-44f6-96e4-47e4a9d4a289",
+ CellID->681210923],
+Cell[14343, 389, 370, 8, 70, "GuideText",ExpressionUUID->"30dbafa3-ed7e-4373-8f95-20ef0ec35445",
+ CellID->182275618],
+Cell[14716, 399, 351, 7, 70, "GuideText",ExpressionUUID->"6fc8d4f7-512b-4866-98eb-629acf891e0e",
+ CellID->194703518],
+Cell[15070, 408, 333, 7, 70, "GuideText",ExpressionUUID->"57a2e67a-b322-49ea-a178-d3b7e0d39ca4",
+ CellID->55830684],
+Cell[15406, 417, 334, 7, 70, "GuideText",ExpressionUUID->"e4d1c1bf-fd7a-40a4-9bac-61b9370ceb9f",
+ CellID->169586431],
+Cell[15743, 426, 325, 7, 70, "GuideText",ExpressionUUID->"42f4a3f6-70d1-4442-85b5-56e91d3d1e10",
+ CellID->98888192],
+Cell[16071, 435, 328, 7, 70, "GuideText",ExpressionUUID->"f0c83085-c52a-4033-b924-ae8ae8483ba8",
+ CellID->454848950],
+Cell[16402, 444, 308, 7, 70, "GuideText",ExpressionUUID->"3a93b19b-0d56-417b-be85-251a1f036599",
+ CellID->41057021]
+}, Open  ]]
 }, Open  ]],
-Cell[11133, 303, 78, 0, 70, "FooterCell",ExpressionUUID->"0148b0d5-3c36-42aa-86f9-302ba449a762"]
+Cell[16737, 455, 769, 20, 70, "GuideTutorialsSection",ExpressionUUID->"a773513d-e867-47d7-94a2-3c06da248b58"],
+Cell[17509, 477, 78, 0, 70, "FooterCell",ExpressionUUID->"d5b807b0-a83b-406a-b556-8b814d492651"]
 }
 ]
 *)

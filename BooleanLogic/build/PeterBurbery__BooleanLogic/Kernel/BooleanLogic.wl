@@ -12,6 +12,7 @@ VennDiagram;
 TruthTable;
 BooleanCompose;
 RandomBooleanFunction;
+AllMinimalBooleanForms;
 Begin["`Private`"];
 
 
@@ -113,6 +114,8 @@ AllBooleanForms[func_]:=AssociationMap[form|->BooleanConvert[func,form],{"DNF","
 
 RandomBooleanFunction//ClearAll;
 RandomBooleanFunction[inputno_]:=BooleanFunction[RandomInteger[2^(2 inputno)],inputno]
+
+AllMinimalBooleanForms[func_]:=AssociationMap[form|->BooleanMinimize[func,form],{"DNF","SOP","CNF","POS","ANF","NOR","NAND","AND","OR"}]
 
 
 End[]; (* End `Private` *)

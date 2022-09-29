@@ -7,7 +7,7 @@ PacletObject[
     "Creator" -> "Peter Cullen Burbery",
     "License" -> "MIT",
     "PublisherID" -> "PeterBurbery",
-    "Version" -> "1.22.0",
+    "Version" -> "1.23.0",
     "WolframVersion" -> "13.1+",
     "Extensions" -> {
       {
@@ -21,6 +21,7 @@ PacletObject[
         },
         "Symbols" -> {
           "PeterBurbery`BooleanLogic`AllBooleanForms",
+          "PeterBurbery`BooleanLogic`AllMinimalBooleanForms",
           "PeterBurbery`BooleanLogic`BooleanCompose",
           "PeterBurbery`BooleanLogic`BooleanStructureData",
           "PeterBurbery`BooleanLogic`BooleanTruthInputData",

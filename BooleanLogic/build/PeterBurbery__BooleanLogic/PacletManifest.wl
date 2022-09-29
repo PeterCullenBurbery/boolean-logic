@@ -11,7 +11,7 @@
             ,
             "Hash"
             ->
-            "a1fe082a759fba49ba9720879f9d0978c11031324ac9450b3798aa145826c798"
+            "258b92c7f890b0c00030ff36480246f6418d790285621da4f88e7728785023d7"
                 
         |>
         ,
@@ -24,7 +24,7 @@
             ,
             "Hash"
             ->
-            "515fa4aeaa6e2eb4b4675b7e2808597c5df0150deb2da473e91879e90e714e26"
+            "adfb912b6793f726736dc50b11328391c3f9a5871bdfd7a9b430e7b214a507e5"
                 
         |>
         ,
@@ -39,6 +39,20 @@
             "Hash"
             ->
             "8a033e0568b299f7fd8d7840b8cd709df8b01fc8d3e9ee0c798c3a294e2fc437"
+                
+        |>
+        ,
+        <|
+            "File"
+            ->
+            File[
+                "Documentation\\English\\ReferencePages\\Symbols\\AllMinimalBooleanForms.nb"
+                    
+            ]
+            ,
+            "Hash"
+            ->
+            "c85f0d2de54778b84236fd71f037f5457ee9780e1203810196585ccd51da8f5c"
                 
         |>
         ,
@@ -66,7 +80,7 @@
             ,
             "Hash"
             ->
-            "8e55640ffff666b5aa97440e50d4ba07545e92d9fa2a893e2080c9ca2fa38c05"
+            "78b5e239bb80d129a6e7ab9bb704a56be7985741cb45f7d3665d08bfc52c1a03"
                 
         |>
         ,
@@ -158,13 +172,13 @@
             "File"
             ->
             File[
-                "Documentation\\English\\Tutorials\\BooleanBasics.nb"
+                "Documentation\\English\\Tutorials\\Boolean Basics.nb"
                     
             ]
             ,
             "Hash"
             ->
-            "81601c76ba9b6d1fda29642ab9e5a02054515f34e9557b92610ebc414925adc0"
+            "1dcca76a8b71e37113f160ce21a32e532cd87528679ac09b62d44c6b91a2279e"
                 
         |>
     }
