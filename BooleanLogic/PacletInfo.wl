@@ -21,6 +21,7 @@ PacletObject[
         },
         "Symbols" -> {
           "PeterBurbery`BooleanLogic`AllBooleanForms",
+          "PeterBurbery`BooleanLogic`AllMinimalBooleanForms",
           "PeterBurbery`BooleanLogic`BooleanCompose",
           "PeterBurbery`BooleanLogic`BooleanStructureData",
           "PeterBurbery`BooleanLogic`BooleanTruthInputData",
