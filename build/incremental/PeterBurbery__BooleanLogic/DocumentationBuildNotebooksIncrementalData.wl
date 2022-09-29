@@ -4,8 +4,8 @@
    "FileHash" -> "zq5cyg4Uslf6W376z3OrJ0vUxQCcnS9dFbBd+vvndzg="|>, 
  "English\\ReferencePages\\Symbols\\BooleanStructureData.nb" -> 
   <|"Result" -> Success["BuildDocumentationNotebook", 
-     <|"Time" -> Quantity[1.415959, "Seconds"]|>], 
-   "FileHash" -> "W56wNMqUJM6w/lfuLApUy/ZmEIYzrwlTpSBbxpTX5Ms="|>, 
+     <|"Time" -> Quantity[1.6506759, "Seconds"]|>], 
+   "FileHash" -> "IKJRDCrOqzi5frrFoRmyjeCfBNWQkeN2GJB4/gW+XcE="|>, 
  "English\\ReferencePages\\Symbols\\FindBooleanAlternative.nb" -> 
   <|"Result" -> Success["BuildDocumentationNotebook", 
      <|"Time" -> Quantity[0.9211383, "Seconds"]|>], 
@@ -16,5 +16,5 @@
    "FileHash" -> "DIOku1YgKDIbXj1APGzwZF4SW2M5uoYjko1syhnGaZM="|>, 
  "English\\Guides\\Logic.nb" -> 
   <|"Result" -> Success["BuildDocumentationNotebook", 
-     <|"Time" -> Quantity[0.4982272, "Seconds"]|>], 
-   "FileHash" -> "pOvxVxQ2zvpF/5ptmA9YiCQzOqdyMmaFIpXyh823U/U="|>|>
+     <|"Time" -> Quantity[0.9090748, "Seconds"]|>], 
+   "FileHash" -> "ufVOblHsFWDplJ6pIff4KvE1zf8unl3A1tOvwNnOUL0="|>|>

@@ -9,6 +9,8 @@ FindBooleanAlternative;
 BooleanTruthInputData;
 VennDiagram;
 TruthTable;
+BooleanCompose;
+TestArray;
 Begin["`Private`"];
 
 
@@ -53,6 +55,7 @@ Enclose @ Module[{
 ]
 
 VennDiagram // ClearAll;
+
 VennDiagram // Attributes = {};
 VennDiagram[ args___ ] := 
     Module[ { res },
@@ -85,8 +88,16 @@ update[ ] :=
     ];
     
 TruthTable//ClearAll;
-TruthTable[expr_]:=TableForm[BooleanTable[expr],TableHeadings->{None,expr}]  
-TruthTable[expr_,truevalue_,falsevalue_]:=TableForm[BooleanTable[expr]/.{True->truevalue,False->falsevalue},TableHeadings->{None,expr}]  
+(*TruthTable[expr_]:=TableForm[BooleanTable[Join[BooleanVariables[expr],List[expr]]],TableHeadings->{None,Join[BooleanVariables[expr],List[expr]]}]/;Head[expr]!=BooleanFunction;
+TruthTable[expr_,truevalue_,falsevalue_]:=TableForm[BooleanTable[Join[BooleanVariables[expr],List[expr]]]/.{True->truevalue,False->falsevalue},TableHeadings->{None,Join[BooleanVariables[expr],List[expr]]}] /;Head[expr]!=BooleanFunction
+
+TruthTable[expr_]:=Block[{transformed},transformed=BooleanConvert[expr]@@Array[Indexed[p,##]&,BooleanVariables[expr]];TableForm[BooleanTable[Join[BooleanVariables[transformed],List[transformed]]],TableHeadings->{None,Join[BooleanVariables[transformed],List[transformed]]}]]/;Head[expr]==BooleanFunction;
+TruthTable[expr_,truevalue_,falsevalue_]:=Block[{transformed},transformed=BooleanConvert[expr]@@Array[Indexed[p,##]&,BooleanVariables[expr]];TableForm[BooleanTable[Join[BooleanVariables[transformed],List[transformed]]]/.{True->truevalue,False->falsevalue},TableHeadings->{None,Join[BooleanVariables[transformed],List[transformed]]}]]/;Head[expr]==BooleanFunction;
+*)
+
+TestArray[expr_]:=Array[Indexed[p,##]&,{expr}];
+ BooleanCompose[expr_][args__]:=expr/.(Verbatim[#]->#[args]&/@Union@BooleanVariables[expr&&(True&)]) 
+ ResourceFunction[ResourceObject[<|"Name" -> "FormatAsResourceFunction", "ShortName" -> "FormatAsResourceFunction", "UUID" -> "a04b8cc2-23c4-424e-9846-fb9e83ff42ef", "ResourceType" -> "Function", "Version" -> "1.0.0", "Description" -> "Format a symbol as a ResourceFunction in outputs", "RepositoryLocation" -> URL["https://www.wolframcloud.com/objects/resourcesystem/api/1.0"], "SymbolName" -> "FunctionRepository`$9a23e344af2a439b9bf754d5e4b52c65`FormatAsResourceFunction", "FunctionLocation" -> CloudObject["https://www.wolframcloud.com/objects/ef623453-1f3d-4647-a91c-c7e8a948cbc7"]|>, ResourceSystemBase -> "https://www.wolframcloud.com/objects/resourcesystem/api/1.0"]][BooleanCompose]
 
 
 End[]; (* End `Private` *)
