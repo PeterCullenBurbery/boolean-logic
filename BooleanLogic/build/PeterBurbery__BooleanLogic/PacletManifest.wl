@@ -11,7 +11,7 @@
             ,
             "Hash"
             ->
-            "d08f65608c8f488d4fbd2c8317608f287a469b8b24e8ff2f8444a3e4e73018e6"
+            "cda2fce8e4318fe661f55eccaa0097db99d08f1d3c1a9be20de97e9db3d1c032"
                 
         |>
         ,
@@ -24,7 +24,7 @@
             ,
             "Hash"
             ->
-            "67de9c4fe8a21a2b4bce71a969b77d5f519a43743152e89d0022c9ee3765604a"
+            "ec44ba83f8813a524ec0fd265ef7f93bc4aaec68f3570f657299ccc5c2c17ca7"
                 
         |>
         ,
@@ -38,7 +38,7 @@
             ,
             "Hash"
             ->
-            "eb1b70a7a25d7ad81beff585e47af81865f0114d22b98c05d5ba777f5b73a6c6"
+            "967ba7fd4aa0e90be78aaab542409a609258374e133b7484cf760c3d9ce8fada"
                 
         |>
         ,
@@ -66,7 +66,7 @@
             ,
             "Hash"
             ->
-            "d0b6c2e3fec37e7b54fad6d5bbc65106556bd6beb682c758b44272d58b1fe054"
+            "6882d19eda5e5b0f06e5105d5dbcc153f000acd09882fb32fc53d0cdbb35f0a8"
                 
         |>
         ,
@@ -81,6 +81,20 @@
             "Hash"
             ->
             "51f849cb65194a6737d869987c2fe7845d711586e3c6a06200d7fe65cae2ad4e"
+                
+        |>
+        ,
+        <|
+            "File"
+            ->
+            File[
+                "Documentation\\English\\ReferencePages\\Symbols\\InverseBoole.nb"
+                    
+            ]
+            ,
+            "Hash"
+            ->
+            "e45fd8ab73e11e43c4443c43076e5396bf922b8578ba89ef2fe79f691dff42fa"
                 
         |>
         ,

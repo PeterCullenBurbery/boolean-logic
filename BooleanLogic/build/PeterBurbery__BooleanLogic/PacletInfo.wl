@@ -7,7 +7,7 @@ PacletObject[
     "Creator" -> "Peter Cullen Burbery",
     "License" -> "MIT",
     "PublisherID" -> "PeterBurbery",
-    "Version" -> "1.18.0",
+    "Version" -> "1.19.0",
     "WolframVersion" -> "13.1+",
     "Extensions" -> {
       {
@@ -24,6 +24,7 @@ PacletObject[
           "PeterBurbery`BooleanLogic`BooleanStructureData",
           "PeterBurbery`BooleanLogic`BooleanTruthInputData",
           "PeterBurbery`BooleanLogic`FindBooleanAlternative",
+          "PeterBurbery`BooleanLogic`InverseBoole",
           "PeterBurbery`BooleanLogic`TruthTable",
           "PeterBurbery`BooleanLogic`VennDiagram"
         }

@@ -3,7 +3,7 @@
 BeginPackage["PeterBurbery`BooleanLogic`"];
 
 (* Declare your packages public symbols here. *)
-
+InverseBoole;
 BooleanStructureData;
 FindBooleanAlternative;
 BooleanTruthInputData;
@@ -92,7 +92,18 @@ TableForm[BooleanTable[input],TableHeadings->{None,input}]]/;!MatchQ[booleanfunc
 TruthTable[booleanfunction_,"Symbols"->{truesymbol_,falsesymbol_}]:=Block[{input},input=Join[BooleanVariables[booleanfunction],{booleanfunction}];
 TableForm[BooleanTable[input]/.{True->truesymbol,False->falsesymbol},TableHeadings->{None,input}]]/;!MatchQ[booleanfunction,_BooleanFunction]
  BooleanCompose[expr_][args__]:=expr/.(Verbatim[#]->#[args]&/@Union@BooleanVariables[expr&&(True&)]) 
- ResourceFunction[ResourceObject[<|"Name" -> "FormatAsResourceFunction", "ShortName" -> "FormatAsResourceFunction", "UUID" -> "a04b8cc2-23c4-424e-9846-fb9e83ff42ef", "ResourceType" -> "Function", "Version" -> "1.0.0", "Description" -> "Format a symbol as a ResourceFunction in outputs", "RepositoryLocation" -> URL["https://www.wolframcloud.com/objects/resourcesystem/api/1.0"], "SymbolName" -> "FunctionRepository`$9a23e344af2a439b9bf754d5e4b52c65`FormatAsResourceFunction", "FunctionLocation" -> CloudObject["https://www.wolframcloud.com/objects/ef623453-1f3d-4647-a91c-c7e8a948cbc7"]|>, ResourceSystemBase -> "https://www.wolframcloud.com/objects/resourcesystem/api/1.0"]][BooleanCompose]
+
+  ResourceFunction[ResourceObject[<|"Name" -> "FormatAsResourceFunction", "ShortName" -> "FormatAsResourceFunction", "UUID" -> "a04b8cc2-23c4-424e-9846-fb9e83ff42ef", "ResourceType" -> "Function", "Version" -> "1.0.0", "Description" -> "Format a symbol as a ResourceFunction in outputs", "RepositoryLocation" -> URL["https://www.wolframcloud.com/objects/resourcesystem/api/1.0"], "SymbolName" -> "FunctionRepository`$9a23e344af2a439b9bf754d5e4b52c65`FormatAsResourceFunction", "FunctionLocation" -> CloudObject["https://www.wolframcloud.com/objects/ef623453-1f3d-4647-a91c-c7e8a948cbc7"]|>, ResourceSystemBase -> "https://www.wolframcloud.com/objects/resourcesystem/api/1.0"]][BooleanCompose]
+
+
+ClearAll[InverseBoole];
+
+Attributes[InverseBoole]={Listable};
+
+InverseBoole[1]=True;
+InverseBoole[0]=False;
+InverseBoole[a_->b_]:=a->InverseBoole[b];
+InverseBoole[args___]:=InverseBoole[args]/;(ArgumentCountQ[InverseBoole,Length@{args},1,1]&&False);
 
 
 End[]; (* End `Private` *)
