@@ -5,11 +5,13 @@ BeginPackage["PeterBurbery`BooleanLogic`"];
 (* Declare your packages public symbols here. *)
 InverseBoole;
 BooleanStructureData;
+AllBooleanForms;
 FindBooleanAlternative;
 BooleanTruthInputData;
 VennDiagram;
 TruthTable;
 BooleanCompose;
+RandomBooleanFunction;
 Begin["`Private`"];
 
 
@@ -104,6 +106,13 @@ InverseBoole[1]=True;
 InverseBoole[0]=False;
 InverseBoole[a_->b_]:=a->InverseBoole[b];
 InverseBoole[args___]:=InverseBoole[args]/;(ArgumentCountQ[InverseBoole,Length@{args},1,1]&&False);
+
+
+AllBooleanForms//ClearAll;
+AllBooleanForms[func_]:=AssociationMap[form|->BooleanConvert[func,form],{"DNF","SOP","CNF","POS","ESOP","ANF","NOR","NAND","AND","OR","IMPLIES","ITE","IF","BFF","BDT"}]
+
+RandomBooleanFunction//ClearAll;
+RandomBooleanFunction[inputno_]:=BooleanFunction[RandomInteger[2^(2 inputno)],inputno]
 
 
 End[]; (* End `Private` *)

@@ -1,23 +1,23 @@
 <|"English\\ReferencePages\\Symbols\\BooleanTruthInputData.nb" -> 
   <|"Result" -> Success["BuildDocumentationNotebook", 
-     <|"Time" -> Quantity[0.8455813, "Seconds"]|>], 
-   "FileHash" -> "2l1debCs/7E0eUefKwKCOCaGGvBIx7suvB2KUt62Ndw="|>, 
+     <|"Time" -> Quantity[0.8622626, "Seconds"]|>], 
+   "FileHash" -> "b8vt6N9kYfm0qKOpnWkwwyw7nvJ2aKFlaZwiq3mgPN4="|>, 
  "English\\ReferencePages\\Symbols\\BooleanStructureData.nb" -> 
   <|"Result" -> Success["BuildDocumentationNotebook", 
      <|"Time" -> Quantity[0.8928833, "Seconds"]|>], 
    "FileHash" -> "H4XneRZ7JcPGHvdR3KNRjro9oD5y6/RC6eBRMzgeNPI="|>, 
  "English\\ReferencePages\\Symbols\\FindBooleanAlternative.nb" -> 
   <|"Result" -> Success["BuildDocumentationNotebook", 
-     <|"Time" -> Quantity[0.7288549, "Seconds"]|>], 
-   "FileHash" -> "pSZLy1ebGMD/NFpnitg/CbwZEFgBuzs6SFr566JQt0g="|>, 
+     <|"Time" -> Quantity[1.0227788, "Seconds"]|>], 
+   "FileHash" -> "F61JfvEvYqxHxGu/G8F7fL7RVDdmLAZyLMP3WQqbgzw="|>, 
  "English\\ReferencePages\\Symbols\\VennDiagram.nb" -> 
   <|"Result" -> Success["BuildDocumentationNotebook", 
      <|"Time" -> Quantity[1.5814904, "Seconds"]|>], 
    "FileHash" -> "qtJOKa9TNmwi2znWMC8G2zGsh7SljURwmSituq1Si4s="|>, 
  "English\\Guides\\Logic.nb" -> 
   <|"Result" -> Success["BuildDocumentationNotebook", 
-     <|"Time" -> Quantity[1.2092151, "Seconds"]|>], 
-   "FileHash" -> "3KOkQlJm7ARR+ml0sQdoGgqa2CZYtYJOORbEOH4DYx8="|>, 
+     <|"Time" -> Quantity[1.0532293, "Seconds"]|>], 
+   "FileHash" -> "umOfCj3+NGRe2KqqCLOWeVEbS6u/e3zXfdqa3r+4UK4="|>, 
  "English\\ReferencePages\\Symbols\\BooleanCompose.nb" -> 
   <|"Result" -> Success["BuildDocumentationNotebook", 
      <|"Time" -> Quantity[0.8532263, "Seconds"]|>], 
@@ -29,4 +29,16 @@
  "English\\ReferencePages\\Symbols\\InverseBoole.nb" -> 
   <|"Result" -> Success["BuildDocumentationNotebook", 
      <|"Time" -> Quantity[1.3969144, "Seconds"]|>], 
-   "FileHash" -> "G/v8jnW9AbSfUDnoqoU4zGU4zHvxSkPkTDEy1ArkzhE="|>|>
+   "FileHash" -> "G/v8jnW9AbSfUDnoqoU4zGU4zHvxSkPkTDEy1ArkzhE="|>, 
+ "English\\ReferencePages\\Symbols\\AllBooleanForms.nb" -> 
+  <|"Result" -> Success["BuildDocumentationNotebook", 
+     <|"Time" -> Quantity[1.392962, "Seconds"]|>], 
+   "FileHash" -> "qomiIuJaR7KUdbKOuqJ56OePEkOuP+U8GzZg+3gvKrk="|>, 
+ "English\\ReferencePages\\Symbols\\RandomBooleanFunction.nb" -> 
+  <|"Result" -> Success["BuildDocumentationNotebook", 
+     <|"Time" -> Quantity[1.1780834, "Seconds"]|>], 
+   "FileHash" -> "EwZk/iUQlAngLTZwgBwbpJH2oHUEamH7iSM7bN/T7NE="|>, 
+ "English\\Tutorials\\BooleanBasics.nb" -> 
+  <|"Result" -> Success["BuildDocumentationNotebook", 
+     <|"Time" -> Quantity[1.8589349, "Seconds"]|>], 
+   "FileHash" -> "f1558ln/gqX8p6Q3CA37M3ye8s+LwobIAuImDF9DTU8="|>|>

@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     23883,        662]
+NotebookDataLength[     23881,        662]
 NotebookOptionsPosition[     17119,        514]
-NotebookOutlinePosition[     17915,        540]
-CellTagsIndexPosition[     17836,        535]
+NotebookOutlinePosition[     17913,        540]
+CellTagsIndexPosition[     17834,        535]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -512,8 +512,8 @@ Cell[BoxData[""], "Template",
 }, Closed]]
 }, Open  ]]
 },
-WindowSize->{1440., 741.75},
-WindowMargins->{{-6, Automatic}, {Automatic, -6}},
+WindowSize->{1428., 735.75},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
 TaggingRules-><|"Paclet" -> "PeterBurbery/BooleanLogic"|>,
 CellContext->"Global`",
 FrontEndVersion->"13.1 for Microsoft Windows (64-bit) (June 16, 2022)",
@@ -534,7 +534,7 @@ CellTagsIndex->{
 *)
 (*CellTagsIndex
 CellTagsIndex->{
- {"ExtendedExamples", 17642, 528}
+ {"ExtendedExamples", 17640, 528}
  }
 *)
 (*NotebookFileOutline

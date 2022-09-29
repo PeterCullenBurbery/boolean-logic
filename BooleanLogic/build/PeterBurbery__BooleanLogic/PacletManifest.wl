@@ -11,7 +11,7 @@
             ,
             "Hash"
             ->
-            "cda2fce8e4318fe661f55eccaa0097db99d08f1d3c1a9be20de97e9db3d1c032"
+            "a1fe082a759fba49ba9720879f9d0978c11031324ac9450b3798aa145826c798"
                 
         |>
         ,
@@ -24,7 +24,21 @@
             ,
             "Hash"
             ->
-            "ec44ba83f8813a524ec0fd265ef7f93bc4aaec68f3570f657299ccc5c2c17ca7"
+            "515fa4aeaa6e2eb4b4675b7e2808597c5df0150deb2da473e91879e90e714e26"
+                
+        |>
+        ,
+        <|
+            "File"
+            ->
+            File[
+                "Documentation\\English\\ReferencePages\\Symbols\\AllBooleanForms.nb"
+                    
+            ]
+            ,
+            "Hash"
+            ->
+            "8a033e0568b299f7fd8d7840b8cd709df8b01fc8d3e9ee0c798c3a294e2fc437"
                 
         |>
         ,
@@ -66,7 +80,7 @@
             ,
             "Hash"
             ->
-            "6882d19eda5e5b0f06e5105d5dbcc153f000acd09882fb32fc53d0cdbb35f0a8"
+            "4e2148a072734ae4b70c079d28410ad225f48457a098385caa8e1f5cfcfefe7b"
                 
         |>
         ,
@@ -80,7 +94,7 @@
             ,
             "Hash"
             ->
-            "51f849cb65194a6737d869987c2fe7845d711586e3c6a06200d7fe65cae2ad4e"
+            "06015ec77144a09552e9ab564ffb84b58899784fd293ff6983bfc7d02e683eb9"
                 
         |>
         ,
@@ -95,6 +109,20 @@
             "Hash"
             ->
             "e45fd8ab73e11e43c4443c43076e5396bf922b8578ba89ef2fe79f691dff42fa"
+                
+        |>
+        ,
+        <|
+            "File"
+            ->
+            File[
+                "Documentation\\English\\ReferencePages\\Symbols\\RandomBooleanFunction.nb"
+                    
+            ]
+            ,
+            "Hash"
+            ->
+            "f18bce285ed924747d3ee5edc1ba8c33f9ecf858316a8821c4573cc0dc261d0c"
                 
         |>
         ,
@@ -123,6 +151,20 @@
             "Hash"
             ->
             "97b1c23bc90134c1f4e2a4dc6906dfbb69b66c39e64aedf753548ab313c54ad6"
+                
+        |>
+        ,
+        <|
+            "File"
+            ->
+            File[
+                "Documentation\\English\\Tutorials\\BooleanBasics.nb"
+                    
+            ]
+            ,
+            "Hash"
+            ->
+            "81601c76ba9b6d1fda29642ab9e5a02054515f34e9557b92610ebc414925adc0"
                 
         |>
     }
