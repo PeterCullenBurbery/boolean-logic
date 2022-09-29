@@ -13,6 +13,8 @@ TruthTable;
 BooleanCompose;
 RandomBooleanFunction;
 AllMinimalBooleanForms;
+AllBooleanFormsLiteralCounts;
+(*AllMinimalBooleanFormsLiteralCounts;*)
 Begin["`Private`"];
 
 
@@ -115,7 +117,16 @@ AllBooleanForms[func_]:=AssociationMap[form|->BooleanConvert[func,form],{"DNF","
 RandomBooleanFunction//ClearAll;
 RandomBooleanFunction[inputno_]:=BooleanFunction[RandomInteger[2^(2 inputno)],inputno]
 
+AllMinimalBooleanForms//ClearAll
 AllMinimalBooleanForms[func_]:=AssociationMap[form|->BooleanMinimize[func,form],{"DNF","SOP","CNF","POS","ANF","NOR","NAND","AND","OR"}]
+
+AllBooleanFormsLiteralCounts//ClearAll
+AllBooleanFormsLiteralCounts[func_]:=AssociationMap[form|->LeafCount[BooleanConvert[func,form],Heads->False],{"DNF","SOP","CNF","POS","ESOP","ANF","NOR","NAND","AND","OR","IMPLIES","ITE","IF","BFF","BDT"}]
+
+
+AllMinimalBooleanFormsLiteralCounts;//ClearAll
+AllMinimalBooleanFormsLiteralCounts;[func_]:=AssociationMap[form|->LeafCount[BooleanMinimize[func,form],Heads->False],{"DNF","SOP","CNF","POS","ANF","NOR","NAND","AND","OR"}]
+
 
 
 End[]; (* End `Private` *)
