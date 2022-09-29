@@ -1,0 +1,586 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     22939,        576]
+NotebookOptionsPosition[     17926,        472]
+NotebookOutlinePosition[     20194,        527]
+CellTagsIndexPosition[     20109,        522]
+WindowTitle->AllBooleanFormsLiteralCounts
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[GridBox[{
+   {GridBox[{
+      {
+       ItemBox[Cell[BoxData[
+         RowBox[{
+          TemplateBox[{12},
+           "Spacer1"], Cell[
+          "PETER BURBERY/ BOOLEAN LOGIC SYMBOL", "PacletNameCell",
+           TextAlignment->Center,ExpressionUUID->
+           "4776d737-c53a-40bf-8577-011a3bdc27be"], 
+          TemplateBox[{8},
+           "Spacer1"]}]],
+         TextAlignment->Center,ExpressionUUID->
+         "3f109a1e-f523-413f-9fbe-4a8bce7278d2"],
+        Background->RGBColor[0.490196, 0.576471, 0.690196],
+        ItemSize->Full], ""}
+     },
+     GridBoxAlignment->{"Rows" -> {{Center}}},
+     GridBoxItemSize->{"Columns" -> {Full, 
+         Scaled[0.02]}, "Rows" -> {{2.5}}}], Cell[TextData[{
+     Cell[BoxData[
+      TagBox[
+       ActionMenuBox[
+        FrameBox[Cell[TextData[{
+          "Related Guides",
+          " ",
+          Cell[BoxData[
+           GraphicsBox[
+            {GrayLevel[0.66667], Thickness[0.13], 
+             LineBox[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]},
+            AspectRatio->1,
+            ImageSize->20,
+            PlotRange->{{-3, 4}, {-1, 1}}]],ExpressionUUID->
+           "d027eeb4-520d-4cfd-bcf2-6a009801747f"]
+         }],ExpressionUUID->"7b316cd3-ef03-46ea-ae07-b7ad0b3c30d4"],
+         StripOnInput->False], {"\<\"Logic\"\>":>Documentation`HelpLookup[
+        "paclet:PeterBurbery/BooleanLogic/guide/Logic"]},
+        Appearance->None,
+        MenuAppearance->Automatic,
+        MenuStyle->"MoreAbout"],
+       MouseAppearanceTag["LinkHand"]]],
+      LineSpacing->{1.4, 0},ExpressionUUID->
+      "4439942e-cbec-4fe1-8906-b8f61ef1da3c"],
+     "\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\
+\[ThickSpace]",
+     Cell[BoxData[
+      TagBox[
+       ActionMenuBox[
+        FrameBox[Cell[TextData[{
+          "URL",
+          " ",
+          Cell[BoxData[
+           GraphicsBox[
+            {GrayLevel[0.66667], Thickness[0.13], 
+             LineBox[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]},
+            AspectRatio->1,
+            ImageSize->20,
+            PlotRange->{{-3, 4}, {-1, 1}}]],ExpressionUUID->
+           "33a25d2c-fe3e-4680-a743-b61eb75694ae"]
+         }],ExpressionUUID->"b6cc8da6-54cf-439c-b123-fae3d34e1dc9"],
+         StripOnInput->
+          False], {"\<\"PeterBurbery/BooleanLogic/ref/\
+AllBooleanFormsLiteralCounts\"\>":>
+        None, "\<\"Copy Wolfram Documentation Center URL\"\>":>
+        Module[{DocumentationSearch`Private`nb$}, 
+         DocumentationSearch`Private`nb$ = NotebookPut[
+            Notebook[{
+              Cell[
+              "PeterBurbery/BooleanLogic/ref/AllBooleanFormsLiteralCounts"]}, 
+             Visible -> False]]; 
+         SelectionMove[DocumentationSearch`Private`nb$, All, Notebook]; 
+         FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
+         NotebookClose[DocumentationSearch`Private`nb$]; Null], 
+        Delimiter, "\<\"Copy web URL\"\>":>
+        Module[{DocumentationSearch`Private`nb$}, 
+         DocumentationSearch`Private`nb$ = NotebookPut[
+            Notebook[{
+              Cell[
+               BoxData[
+                MakeBoxes[
+                 Hyperlink[
+                 "http://reference.wolfram.com/language/PeterBurbery/\
+BooleanLogic/ref/AllBooleanFormsLiteralCounts.html"], StandardForm]], "Input",
+                TextClipboardType -> "PlainText"]}, Visible -> False]]; 
+         SelectionMove[DocumentationSearch`Private`nb$, All, Notebook]; 
+         FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
+         NotebookClose[DocumentationSearch`Private`nb$]; 
+         Null], "\<\"Go to web URL\"\>":>FrontEndExecute[{
+          NotebookLocate[{
+            URL[If[
+               TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$338840], 
+               "http://reference.wolfram.com/system-modeler/", 
+               "http://reference.wolfram.com/language/"] <> 
+             "PeterBurbery/BooleanLogic/ref/AllBooleanFormsLiteralCounts" <> 
+             ".html"], None}]}]},
+        Appearance->None,
+        MenuAppearance->Automatic,
+        MenuStyle->"URLMenu"],
+       MouseAppearanceTag["LinkHand"]]],
+      LineSpacing->{1.4, 0},ExpressionUUID->
+      "0cf8e68f-7790-46f9-b37f-b5ab07d2fa97"]
+    }], "AnchorBar",
+     CacheGraphics->False,ExpressionUUID->
+     "38ff3ec8-38d8-4c0b-b97a-11e7e6491fbd"]}
+  }]], "AnchorBarGrid",
+ GridBoxOptions->{GridBoxItemSize->{"Columns" -> {
+     Scaled[0.65], {
+      Scaled[0.34]}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+   "RowsIndexed" -> {}}},
+ CellID->1,ExpressionUUID->"4465a9a3-4532-440e-973b-e4f8c00f70cf"],
+
+Cell["PeterBurbery`BooleanLogic`", "ContextNameCell",ExpressionUUID->"9b743921-748f-4a2c-9ca2-9399bef8a6e4"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[GridBox[{
+   {Cell[TextData[{
+     Cell[
+     "AllBooleanFormsLiteralCounts", "ObjectName",ExpressionUUID->
+      "7fcc2600-d1aa-420f-b2cb-305f6bd5d656"],
+     Cell[BoxData[
+      TemplateBox[{8},
+       "Spacer1"]],ExpressionUUID->"97f3b77d-a63f-406d-920f-cdcf2798083e"],
+     Cell[BoxData[
+     ""], "ObjectNameTranslation",ExpressionUUID->
+      "9dadf726-021c-45c8-b30e-1041ce74b6a7"]
+    }],ExpressionUUID->"46779dab-fbf9-45b2-ae4e-07bc7df4fc99"], 
+    "\[SpanFromLeft]"}
+  }]], "ObjectNameGrid",ExpressionUUID->"9ceb5386-8ac0-4a80-ba3c-\
+fb70f82bdd07"],
+
+Cell[BoxData[GridBox[{
+   {"", Cell[TextData[{
+     Cell[BoxData[
+      RowBox[{
+       TemplateBox[{
+         Cell[
+          TextData["AllBooleanFormsLiteralCounts"]], 
+         "paclet:PeterBurberyBooleanLogic/ref/AllBooleanFormsLiteralCounts", 
+         "PeterBurberyBooleanLogic Package Symbol"},
+        "PackageLink",
+        BaseStyle->"InlineFormula"], "[", 
+       StyleBox["func", "TI"], "]"}]], "InlineFormula",
+      FontFamily->"Source Sans Pro",ExpressionUUID->
+      "7525d35f-51f7-47a1-abd0-308c683c77ec"],
+     "\[LineSeparator]counts the number of literals in every form for a \
+boolean function ",
+     Cell[BoxData[
+      StyleBox["func", "TI"]], "InlineFormula",
+      FontFamily->"Source Sans Pro",ExpressionUUID->
+      "ad24f859-041a-4611-8018-1eef33fe7bb3"]
+    }],ExpressionUUID->"5d8d218e-fa4c-4000-b6f0-3b89869e442c"]}
+  }]], "Usage",
+ CellID->180436121,ExpressionUUID->"5da886e0-26f9-47b7-9e1d-12c8346cf38d"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[Cell[BoxData[
+ ButtonBox[Cell[TextData[{
+   Cell[BoxData[
+    DynamicBox[ToBoxes[
+      If[
+       MatchQ[
+        CurrentValue[
+         EvaluationNotebook[], {TaggingRules, "Openers", "NotesSection"}, 
+         Closed], 
+        Alternatives[Open, True]], 
+       Style[
+        Graphics[{
+          Thickness[0.18], 
+          RGBColor[0.8509803921568627, 0.396078431372549, 0], 
+          Line[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]}, AspectRatio -> 1, 
+         PlotRange -> {{-3, 4}, {-1, 1}}, ImageSize -> 20], Magnification -> 
+        0.68 Inherited], 
+       Rotate[
+        Style[
+         Graphics[{
+           Thickness[0.18], 
+           RGBColor[0.8509803921568627, 0.396078431372549, 0], 
+           Line[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]}, AspectRatio -> 1, 
+          PlotRange -> {{-3, 4}, {-1, 1}}, ImageSize -> 20], Magnification -> 
+         0.68 Inherited], Rational[1, 2] Pi, {-1.65, -1}]]],
+     ImageSizeCache->{
+      13.600000000000001`, {0.5800000000000001, 13.020000000000001`}}]],
+    ExpressionUUID->"c9f4a1bf-e238-4916-9647-be55d9f75c9b"],
+   Cell[BoxData[
+    TemplateBox[{1},
+     "Spacer1"]],ExpressionUUID->"ca36c2c0-a265-48b3-ae67-d020275f8f17"],
+   "Details and Options"
+  }], "NotesFrameText",ExpressionUUID->"917ff551-c741-485b-b17c-5f4e2ffe080f"],
+  Appearance->{Automatic, None, "Normal", Automatic},
+  BaseStyle->None,
+  ButtonFunction:>(FrontEndExecute[{
+     FrontEnd`SelectionMove[
+      FrontEnd`SelectedNotebook[], All, ButtonCell], 
+     FrontEndToken["OpenCloseGroup"], 
+     FrontEnd`SelectionMove[
+      FrontEnd`SelectedNotebook[], After, CellContents]}]& ),
+  Evaluator->None,
+  Method->
+   "Preemptive"]],ExpressionUUID->"bf4c600f-bfcb-49c3-9047-1747c943d035"]], \
+"NotesSection",
+ WholeCellGroupOpener->True,
+ CellGroupingRules->{"SectionGrouping", 50},
+ CacheGraphics->False,
+ CellID->462679390,ExpressionUUID->"9cbe794c-4c49-43b1-b8e3-d2cf1df53434"],
+
+Cell[TextData[{
+ Cell[BoxData[
+  RowBox[{
+   TemplateBox[{
+     Cell[
+      TextData["AllBooleanFormsLiteralCounts"]], 
+     "paclet:PeterBurberyBooleanLogic/ref/AllBooleanFormsLiteralCounts", 
+     "PeterBurberyBooleanLogic Package Symbol"},
+    "PackageLink",
+    BaseStyle->"InlineFormula"], "[", 
+   RowBox[{
+    StyleBox["func", "TI"], ",", " ", 
+    RowBox[{"\"\<Output-Form\>\"", "->", "\"\<Long-Form\>\""}]}], "]"}]], 
+  "InlineFormula",
+  FontFamily->"Source Sans Pro",ExpressionUUID->
+  "452b27c4-dacb-4a20-8b65-672c464f99e4"],
+ "  displays the full names of the keys."
+}], "Notes",
+ CellID->421526985,ExpressionUUID->"93ab8e9d-23ce-4082-b0ec-67e942483676"]
+}, Dynamic[CurrentValue[
+ EvaluationNotebook[], {TaggingRules, "Openers", "NotesSection"}, Closed]]]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ Cell[BoxData[
+  DynamicBox[ToBoxes[
+    If[
+     MatchQ[
+      CurrentValue[
+       EvaluationNotebook[], {
+       TaggingRules, "Openers", "PrimaryExamplesSection"}, Open], 
+      Alternatives[True, Open]], 
+     Style[
+      Graphics[{
+        Thickness[0.18], 
+        RGBColor[0.8509803921568627, 0.396078431372549, 0], 
+        Line[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]}, AspectRatio -> 1, 
+       PlotRange -> {{-3, 4}, {-1, 1}}, ImageSize -> 20], Magnification -> 
+      0.68 Inherited], 
+     Rotate[
+      Style[
+       Graphics[{
+         Thickness[0.18], 
+         RGBColor[0.8509803921568627, 0.396078431372549, 0], 
+         Line[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]}, AspectRatio -> 1, 
+        PlotRange -> {{-3, 4}, {-1, 1}}, ImageSize -> 20], Magnification -> 
+       0.68 Inherited], Rational[1, 2] Pi, {-1.65, -1}]]],
+   ImageSizeCache->{13.600000000000001`, {5., 8.600000000000001}}]],
+  ExpressionUUID->"1a12d9c8-9a62-4390-a967-ce1462982531"],
+ Cell[BoxData[
+  TemplateBox[{1},
+   "Spacer1"]],ExpressionUUID->"fd9b88e2-86ea-4473-957f-5f7c3e29e992"],
+ "Examples",
+ "\[NonBreakingSpace]\[NonBreakingSpace]",
+ Cell["(1)", "ExampleCount",ExpressionUUID->
+  "a0d1c54e-8f3d-4e64-9cb4-56b9af0b32d7"]
+}], "PrimaryExamplesSection",
+ WholeCellGroupOpener->True,
+ CacheGraphics->False,
+ CellTags->"PrimaryExamplesSection",
+ CellID->36754940,ExpressionUUID->"67b6c230-47a9-4988-9934-4bf9e04db478"],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<PeterBurbery`BooleanLogic`\>\"", "]"}]], "Input", \
+"ExampleInitialization",
+ CellLabel->"In[1]:=",
+ CellID->5615109,ExpressionUUID->"668586bf-8e8f-463f-bdc8-93faa20cac42"],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ Cell[BoxData[
+  DynamicBox[ToBoxes[
+    If[
+     MatchQ[
+      CurrentValue[
+       EvaluationNotebook[], {TaggingRules, "Openers", "ExampleSection", "0"},
+        Closed], 
+      Alternatives[Open, True]], 
+     Style[
+      Graphics[{
+        Thickness[0.18], 
+        RGBColor[0.8509803921568627, 0.396078431372549, 0], 
+        Line[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]}, AspectRatio -> 1, 
+       PlotRange -> {{-3, 4}, {-1, 1}}, ImageSize -> 20], Magnification -> 
+      0.68 Inherited], 
+     Rotate[
+      Style[
+       Graphics[{
+         Thickness[0.18], 
+         RGBColor[0.8509803921568627, 0.396078431372549, 0], 
+         Line[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]}, AspectRatio -> 1, 
+        PlotRange -> {{-3, 4}, {-1, 1}}, ImageSize -> 20], Magnification -> 
+       0.68 Inherited], Rational[1, 2] Pi, {-1.65, -1}]]],
+   ImageSizeCache->{13.600000000000001`, {5., 8.600000000000001}}]],
+  ExpressionUUID->"05472a31-800a-412e-9d69-b82a8ef8bc3c"],
+ Cell[BoxData[
+  TemplateBox[{1},
+   "Spacer1"]],ExpressionUUID->"b644bc25-3ef0-4fa0-9f7a-33f7a8ff0cb9"],
+ "Basic Examples",
+ "\[NonBreakingSpace]\[NonBreakingSpace]",
+ Cell["(1)", "ExampleCount",ExpressionUUID->
+  "7579fbff-9e43-48fe-9601-68a0a344b47c"]
+}], "ExampleSection", "ExampleSection",
+ WholeCellGroupOpener->True,
+ CacheGraphics->False,
+ CellID->639896860,ExpressionUUID->"47fe0205-d0c5-4240-a36b-bc548b1354f5"],
+
+Cell["\<\
+Count the number of literals in every form for a boolean function with 18 \
+inputs:\
+\>", "ExampleText",
+ CellID->432919041,ExpressionUUID->"0bd9d264-d715-4a86-b596-a956644884b1"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"AllBooleanFormsLiteralCounts", "[", 
+  RowBox[{"RandomBooleanFunction", "[", "18", "]"}], "]"}]], "Input",
+ CellProlog:>Needs["PeterBurbery`BooleanLogic`"],
+ CellLabel->"In[1]:=",
+ CellID->78467620,ExpressionUUID->"bd4bcf7d-5d15-443d-af43-dbd3ca25a638"],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{
+   RowBox[{"\<\"DNF\"\>", "\[Rule]", "211"}], ",", 
+   RowBox[{"\<\"SOP\"\>", "\[Rule]", "211"}], ",", 
+   RowBox[{"\<\"CNF\"\>", "\[Rule]", "1837"}], ",", 
+   RowBox[{"\<\"POS\"\>", "\[Rule]", "1837"}], ",", 
+   RowBox[{"\<\"ESOP\"\>", "\[Rule]", "211"}], ",", 
+   RowBox[{"\<\"ANF\"\>", "\[Rule]", "1150976"}], ",", 
+   RowBox[{"\<\"NOR\"\>", "\[Rule]", "1837"}], ",", 
+   RowBox[{"\<\"NAND\"\>", "\[Rule]", "211"}], ",", 
+   RowBox[{"\<\"AND\"\>", "\[Rule]", "1837"}], ",", 
+   RowBox[{"\<\"OR\"\>", "\[Rule]", "211"}], ",", 
+   RowBox[{"\<\"IMPLIES\"\>", "\[Rule]", "48"}], ",", 
+   RowBox[{"\<\"ITE\"\>", "\[Rule]", "81"}], ",", 
+   RowBox[{"\<\"IF\"\>", "\[Rule]", "81"}], ",", 
+   RowBox[{"\<\"BFF\"\>", "\[Rule]", "1"}], ",", 
+   RowBox[{"\<\"BDT\"\>", "\[Rule]", "69"}]}], 
+  "\[RightAssociation]"}]], "Output",
+ CellLabel->"Out[1]=",
+ CellID->1728180,ExpressionUUID->"b82e968b-89a8-41cf-9b2e-695c2b1ecdc9"]
+}, Open  ]],
+
+Cell["Delete duplicate values:", "ExampleText",
+ CellID->156959783,ExpressionUUID->"0b8e8274-8a24-4964-9a2e-e4dd1d3281d1"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DeleteDuplicates", "[", 
+  RowBox[{"AllBooleanFormsLiteralCounts", "[", 
+   RowBox[{"RandomBooleanFunction", "[", "18", "]"}], "]"}], "]"}]], "Input",
+ CellProlog:>Needs["PeterBurbery`BooleanLogic`"],
+ CellLabel->"In[2]:=",
+ CellID->580709533,ExpressionUUID->"3c9a480a-6999-4cc8-87aa-4bd1babc76fb"],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{
+   RowBox[{"\<\"DNF\"\>", "\[Rule]", "190"}], ",", 
+   RowBox[{"\<\"CNF\"\>", "\[Rule]", "1649"}], ",", 
+   RowBox[{"\<\"ANF\"\>", "\[Rule]", "1257472"}], ",", 
+   RowBox[{"\<\"IMPLIES\"\>", "\[Rule]", "46"}], ",", 
+   RowBox[{"\<\"ITE\"\>", "\[Rule]", "77"}], ",", 
+   RowBox[{"\<\"BFF\"\>", "\[Rule]", "1"}], ",", 
+   RowBox[{"\<\"BDT\"\>", "\[Rule]", "66"}]}], 
+  "\[RightAssociation]"}]], "Output",
+ CellLabel->"Out[2]=",
+ CellID->284128196,ExpressionUUID->"840c8484-0e08-4c1b-9884-73e2c22725f0"]
+}, Open  ]],
+
+Cell["Display the full key names:", "ExampleText",
+ CellID->637745860,ExpressionUUID->"5ec1627d-adbc-4119-8914-c7e8385da2dc"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"AllBooleanFormsLiteralCounts", "[", 
+   RowBox[{
+    RowBox[{"RandomBooleanFunction", "[", "13", "]"}], ",", 
+    RowBox[{"\"\<Output-Form\>\"", "->", "\"\<Long-Form\>\""}]}], "]"}], "//",
+   "TraditionalForm"}]], "Input",
+ CellProlog:>Needs["PeterBurbery`BooleanLogic`"],
+ CellLabel->"In[3]:=",
+ CellID->420274481,ExpressionUUID->"64459dea-707a-45d0-a044-fb64b10c536f"],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"\[LeftAssociation]", 
+   RowBox[{
+    RowBox[{"\<\"disjunctive-normal-form\"\>", "\[Rule]", "86"}], ",", 
+    RowBox[{"\<\"sum-of-products\"\>", "\[Rule]", "86"}], ",", 
+    RowBox[{"\<\"conjunctive-normal-form\"\>", "\[Rule]", "535"}], ",", 
+    RowBox[{"\<\"product-of-sums\"\>", "\[Rule]", "535"}], ",", 
+    RowBox[{"\<\"exclusive-sum-of-products\"\>", "\[Rule]", "86"}], ",", 
+    RowBox[{"\<\"algebraic-normal-form\"\>", "\[Rule]", "30976"}], ",", 
+    RowBox[{"\<\"nor-and-not\"\>", "\[Rule]", "535"}], ",", 
+    RowBox[{"\<\"nand-and-not\"\>", "\[Rule]", "86"}], ",", 
+    RowBox[{"\<\"and-and-not\"\>", "\[Rule]", "535"}], ",", 
+    RowBox[{"\<\"or-and-not\"\>", "\[Rule]", "86"}], ",", 
+    RowBox[{"\<\"implies-and-not\"\>", "\[Rule]", "35"}], ",", 
+    RowBox[{"\<\"if-and-constants\"\>", "\[Rule]", "57"}], ",", 
+    RowBox[{"\<\"boolean-function-form\"\>", "\[Rule]", "1"}], ",", 
+    RowBox[{"\<\"boolean-decision-tree\"\>", "\[Rule]", "47"}]}], 
+   "\[RightAssociation]"}], TraditionalForm]], "Output",
+ CellLabel->"Out[3]//TraditionalForm=",
+ CellID->386205117,ExpressionUUID->"99cc42fc-6eb2-4e62-af3b-5411ff1d5a10"]
+}, Open  ]]
+}, Dynamic[CurrentValue[
+ EvaluationNotebook[], {TaggingRules, "Openers", "ExampleSection", "0"}, 
+  Closed]]]]
+}, Dynamic[CurrentValue[
+ EvaluationNotebook[], {TaggingRules, "Openers", "PrimaryExamplesSection"}, 
+  Closed]]]],
+
+Cell[BoxData[GridBox[{
+   {
+    DynamicBox[FEPrivate`ImportImage[
+      FrontEnd`FileName[{"Documentation", "FooterIcons"}, "RelatedGuide.png"]],
+     ImageSizeCache->{50., {27., 33.}}], GridBox[{
+      {
+       StyleBox[
+        RowBox[{"Related", " ", "Guides"}], "MoreAboutSection"]},
+      {
+       RowBox[{"\[FilledVerySmallSquare]", Cell[BoxData[
+         TemplateBox[{
+           Cell[
+            TextData["Logic"]], 
+           "paclet:PeterBurbery/BooleanLogic/guide/Logic"},
+          "RefLinkPlain",
+          BaseStyle->{"MoreAbout"}]], "MoreAbout",ExpressionUUID->
+         "4aec7f0d-7b20-4ccb-a8c9-0259967a05df"]}]}
+     }]}
+  }]], "MoreAboutSection",ExpressionUUID->"fb4f7ed5-3f0b-4fa0-8e85-\
+16ff7833389a"],
+
+Cell[" ", "FooterCell",ExpressionUUID->"7ed3ee31-6f51-4c31-ae1e-75d005df2b6d"]
+},
+Saveable->False,
+ScreenStyleEnvironment->"Working",
+WindowSize->{900., 765.75},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+WindowTitle->"AllBooleanFormsLiteralCounts",
+TaggingRules->{
+ "ModificationHighlight" -> False, "ColorType" -> "", "LinkTrails" -> "", 
+  "HasOptions" -> True, "ExampleCounter" -> 1, 
+  "Openers" -> {
+   "PrimaryExamplesSection" -> Open, "ExampleSection" -> {"0" -> Open}, 
+    "NotesSection" -> Closed}, "NewStyles" -> True, 
+  "CitationPopupData" -> $Failed, "ShowCitation" -> False, "RootCaptions" -> 
+  "", "Metadata" -> {
+   "built" -> "{2022, 9, 29, 19, 33, 54.1501171}", 
+    "history" -> {"XX", "", "", ""}, "context" -> 
+    "PeterBurbery`BooleanLogic`", "keywords" -> {}, "specialkeywords" -> {}, 
+    "tutorialcollectionlinks" -> {}, "index" -> True, "label" -> 
+    "Peter Burbery/ Boolean Logic Symbol", "language" -> "en", "paclet" -> 
+    "PeterBurbery/BooleanLogic", "status" -> "None", "summary" -> 
+    "AllBooleanFormsLiteralCounts[func] counts the number of literals in \
+every form for a boolean function func", "synonyms" -> {}, "tabletags" -> {}, 
+    "title" -> "AllBooleanFormsLiteralCounts", "titlemodifier" -> "", 
+    "windowtitle" -> "AllBooleanFormsLiteralCounts", "type" -> "Symbol", 
+    "uri" -> "PeterBurbery/BooleanLogic/ref/AllBooleanFormsLiteralCounts"}},
+CellContext->"Global`",
+FrontEndVersion->"13.1 for Microsoft Windows (64-bit) (June 16, 2022)",
+StyleDefinitions->Notebook[{
+   Cell[
+    StyleData[
+    StyleDefinitions -> FrontEnd`FileName[{"Wolfram"}, "Reference.nb"]]], 
+   Cell[
+    StyleData["Input"], CellContext -> "Global`"], 
+   Cell[
+    StyleData["Output"], CellContext -> "Global`"]}, Visible -> False, 
+  FrontEndVersion -> "13.1 for Microsoft Windows (64-bit) (June 16, 2022)", 
+  StyleDefinitions -> "Default.nb"],
+ExpressionUUID->"67c91001-cbb0-47e3-9bed-dc760c9cc7c5"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{
+ "PrimaryExamplesSection"->{
+  Cell[9562, 253, 1419, 37, 35, "PrimaryExamplesSection",ExpressionUUID->"67b6c230-47a9-4988-9934-4bf9e04db478",
+   CellTags->"PrimaryExamplesSection",
+   CellID->36754940]}
+ }
+*)
+(*CellTagsIndex
+CellTagsIndex->{
+ {"PrimaryExamplesSection", 19911, 515}
+ }
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[600, 21, 4561, 109, 56, "AnchorBarGrid",ExpressionUUID->"4465a9a3-4532-440e-973b-e4f8c00f70cf",
+ CellID->1],
+Cell[5164, 132, 108, 0, 23, "ContextNameCell",ExpressionUUID->"9b743921-748f-4a2c-9ca2-9399bef8a6e4"],
+Cell[CellGroupData[{
+Cell[5297, 136, 571, 14, 56, "ObjectNameGrid",ExpressionUUID->"9ceb5386-8ac0-4a80-ba3c-fb70f82bdd07"],
+Cell[5871, 152, 938, 22, 111, "Usage",ExpressionUUID->"5da886e0-26f9-47b7-9e1d-12c8346cf38d",
+ CellID->180436121]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6846, 179, 1919, 48, 37, "NotesSection",ExpressionUUID->"9cbe794c-4c49-43b1-b8e3-d2cf1df53434",
+ CellGroupingRules->{"SectionGrouping", 50},
+ CellID->462679390],
+Cell[8768, 229, 667, 18, 70, "Notes",ExpressionUUID->"93ab8e9d-23ce-4082-b0ec-67e942483676",
+ CellID->421526985]
+}, Dynamic[CurrentValue[EvaluationNotebook[], {TaggingRules, "Openers", "NotesSection"}, Closed]]]],
+Cell[CellGroupData[{
+Cell[9562, 253, 1419, 37, 35, "PrimaryExamplesSection",ExpressionUUID->"67b6c230-47a9-4988-9934-4bf9e04db478",
+ CellTags->"PrimaryExamplesSection",
+ CellID->36754940],
+Cell[10984, 292, 214, 4, 26, "Input",ExpressionUUID->"668586bf-8e8f-463f-bdc8-93faa20cac42",
+ CellID->5615109],
+Cell[CellGroupData[{
+Cell[11223, 300, 1398, 36, 30, "ExampleSection",ExpressionUUID->"47fe0205-d0c5-4240-a36b-bc548b1354f5",
+ CellID->639896860],
+Cell[12624, 338, 189, 4, 38, "ExampleText",ExpressionUUID->"0bd9d264-d715-4a86-b596-a956644884b1",
+ CellID->432919041],
+Cell[CellGroupData[{
+Cell[12838, 346, 277, 5, 26, "Input",ExpressionUUID->"bd4bcf7d-5d15-443d-af43-dbd3ca25a638",
+ CellID->78467620],
+Cell[13118, 353, 973, 20, 51, "Output",ExpressionUUID->"b82e968b-89a8-41cf-9b2e-695c2b1ecdc9",
+ CellID->1728180]
+}, Open  ]],
+Cell[14106, 376, 122, 1, 38, "ExampleText",ExpressionUUID->"0b8e8274-8a24-4964-9a2e-e4dd1d3281d1",
+ CellID->156959783],
+Cell[CellGroupData[{
+Cell[14253, 381, 322, 6, 26, "Input",ExpressionUUID->"3c9a480a-6999-4cc8-87aa-4bd1babc76fb",
+ CellID->580709533],
+Cell[14578, 389, 557, 12, 35, "Output",ExpressionUUID->"840c8484-0e08-4c1b-9884-73e2c22725f0",
+ CellID->284128196]
+}, Open  ]],
+Cell[15150, 404, 125, 1, 38, "ExampleText",ExpressionUUID->"5ec1627d-adbc-4119-8914-c7e8385da2dc",
+ CellID->637745860],
+Cell[CellGroupData[{
+Cell[15300, 409, 405, 9, 26, "Input",ExpressionUUID->"64459dea-707a-45d0-a044-fb64b10c536f",
+ CellID->420274481],
+Cell[15708, 420, 1168, 20, 81, "Output",ExpressionUUID->"99cc42fc-6eb2-4e62-af3b-5411ff1d5a10",
+ CellID->386205117]
+}, Open  ]]
+}, Dynamic[CurrentValue[EvaluationNotebook[], {TaggingRules, "Openers", "ExampleSection", "0"}, Closed]]]]
+}, Dynamic[CurrentValue[EvaluationNotebook[], {TaggingRules, "Openers", "PrimaryExamplesSection"}, Closed]]]],
+Cell[17118, 449, 723, 19, 114, "MoreAboutSection",ExpressionUUID->"fb4f7ed5-3f0b-4fa0-8e85-16ff7833389a"],
+Cell[17844, 470, 78, 0, 70, "FooterCell",ExpressionUUID->"7ed3ee31-6f51-4c31-ae1e-75d005df2b6d"]
+}
+]
+*)
+
+(* End of internal cache information *)
+

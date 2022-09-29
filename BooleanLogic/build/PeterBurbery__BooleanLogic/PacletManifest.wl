@@ -11,7 +11,7 @@
             ,
             "Hash"
             ->
-            "258b92c7f890b0c00030ff36480246f6418d790285621da4f88e7728785023d7"
+            "1781c9204483224febd3bfa7fac86c685c8abb03ca3cb27826ddf16243303a7e"
                 
         |>
         ,
@@ -24,7 +24,21 @@
             ,
             "Hash"
             ->
-            "adfb912b6793f726736dc50b11328391c3f9a5871bdfd7a9b430e7b214a507e5"
+            "9ae368e3e0f6fe107f9be8667e1a32904a261624d471758284e595a73fb44f8e"
+                
+        |>
+        ,
+        <|
+            "File"
+            ->
+            File[
+                "Documentation\\English\\ReferencePages\\Symbols\\AllBooleanFormsLiteralCounts.nb"
+                    
+            ]
+            ,
+            "Hash"
+            ->
+            "4d4e4d0269fafebc2bfcf1b743af05f732e8442ced867b108f8b00f7f5cdcc29"
                 
         |>
         ,
@@ -38,7 +52,21 @@
             ,
             "Hash"
             ->
-            "8a033e0568b299f7fd8d7840b8cd709df8b01fc8d3e9ee0c798c3a294e2fc437"
+            "c038de31ea4b648d8440e423bc325c7c8201bb6a9b9fc59fbfd1014260f62bcc"
+                
+        |>
+        ,
+        <|
+            "File"
+            ->
+            File[
+                "Documentation\\English\\ReferencePages\\Symbols\\AllMinimalBooleanFormsLiteralCounts.nb"
+                    
+            ]
+            ,
+            "Hash"
+            ->
+            "5c0f785d87970582ea84a37da86c5d5931c6d8eb4711e18342e7d82e192f11b7"
                 
         |>
         ,
@@ -52,7 +80,7 @@
             ,
             "Hash"
             ->
-            "c85f0d2de54778b84236fd71f037f5457ee9780e1203810196585ccd51da8f5c"
+            "3320bcc8065d679b4d93463f80c4798ed61826451b067149caae5d8c89f629be"
                 
         |>
         ,
@@ -178,7 +206,7 @@
             ,
             "Hash"
             ->
-            "1dcca76a8b71e37113f160ce21a32e532cd87528679ac09b62d44c6b91a2279e"
+            "806d4c116d85cf97fe0012501fdd5a338b3a6565a2aad7f6c0144d26ec46f889"
                 
         |>
     }

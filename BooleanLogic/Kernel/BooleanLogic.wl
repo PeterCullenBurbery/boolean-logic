@@ -14,7 +14,7 @@ BooleanCompose;
 RandomBooleanFunction;
 AllMinimalBooleanForms;
 AllBooleanFormsLiteralCounts;
-(*AllMinimalBooleanFormsLiteralCounts;*)
+AllMinimalBooleanFormsLiteralCounts;
 Begin["`Private`"];
 
 
@@ -113,19 +113,28 @@ InverseBoole[args___]:=InverseBoole[args]/;(ArgumentCountQ[InverseBoole,Length@{
 
 AllBooleanForms//ClearAll;
 AllBooleanForms[func_]:=AssociationMap[form|->BooleanConvert[func,form],{"DNF","SOP","CNF","POS","ESOP","ANF","NOR","NAND","AND","OR","IMPLIES","ITE","IF","BFF","BDT"}]
+(*AllBooleanForms[func_,"Output-Form"->"Long-Form"]:=AssociationMap[form|->BooleanConvert[func,form],{"disjunctive-normal-form","sum-of-products","conjunctive-normal-form","product-of-sums","exclusive-sum-of-products","algebraic-normal-form","nor-and-not","nand-and-not","and-and-not","or-and-not","implies-and-not","if-and-constants","if-and-constants","boolean-function-form","boolean-decision-tree"}]
+*)
+AllBooleanForms[func_,"Output-Form"->"Long-Form"]:=AssociationThread[{"disjunctive-normal-form","sum-of-products","conjunctive-normal-form","product-of-sums","exclusive-sum-of-products","algebraic-normal-form","nor-and-not","nand-and-not","and-and-not","or-and-not","implies-and-not","if-and-constants","if-and-constants","boolean-function-form","boolean-decision-tree"}->Map[form|->BooleanConvert[func,form],{"DNF","SOP","CNF","POS","ESOP","ANF","NOR","NAND","AND","OR","IMPLIES","ITE","IF","BFF","BDT"}]]
 
 RandomBooleanFunction//ClearAll;
 RandomBooleanFunction[inputno_]:=BooleanFunction[RandomInteger[2^(2 inputno)],inputno]
 
 AllMinimalBooleanForms//ClearAll
 AllMinimalBooleanForms[func_]:=AssociationMap[form|->BooleanMinimize[func,form],{"DNF","SOP","CNF","POS","ANF","NOR","NAND","AND","OR"}]
+AllMinimalBooleanForms[func_,"Output-Form"->"Long-Form"]:=AssociationThread[{"disjunctive-normal-form","sum-of-products","conjunctive-normal-form","product-of-sums","algebraic-normal-form","nor-and-not","nand-and-not","and-and-not","or-and-not"}->Map[form|->BooleanMinimize[func,form],{"DNF","SOP","CNF","POS","ANF","NOR","NAND","AND","OR"}]]
 
 AllBooleanFormsLiteralCounts//ClearAll
 AllBooleanFormsLiteralCounts[func_]:=AssociationMap[form|->LeafCount[BooleanConvert[func,form],Heads->False],{"DNF","SOP","CNF","POS","ESOP","ANF","NOR","NAND","AND","OR","IMPLIES","ITE","IF","BFF","BDT"}]
+AllBooleanFormsLiteralCounts[func_,"Output-Form"->"Long-Form"]:=AssociationThread[{"disjunctive-normal-form","sum-of-products","conjunctive-normal-form","product-of-sums","exclusive-sum-of-products","algebraic-normal-form","nor-and-not","nand-and-not","and-and-not","or-and-not","implies-and-not","if-and-constants","if-and-constants","boolean-function-form","boolean-decision-tree"}->Map[form|->LeafCount[BooleanConvert[func,form],Heads->False],{"DNF","SOP","CNF","POS","ESOP","ANF","NOR","NAND","AND","OR","IMPLIES","ITE","IF","BFF","BDT"}]]
 
 
-AllMinimalBooleanFormsLiteralCounts;//ClearAll
-AllMinimalBooleanFormsLiteralCounts;[func_]:=AssociationMap[form|->LeafCount[BooleanMinimize[func,form],Heads->False],{"DNF","SOP","CNF","POS","ANF","NOR","NAND","AND","OR"}]
+
+
+
+AllMinimalBooleanFormsLiteralCounts//ClearAll;
+AllMinimalBooleanFormsLiteralCounts[func_]:=AssociationMap[form|->LeafCount[BooleanMinimize[func,form],Heads->False],{"DNF","SOP","CNF","POS","ANF","NOR","NAND","AND","OR"}]
+AllMinimalBooleanFormsLiteralCounts[func_,"Output-Form"->"Long-Form"]:=AssociationThread[{"disjunctive-normal-form","sum-of-products","conjunctive-normal-form","product-of-sums","algebraic-normal-form","nor-and-not","nand-and-not","and-and-not","or-and-not"}->Map[form|->LeafCount[BooleanMinimize[func,form],Heads->False],{"DNF","SOP","CNF","POS","ANF","NOR","NAND","AND","OR"}]]
 
 
 

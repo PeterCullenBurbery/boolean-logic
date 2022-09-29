@@ -16,8 +16,8 @@
    "FileHash" -> "qtJOKa9TNmwi2znWMC8G2zGsh7SljURwmSituq1Si4s="|>, 
  "English\\Guides\\Logic.nb" -> 
   <|"Result" -> Success["BuildDocumentationNotebook", 
-     <|"Time" -> Quantity[1.5339935, "Seconds"]|>], 
-   "FileHash" -> "TlRuick3uUEzZcMH67Jy1KA+c3d8FlNWqJ3ir3VCZRI="|>, 
+     <|"Time" -> Quantity[1.4139855, "Seconds"]|>], 
+   "FileHash" -> "ebc1ZtEPmEmn4FkWGojC7kIORAk2IKrT/SjZEYFkBVU="|>, 
  "English\\ReferencePages\\Symbols\\BooleanCompose.nb" -> 
   <|"Result" -> Success["BuildDocumentationNotebook", 
      <|"Time" -> Quantity[0.8532263, "Seconds"]|>], 
@@ -32,8 +32,8 @@
    "FileHash" -> "G/v8jnW9AbSfUDnoqoU4zGU4zHvxSkPkTDEy1ArkzhE="|>, 
  "English\\ReferencePages\\Symbols\\AllBooleanForms.nb" -> 
   <|"Result" -> Success["BuildDocumentationNotebook", 
-     <|"Time" -> Quantity[1.392962, "Seconds"]|>], 
-   "FileHash" -> "qomiIuJaR7KUdbKOuqJ56OePEkOuP+U8GzZg+3gvKrk="|>, 
+     <|"Time" -> Quantity[1.5474741, "Seconds"]|>], 
+   "FileHash" -> "Uk4DHJXPYANcVdz/nE9aEcLRFYTyh3ZK1P1bxvaxyhQ="|>, 
  "English\\ReferencePages\\Symbols\\RandomBooleanFunction.nb" -> 
   <|"Result" -> Success["BuildDocumentationNotebook", 
      <|"Time" -> Quantity[1.1780834, "Seconds"]|>], 
@@ -44,9 +44,17 @@
    "FileHash" -> "f1558ln/gqX8p6Q3CA37M3ye8s+LwobIAuImDF9DTU8="|>, 
  "English\\ReferencePages\\Symbols\\AllMinimalBooleanForms.nb" -> 
   <|"Result" -> Success["BuildDocumentationNotebook", 
-     <|"Time" -> Quantity[0.8931961, "Seconds"]|>], 
-   "FileHash" -> "wVj3MEGNUMXlwc5xiUddufVl7vy8uX4KLqZ9+KtwAoY="|>, 
+     <|"Time" -> Quantity[1.26823, "Seconds"]|>], 
+   "FileHash" -> "9iw5RLWNCX52sFCNUVrXAP1ypu89MY/b7+tjE8EGrok="|>, 
  "English\\Tutorials\\Boolean Basics.nb" -> 
   <|"Result" -> Success["BuildDocumentationNotebook", 
-     <|"Time" -> Quantity[1.5931294, "Seconds"]|>], 
-   "FileHash" -> "XsjipBm6vqNLi/MNLH2tJMYh9gtAE08xl5YR2rARKsc="|>|>
+     <|"Time" -> Quantity[1.7639587, "Seconds"]|>], 
+   "FileHash" -> "qI/oxVQMyEikYxF7+PIY5IiLK495OxeioWFAKAwh6Co="|>, 
+ "English\\ReferencePages\\Symbols\\AllBooleanFormsLiteralCounts.nb" -> 
+  <|"Result" -> Success["BuildDocumentationNotebook", 
+     <|"Time" -> Quantity[1.3510335, "Seconds"]|>], 
+   "FileHash" -> "pYPrh/hMgdFKu3bksPhRND5t8b8PRK10UrQ2eOpwITU="|>, 
+ "English\\ReferencePages\\Symbols\\AllMinimalBooleanFormsLiteralCounts.nb" \
+-> <|"Result" -> Success["BuildDocumentationNotebook", 
+     <|"Time" -> Quantity[0.9994009, "Seconds"]|>], 
+   "FileHash" -> "h64Qu+1VZsPPfUFXzyquTwvHkKhhWUNWbIj7raob72k="|>|>
